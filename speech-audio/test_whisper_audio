@@ -1,0 +1,122 @@
+from openai import api_key
+from sic_framework.core.sic_application import SICApplication
+from sic_framework.core import sic_logging
+from sic_framework.devices import Nao
+from sic_framework.core.message_python2 import AudioRequest
+from pathlib import Path
+import wave
+import os
+
+try:
+    from openai import OpenAI
+    client = OpenAI(api_key="your_api_key")
+except ImportError as e:
+    print("Missing dependencies. Install with: pip install openai pydub")
+    raise e
+
+
+class NaoWhisperTTSDemo(SICApplication):
+    def __init__(self, text_to_speak, voice="alloy", speed=1.0, model="gpt-4o-mini-tts", instructions=None):
+        super(NaoWhisperTTSDemo, self).__init__()
+        
+        self.nao_ip = "10.0.0.181"
+        self.text_to_speak = text_to_speak
+        self.voice = voice
+        self.speed = speed
+        self.model = model
+        self.instructions = instructions
+        self.nao = None
+        self.speech_file_path = Path(__file__).parent / "whisper_speech.wav"
+        
+        self.set_log_level(sic_logging.INFO)
+        self.setup()
+    
+    def generate_speech_with_openai(self):
+        try:
+            with client.audio.speech.with_streaming_response.create(
+                model=self.model,
+                voice=self.voice,
+                input=self.text_to_speak,
+                response_format="wav",
+                instructions=self.instructions,
+                speed=self.speed
+            ) as response:
+                response.stream_to_file(self.speech_file_path)
+            
+            return True
+            
+        except Exception as e:
+            return False
+    
+    def verify_wav_format(self):
+        try:
+            with wave.open(str(self.speech_file_path), "rb") as wf:
+                sample_rate = wf.getframerate()
+                channels = wf.getnchannels()
+                sample_width = wf.getsampwidth()
+            
+            return True
+            
+        except Exception as e:
+            return False
+    
+    def setup(self):
+        if not self.generate_speech_with_openai():
+            raise RuntimeError("Failed to generate speech with OpenAI")
+        
+        if not self.verify_wav_format():
+            raise RuntimeError("Failed to verify WAV format")
+        
+        self.nao = Nao(ip=self.nao_ip)
+    
+    def play_speech_on_nao(self):
+        try:
+            with wave.open(str(self.speech_file_path), "rb") as wf:
+                samplerate = wf.getframerate()
+                sound = wf.readframes(wf.getnframes())
+            
+            message = AudioRequest(sample_rate=samplerate, waveform=sound)
+            self.nao.speaker.request(message)
+            
+            return True
+            
+        except Exception as e:
+            return False
+    
+    def cleanup_files(self):
+        try:
+            if self.speech_file_path.exists():
+                os.remove(self.speech_file_path)
+                
+        except Exception as e:
+            pass
+    
+    def run(self):
+        try:
+            self.play_speech_on_nao()
+            
+        except Exception as e:
+            pass
+        finally:
+            self.cleanup_files()
+            self.shutdown()
+
+
+if __name__ == "__main__":
+    story_text = """
+    Rain lashed against the window of the midnight bus, blurring the faces of the other passengers. A crumpled note sat in Leo's palm, reading only "Don't trust the woman in the red hat." He looked up, and his blood ran cold.
+    """
+    voice = "onyx"
+    speed = 1.0
+    audio_file = "./ghost-audio.wav"
+    instructions = """
+    Voice: Deep, hushed, and enigmatic, with a slow, deliberate cadence that draws the listener in.
+    Phrasing: Sentences are short and rhythmic, building tension with pauses and carefully placed suspense.
+    Punctuation: Dramatic pauses, ellipses, and abrupt stops enhance the feeling of unease and anticipation.
+    """
+    model = "gpt-4o-mini-tts"
+    
+    demo = NaoWhisperTTSDemo(story_text, voice=voice, speed=speed, model=model, instructions=instructions)
+    demo.run()
+   
+    
