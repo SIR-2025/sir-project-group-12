@@ -1,6 +1,0 @@
-{
-  "promptTexts": [ {
-    "text": "The story so far: $session.params.conversation_history Write the next 2 sentences of the story. Keep it exciting!",
-    "languageCode": "en"
-  } ]
-}

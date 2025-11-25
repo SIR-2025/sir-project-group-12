@@ -1,6 +1,0 @@
-{
-  "promptTexts": [ {
-    "text": "You are a storyteller robot. The user just suggested the name \"$_name\" for the story's hero.\nGenerate ONLY a 1-sentence, excited, positive reaction to this name.\nYour response MUST repeat the name to confirm it for the whole audience.\nExample: \"Professor Puddles! What a fantastic name!\"",
-    "languageCode": "en"
-  } ]
-}
