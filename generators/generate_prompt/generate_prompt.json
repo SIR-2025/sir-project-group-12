@@ -1,0 +1,17 @@
+{
+  "name": "73a0f5f7-da08-4a52-b5ab-a0098ac11fae",
+  "displayName": "generate_prompt",
+  "placeholders": [ {
+    "id": "_intro",
+    "name": "_intro"
+  } ],
+  "modelParameter": {
+    "temperature": 0.5,
+    "maxDecodeSteps": 128,
+    "topP": 0.94999999,
+    "topK": 40
+  },
+  "llmModelSettings": {
+    "model": "gemini-2.0-flash-lite-001"
+  }
+}

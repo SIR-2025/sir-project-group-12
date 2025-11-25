@@ -1,0 +1,6 @@
+{
+  "promptTexts": [ {
+    "text": "Based on this story: \"$_intro\".\nPick the *best* animation from this exact list: ['open_arms_welcoming', 'look_around_curious', 'lean_in_excited', 'thinking_pose_story']\nRespond with ONLY the animation name and nothing else.",
+    "languageCode": "en"
+  } ]
+}

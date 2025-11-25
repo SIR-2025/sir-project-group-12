@@ -1,0 +1,6 @@
+{
+  "name": "b30a1e55-e4ef-467d-a9fd-9931acf7e5e4",
+  "displayName": "small_talk.agent.my_friend",
+  "priority": 500000,
+  "numTrainingPhrases": 40
+}

@@ -1,0 +1,17 @@
+{
+  "name": "9ce6d4b0-9168-4ef6-8038-59d6b66c0102",
+  "displayName": "Generate_Story_Segment",
+  "placeholders": [ {
+    "id": "session",
+    "name": "session"
+  } ],
+  "modelParameter": {
+    "temperature": 0.5,
+    "maxDecodeSteps": 128,
+    "topP": 0.94999999,
+    "topK": 40
+  },
+  "llmModelSettings": {
+    "model": "gemini-2.5-flash-lite"
+  }
+}

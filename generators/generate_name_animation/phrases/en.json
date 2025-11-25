@@ -1,0 +1,6 @@
+{
+  "promptTexts": [ {
+    "text": "The user just suggested the name \"$_name\".\nPick the *best* animation from this exact list that fits an excited reaction: ['excited_nod', 'happy_dance', 'thinking_pose_story', 'open_arms_welcoming']\nRespond with ONLY the animation name.",
+    "languageCode": "en"
+  } ]
+}
