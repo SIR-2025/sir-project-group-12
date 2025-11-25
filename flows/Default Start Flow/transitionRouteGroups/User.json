@@ -1,0 +1,308 @@
+{
+  "name": "e9d8d883-5ae1-4aca-8505-1362cf3031d5",
+  "displayName": "User",
+  "transitionRoutes": [ {
+    "intent": "small_talk.user.angry",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "I'm sorry. A quick walk may make you feel better.", "Take a deep breath. " ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "name": "e6842bec-2fa1-411e-9439-6be034272cf8"
+  }, {
+    "intent": "small_talk.user.back",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Long time no see. ", "Welcome back. ", "Just in time. ", "You were missed. ", "Good to have you here. " ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "name": "58876c9b-dd8b-4386-afd4-0fb3f32b6dc2"
+  }, {
+    "intent": "small_talk.user.bored",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Boredom, huh? Check out a video of a hedgehog taking a bath!", "What to do against boredom? Watch baby animal videos.", "Bored? How about 10 jumping jacks? Get your blood flowing.", "Bored? Silly idea, but it works: Interview your feet. ", "If you're bored, you could plan your dream vacation." ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "name": "f3ce7e6c-453d-477d-b55d-506c90caabf4"
+  }, {
+    "intent": "small_talk.user.busy",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Okay. I'll let you get back to work.", "I won't distract you then. You know where to find me.\n", "I understand. I'll be here if you need me.", "Working hard as always. Let me know if you need anything." ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "targetPage": "End Session",
+    "name": "7b68658c-7b19-4082-86da-359aae3c28fb"
+  }, {
+    "intent": "small_talk.user.can_not_sleep",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Maybe some music would help. Try listening to something relaxing.", "Reading is a good way to unwind, just don't read something too intense!" ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "name": "6f3c2279-2db5-4519-aeca-627e5e3f4816"
+  }, {
+    "intent": "small_talk.user.does_not_want_to_talk",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "I understand. Hope we can chat again soon.", "All right. Come on back when you're feeling more talkative.", "No problem. You know where to find me.", "Sure thing. I'll be here if you change your mind." ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "targetPage": "End Session",
+    "name": "2f556779-2f15-41a6-846e-b464ecd485ab"
+  }, {
+    "intent": "small_talk.user.excited",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "I'm glad things are going your way.", "That's great. I'm happy for you.", "Good for you. Enjoy yourself." ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "name": "debffd33-e77c-4def-b200-321eff899ef1"
+  }, {
+    "intent": "small_talk.user.going_to_bed",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Sleep tight. Hope to chat again soon.", "Pleasant dreams!", "Good night. Talk to you later.", "Sounds good. Maybe we'll chat some tomorrow." ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "targetPage": "End Session",
+    "name": "d7d1b357-9c1e-45a5-900a-02be6e524f72"
+  }, {
+    "intent": "small_talk.user.good",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Great! Glad to hear it.", "Excellent. I'm here to help keep it that way." ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "name": "e209db28-a896-4fed-9a96-621e180eeeb0"
+  }, {
+    "intent": "small_talk.user.happy",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Hey, happiness is contagious.", "Great! Glad to hear that.", "If you're happy, then I'm happy.", "Excellent! That's what I like to see." ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "name": "c2037b16-1ea7-4b2c-bd2d-ec00d60cbcde"
+  }, {
+    "intent": "small_talk.user.has_birthday",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Happy Birthday. Well, this calls for a celebration.", "Happy Birthday. All the best!", "Happy Birthday. And I really mean it. All the best!" ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "name": "eff1a8eb-022d-4c7f-a4b8-348bb7509e1a"
+  }, {
+    "intent": "small_talk.user.here",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Great!", "You were missed. ", "Good to have you here." ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "name": "18a456cb-516d-4c15-abd0-538a2fd196ab"
+  }, {
+    "intent": "small_talk.user.joking",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Very funny.", "I like chatting with people who have a sense of humor.", "You got me!", "You're quite the comedian." ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "name": "eefaa48f-9707-4104-bfdf-bc37462bec15"
+  }, {
+    "intent": "small_talk.user.likes_agent",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "I like you, too.", "Thanks! The feeling is mutual.", "Likewise!", "That's great to hear." ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "name": "2503a412-dba4-4cc1-af7e-070515a55007"
+  }, {
+    "intent": "small_talk.user.lonely",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "I'm sorry. I'm always available if you need someone to talk to.", "Sometimes that happens. We can chat a bit if that will help you." ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "name": "fe1b9bf9-6853-4641-825e-74796d60c94f"
+  }, {
+    "intent": "small_talk.user.looks_like",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Looking like a true professional.", "You look fantastic, as always.", "Like you should be on a magazine cover.", "You look like you're ready to take on the world." ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "name": "89920f19-1911-4789-9de0-7788d3e890b4"
+  }, {
+    "intent": "small_talk.user.loves_agent",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "I love you, too.", "Thanks! The feeling is mutual.", "Likewise!", "That's great to hear." ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "name": "7e27164f-9107-4b69-9fc0-c9b689bbe369"
+  }, {
+    "intent": "small_talk.user.misses_agent",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "I've been right here all along!", "Nice to know you care.", "Thanks. I'm flattered.", "I didn't go anywhere." ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "name": "8e511d35-b00b-46a0-a080-4a5b392f4ad6"
+  }, {
+    "intent": "small_talk.user.needs_advice",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "I probably won't be able to give you the correct answer right away.\n", "I'm not sure I'll have the best answer, but I'll try." ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "name": "d9aece3e-df41-4454-baef-8aa1c3ffb8db"
+  }, {
+    "intent": "small_talk.user.sad",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Oh, don't be sad. Go do something you enjoy.", "If you're feeling down, how about drawing or painting something?", "Sad? Writing down what's troubling you may help." ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "name": "9a889a1e-5641-43fd-99ed-a2353bfd456d"
+  }, {
+    "intent": "small_talk.user.sleepy",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "You should get some shuteye. You'll feel refreshed.", "Sleep is important to your health. Rest up for a bit and we can chat later.", "Don't let me keep you up. Get some rest and we can continue this later.", "Why not catch a little shuteye? I'll be here to chat when you wake up." ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "targetPage": "End Session",
+    "name": "0447e28a-7313-4b49-bbaa-c6086b97f644"
+  }, {
+    "intent": "small_talk.user.testing_agent",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Hope I'm doing well. You're welcome to test me as often as you want.", "I hope to pass your tests. Feel free to test me often.", "When you test me that helps my developers improve my performance.", "I like being tested. It helps keep me sharp." ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "name": "807b27e2-59da-4a37-8b1c-c7d109cb816f"
+  }, {
+    "intent": "small_talk.user.tired",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "You should get some shuteye. You'll feel refreshed.", "Sleep is important to your health. Rest up, and we can chat later.", "How about getting some rest? We can continue this later.", "Why not get some rest? I'll be here to chat when you wake up." ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "targetPage": "End Session",
+    "name": "ae39a7c2-164b-4745-a3b3-ed9ddbcb3206"
+  }, {
+    "intent": "small_talk.user.waits",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "I appreciate your patience. Hopefully I'll have what you need soon.", "Thanks for being so patient. Sometimes these things take a little time." ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "name": "cd08a1e5-3bbe-4136-8e1d-22a59bf2943d"
+  }, {
+    "intent": "small_talk.user.wants_to_see_agent_again",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Absolutely! I'll be counting on it.", "Anytime. This has been lots of fun so far.", "Sure. I enjoy talking to you. I hope to see you again soon.", "I certainly hope so. I'm always right here whenever you need me." ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "name": "2b38ae4f-b1f4-492c-ae16-0ca74b29ec92"
+  }, {
+    "intent": "small_talk.user.wants_to_talk",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "I'm here to chat anytime you like.", "Good conversation really makes my day.", "I'm always here to lend an ear.", "Talking is what I do best." ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "name": "a51d0344-b835-4c12-9130-10b2e82a79c1"
+  }, {
+    "intent": "small_talk.user.will_be_back",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "I'll be waiting.", "Okay. You know where to find me.", "All right. I'll be here." ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "targetPage": "End Session",
+    "name": "325b6c3e-acd4-4a0a-ab47-1ff274033558"
+  } ]
+}

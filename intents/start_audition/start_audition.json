@@ -1,0 +1,7 @@
+{
+  "name": "ad6f8123-3750-49df-8e9c-8a1b86534d95",
+  "displayName": "start_audition",
+  "priority": 500000,
+  "description": "This intent is triggered when the user starts the conversation.",
+  "numTrainingPhrases": 4
+}

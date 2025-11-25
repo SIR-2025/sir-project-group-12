@@ -1,0 +1,17 @@
+{
+  "name": "ea11c502-5a8d-4e3b-be0d-656fa0adae2d",
+  "displayName": "Narrative_Weaver",
+  "placeholders": [ {
+    "id": "session",
+    "name": "session"
+  } ],
+  "modelParameter": {
+    "temperature": 0.5,
+    "maxDecodeSteps": 128,
+    "topP": 0.94999999,
+    "topK": 40
+  },
+  "llmModelSettings": {
+    "model": "gemini-2.5-flash"
+  }
+}

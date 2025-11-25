@@ -1,0 +1,56 @@
+{
+  "name": "34cafd9e-5b12-4ae8-8e57-9de0ce1971d5",
+  "displayName": "Fairytale story",
+  "transitionRoutes": [ {
+    "intent": "start_story",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "story_kickoff",
+    "name": "db4f8b1e-933f-4d3f-b863-4e8b8173abe4"
+  }, {
+    "condition": "true",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "story_kickoff",
+    "name": "b3f2cc73-42c2-426b-86e5-280fb8e67fc5"
+  } ],
+  "eventHandlers": [ {
+    "targetPage": "story_kickoff",
+    "event": "sys.no-match-default",
+    "triggerFulfillment": {
+    
+    },
+    "name": "31074bcd-086a-4735-a1e8-750dbe6ef3d6"
+  }, {
+    "targetPage": "story_kickoff",
+    "event": "sys.no-input-default",
+    "triggerFulfillment": {
+    
+    },
+    "name": "262bd787-8049-43b1-8a79-2a2273fa0b46"
+  }, {
+    "targetPage": "story_kickoff",
+    "event": "start_story_kickoff",
+    "triggerFulfillment": {
+    
+    },
+    "name": "68b6a220-927f-4e0a-a56d-8e08223ed054"
+  } ],
+  "nluSettings": {
+    "modelType": "MODEL_TYPE_ADVANCED",
+    "classificationThreshold": 0.30000001,
+    "modelTrainingMode": "MODEL_TRAINING_MODE_AUTOMATIC"
+  },
+  "advancedSettings": {
+    "enabled": true
+  },
+  "nluSettingsList": [ {
+    "modelType": "MODEL_TYPE_ADVANCED",
+    "classificationThreshold": 0.30000001,
+    "modelTrainingMode": "MODEL_TRAINING_MODE_AUTOMATIC",
+    "customConfigKey": "2a0e5f84-9501-4900-94b3-cbc2b98ebec3",
+    "languageCode": "en"
+  } ]
+}
