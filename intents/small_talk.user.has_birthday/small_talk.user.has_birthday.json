@@ -1,0 +1,10 @@
+{
+  "name": "6e304c3c-b84b-4ffc-aaf7-76d3f5b72538",
+  "displayName": "small_talk.user.has_birthday",
+  "parameters": [ {
+    "id": "date-time",
+    "entityType": "@sys.date-time"
+  } ],
+  "priority": 500000,
+  "numTrainingPhrases": 7
+}

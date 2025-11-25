@@ -1,0 +1,110 @@
+{
+  "name": "fbcc1ce3-8f05-411c-9ee6-abacda48b6cb",
+  "tags": [ "#friends" ],
+  "displayName": "Happy path - asking to be best friend, says \"nice\" and got to go",
+  "testCaseConversationTurns": [ {
+    "userInput": {
+      "isWebhookEnabled": true,
+      "input": {
+        "text": {
+          "text": "hi"
+        },
+        "languageCode": "en"
+      }
+    },
+    "virtualAgentOutput": {
+      "triggeredIntent": {
+        "name": "small_talk.greetings.hello"
+      },
+      "currentPage": {
+        "name": "df20b17b-91ed-48df-9465-27eb234f21e5",
+        "flow": "Default Start Flow"
+      },
+      "textResponses": [ {
+        "text": [ "Good day! \nI'm the virtual small talk agent. I can tell you a joke, tell you about myself or answer questions. You can also tell me about yourself or give me feedback.\nWhat can I help you with today?" ]
+      } ],
+      "currentFlow": {
+        "name": "Default Start Flow"
+      }
+    }
+  }, {
+    "userInput": {
+      "isWebhookEnabled": true,
+      "input": {
+        "text": {
+          "text": "can you be my best friend?"
+        },
+        "languageCode": "en"
+      }
+    },
+    "virtualAgentOutput": {
+      "triggeredIntent": {
+        "name": "small_talk.agent.my_friend"
+      },
+      "currentPage": {
+        "name": "df20b17b-91ed-48df-9465-27eb234f21e5",
+        "flow": "Default Start Flow"
+      },
+      "textResponses": [ {
+        "text": [ "Friends? Absolutely." ]
+      } ],
+      "currentFlow": {
+        "name": "Default Start Flow"
+      }
+    }
+  }, {
+    "userInput": {
+      "isWebhookEnabled": true,
+      "input": {
+        "text": {
+          "text": "nice"
+        },
+        "languageCode": "en"
+      }
+    },
+    "virtualAgentOutput": {
+      "triggeredIntent": {
+        "name": "small_talk.appraisal.good"
+      },
+      "currentPage": {
+        "name": "df20b17b-91ed-48df-9465-27eb234f21e5",
+        "flow": "Default Start Flow"
+      },
+      "textResponses": [ {
+        "text": [ "Agreed!" ]
+      } ],
+      "currentFlow": {
+        "name": "Default Start Flow"
+      }
+    }
+  }, {
+    "userInput": {
+      "isWebhookEnabled": true,
+      "input": {
+        "text": {
+          "text": "ok got to go now"
+        },
+        "languageCode": "en"
+      }
+    },
+    "virtualAgentOutput": {
+      "triggeredIntent": {
+        "name": "small_talk.greetings.bye"
+      },
+      "currentPage": {
+        "name": "End Session",
+        "flow": "Default Start Flow"
+      },
+      "textResponses": [ {
+        "text": [ "Thanks for chatting with me today. Goodbye!" ]
+      } ],
+      "currentFlow": {
+        "name": "Default Start Flow"
+      }
+    }
+  } ],
+  "creationTime": {
+    "seconds": 1609870900,
+    "nanos": 898127000
+  }
+}

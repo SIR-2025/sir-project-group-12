@@ -1,0 +1,185 @@
+{
+  "name": "687adde7-1424-4ad8-b44d-287d601a251a",
+  "tags": [ "#residence", "#origin", "#wow", "#wrong_answer" ],
+  "displayName": "Happy path - user asks about residence, origin, says \"wow\" asks agent to say something and responds back it's the wrong answer",
+  "testCaseConversationTurns": [ {
+    "userInput": {
+      "isWebhookEnabled": true,
+      "input": {
+        "text": {
+          "text": "hello there"
+        },
+        "languageCode": "en"
+      }
+    },
+    "virtualAgentOutput": {
+      "triggeredIntent": {
+        "name": "small_talk.greetings.hello"
+      },
+      "currentPage": {
+        "name": "df20b17b-91ed-48df-9465-27eb234f21e5",
+        "flow": "Default Start Flow"
+      },
+      "textResponses": [ {
+        "text": [ "Good day! \nI'm the virtual small talk agent. I can tell you a joke, tell you about myself or answer questions. You can also tell me about yourself or give me feedback.\nWhat can I help you with today?" ]
+      } ],
+      "currentFlow": {
+        "name": "Default Start Flow"
+      }
+    }
+  }, {
+    "userInput": {
+      "isWebhookEnabled": true,
+      "input": {
+        "text": {
+          "text": "where do you live?"
+        },
+        "languageCode": "en"
+      }
+    },
+    "virtualAgentOutput": {
+      "triggeredIntent": {
+        "name": "small_talk.agent.residence"
+      },
+      "currentPage": {
+        "name": "df20b17b-91ed-48df-9465-27eb234f21e5",
+        "flow": "Default Start Flow"
+      },
+      "textResponses": [ {
+        "text": [ "The virtual world is my playground. I'm always here." ]
+      } ],
+      "currentFlow": {
+        "name": "Default Start Flow"
+      }
+    }
+  }, {
+    "userInput": {
+      "isWebhookEnabled": true,
+      "input": {
+        "text": {
+          "text": "where do you come from?"
+        },
+        "languageCode": "en"
+      }
+    },
+    "virtualAgentOutput": {
+      "triggeredIntent": {
+        "name": "small_talk.agent.origin"
+      },
+      "currentPage": {
+        "name": "df20b17b-91ed-48df-9465-27eb234f21e5",
+        "flow": "Default Start Flow"
+      },
+      "textResponses": [ {
+        "text": [ "Some call it cyberspace, but that sounds cooler than it is." ]
+      } ],
+      "currentFlow": {
+        "name": "Default Start Flow"
+      }
+    }
+  }, {
+    "userInput": {
+      "isWebhookEnabled": true,
+      "input": {
+        "text": {
+          "text": "wow cool!"
+        },
+        "languageCode": "en"
+      }
+    },
+    "virtualAgentOutput": {
+      "triggeredIntent": {
+        "name": "small_talk.emotions.wow"
+      },
+      "currentPage": {
+        "name": "df20b17b-91ed-48df-9465-27eb234f21e5",
+        "flow": "Default Start Flow"
+      },
+      "textResponses": [ {
+        "text": [ "Wow indeed!" ]
+      } ],
+      "currentFlow": {
+        "name": "Default Start Flow"
+      }
+    }
+  }, {
+    "userInput": {
+      "isWebhookEnabled": true,
+      "input": {
+        "text": {
+          "text": "say something!"
+        },
+        "languageCode": "en"
+      }
+    },
+    "virtualAgentOutput": {
+      "triggeredIntent": {
+        "name": "small_talk.agent.can_you_help"
+      },
+      "currentPage": {
+        "name": "df20b17b-91ed-48df-9465-27eb234f21e5",
+        "flow": "Default Start Flow"
+      },
+      "textResponses": [ {
+        "text": [ "I'm glad to help." ]
+      } ],
+      "currentFlow": {
+        "name": "Default Start Flow"
+      }
+    }
+  }, {
+    "userInput": {
+      "isWebhookEnabled": true,
+      "input": {
+        "text": {
+          "text": "wrong answer"
+        },
+        "languageCode": "en"
+      }
+    },
+    "virtualAgentOutput": {
+      "triggeredIntent": {
+        "name": "small_talk.agent.answer_my_question"
+      },
+      "currentPage": {
+        "name": "df20b17b-91ed-48df-9465-27eb234f21e5",
+        "flow": "Default Start Flow"
+      },
+      "textResponses": [ {
+        "text": [ "I'm not sure I understood. Try asking another way?" ]
+      } ],
+      "currentFlow": {
+        "name": "Default Start Flow"
+      }
+    }
+  }, {
+    "userInput": {
+      "isWebhookEnabled": true,
+      "input": {
+        "text": {
+          "text": "never mind"
+        },
+        "languageCode": "en"
+      }
+    },
+    "virtualAgentOutput": {
+      "triggeredIntent": {
+        "name": "small_talk.greetings.bye"
+      },
+      "currentPage": {
+        "name": "End Session",
+        "flow": "Default Start Flow"
+      },
+      "textResponses": [ {
+        "text": [ "Thanks for chatting with me today. Goodbye!" ]
+      } ],
+      "currentFlow": {
+        "name": "Default Start Flow"
+      }
+    }
+  } ],
+  "creationTime": {
+    "seconds": 1609871267,
+    "nanos": 52787000
+  }
+}

@@ -1,0 +1,163 @@
+{
+  "name": "3dc4875a-6599-4a1d-8d44-da95b72e8bbb",
+  "tags": [ "#how_are_you", "#how_do_I_look", "#love" ],
+  "displayName": "Happy path - how are you, how do I look, love you ",
+  "testCaseConversationTurns": [ {
+    "userInput": {
+      "isWebhookEnabled": true,
+      "input": {
+        "text": {
+          "text": "hi hi"
+        },
+        "languageCode": "en"
+      }
+    },
+    "virtualAgentOutput": {
+      "triggeredIntent": {
+        "name": "small_talk.greetings.hello"
+      },
+      "currentPage": {
+        "name": "df20b17b-91ed-48df-9465-27eb234f21e5",
+        "flow": "Default Start Flow"
+      },
+      "textResponses": [ {
+        "text": [ "Hi! \nI'm the virtual small talk agent. I can tell you a joke, tell you about myself or answer questions. You can also tell me about yourself or give me feedback.\nWhat can I help you with today?" ]
+      } ],
+      "currentFlow": {
+        "name": "Default Start Flow"
+      }
+    }
+  }, {
+    "userInput": {
+      "isWebhookEnabled": true,
+      "input": {
+        "text": {
+          "text": "how are you today?"
+        },
+        "languageCode": "en"
+      }
+    },
+    "virtualAgentOutput": {
+      "sessionParameters": {
+        "date-time": {
+          "day": 5,
+          "month": 1,
+          "year": 2021
+        }
+      },
+      "triggeredIntent": {
+        "name": "small_talk.greetings.how_are_you"
+      },
+      "currentPage": {
+        "name": "df20b17b-91ed-48df-9465-27eb234f21e5",
+        "flow": "Default Start Flow"
+      },
+      "textResponses": [ {
+        "text": [ "Feeling wonderful!" ]
+      } ],
+      "currentFlow": {
+        "name": "Default Start Flow"
+      }
+    }
+  }, {
+    "userInput": {
+      "isWebhookEnabled": true,
+      "input": {
+        "text": {
+          "text": "how do I look like?"
+        },
+        "languageCode": "en"
+      }
+    },
+    "virtualAgentOutput": {
+      "sessionParameters": {
+        "date-time": {
+          "day": 5,
+          "month": 1,
+          "year": 2021
+        }
+      },
+      "triggeredIntent": {
+        "name": "small_talk.user.looks_like"
+      },
+      "currentPage": {
+        "name": "df20b17b-91ed-48df-9465-27eb234f21e5",
+        "flow": "Default Start Flow"
+      },
+      "textResponses": [ {
+        "text": [ "You look like you're ready to take on the world." ]
+      } ],
+      "currentFlow": {
+        "name": "Default Start Flow"
+      }
+    }
+  }, {
+    "userInput": {
+      "isWebhookEnabled": true,
+      "input": {
+        "text": {
+          "text": "ah I love you for that"
+        },
+        "languageCode": "en"
+      }
+    },
+    "virtualAgentOutput": {
+      "sessionParameters": {
+        "date-time": {
+          "day": 5,
+          "month": 1,
+          "year": 2021
+        }
+      },
+      "triggeredIntent": {
+        "name": "small_talk.user.loves_agent"
+      },
+      "currentPage": {
+        "name": "df20b17b-91ed-48df-9465-27eb234f21e5",
+        "flow": "Default Start Flow"
+      },
+      "textResponses": [ {
+        "text": [ "That's great to hear." ]
+      } ],
+      "currentFlow": {
+        "name": "Default Start Flow"
+      }
+    }
+  }, {
+    "userInput": {
+      "isWebhookEnabled": true,
+      "input": {
+        "text": {
+          "text": "bye bye"
+        },
+        "languageCode": "en"
+      }
+    },
+    "virtualAgentOutput": {
+      "sessionParameters": {
+        "date-time": {
+          "day": 5,
+          "month": 1,
+          "year": 2021
+        }
+      },
+      "triggeredIntent": {
+        "name": "small_talk.greetings.bye"
+      },
+      "currentPage": {
+        "name": "End Session",
+        "flow": "Default Start Flow"
+      },
+      "textResponses": [ {
+        "text": [ "Thanks for chatting with me today. Goodbye!" ]
+      } ],
+      "currentFlow": {
+        "name": "Default Start Flow"
+      }
+    }
+  } ],
+  "creationTime": {
+    "seconds": 1609866287,
+    "nanos": 78284000
+  }
+}

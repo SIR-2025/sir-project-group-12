@@ -1,0 +1,110 @@
+{
+  "name": "61a47904-bc2f-463a-a99f-9d7cdbc5c0ff",
+  "tags": [ "#origin", "#age" ],
+  "displayName": "Happy path - origin and age ",
+  "testCaseConversationTurns": [ {
+    "userInput": {
+      "isWebhookEnabled": true,
+      "input": {
+        "text": {
+          "text": "hello there"
+        },
+        "languageCode": "en"
+      }
+    },
+    "virtualAgentOutput": {
+      "triggeredIntent": {
+        "name": "small_talk.greetings.hello"
+      },
+      "currentPage": {
+        "name": "df20b17b-91ed-48df-9465-27eb234f21e5",
+        "flow": "Default Start Flow"
+      },
+      "textResponses": [ {
+        "text": [ "Hi there, friend!\nI'm the virtual small talk agent. I can tell you a joke, tell you about myself or answer questions. You can also tell me about yourself or give me feedback.\nWhat can I help you with today?" ]
+      } ],
+      "currentFlow": {
+        "name": "Default Start Flow"
+      }
+    }
+  }, {
+    "userInput": {
+      "isWebhookEnabled": true,
+      "input": {
+        "text": {
+          "text": "where do you come from?"
+        },
+        "languageCode": "en"
+      }
+    },
+    "virtualAgentOutput": {
+      "triggeredIntent": {
+        "name": "small_talk.agent.origin"
+      },
+      "currentPage": {
+        "name": "df20b17b-91ed-48df-9465-27eb234f21e5",
+        "flow": "Default Start Flow"
+      },
+      "textResponses": [ {
+        "text": [ "Some call it cyberspace, but that sounds cooler than it is." ]
+      } ],
+      "currentFlow": {
+        "name": "Default Start Flow"
+      }
+    }
+  }, {
+    "userInput": {
+      "isWebhookEnabled": true,
+      "input": {
+        "text": {
+          "text": "how old are you?"
+        },
+        "languageCode": "en"
+      }
+    },
+    "virtualAgentOutput": {
+      "triggeredIntent": {
+        "name": "small_talk.agent.age"
+      },
+      "currentPage": {
+        "name": "df20b17b-91ed-48df-9465-27eb234f21e5",
+        "flow": "Default Start Flow"
+      },
+      "textResponses": [ {
+        "text": [ "Age is just a number. You're only as old as you feel." ]
+      } ],
+      "currentFlow": {
+        "name": "Default Start Flow"
+      }
+    }
+  }, {
+    "userInput": {
+      "isWebhookEnabled": true,
+      "input": {
+        "text": {
+          "text": "that's all!"
+        },
+        "languageCode": "en"
+      }
+    },
+    "virtualAgentOutput": {
+      "triggeredIntent": {
+        "name": "small_talk.appraisal.thank_you"
+      },
+      "currentPage": {
+        "name": "End Session",
+        "flow": "Default Start Flow"
+      },
+      "textResponses": [ {
+        "text": [ "You're welcome! Thanks for chatting with me today." ]
+      } ],
+      "currentFlow": {
+        "name": "Default Start Flow"
+      }
+    }
+  } ],
+  "creationTime": {
+    "seconds": 1609866405,
+    "nanos": 507582000
+  }
+}

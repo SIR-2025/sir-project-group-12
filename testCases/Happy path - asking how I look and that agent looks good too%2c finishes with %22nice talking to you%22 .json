@@ -1,0 +1,110 @@
+{
+  "name": "93e91b1a-d375-4d53-83f1-e7963dda062f",
+  "tags": [ "#how_do_I_look", "#beautiful", "#nice_talking" ],
+  "displayName": "Happy path - asking how I look and that agent looks good too, finishes with \"nice talking to you\" ",
+  "testCaseConversationTurns": [ {
+    "userInput": {
+      "isWebhookEnabled": true,
+      "input": {
+        "text": {
+          "text": "hi"
+        },
+        "languageCode": "en"
+      }
+    },
+    "virtualAgentOutput": {
+      "triggeredIntent": {
+        "name": "small_talk.greetings.hello"
+      },
+      "currentPage": {
+        "name": "df20b17b-91ed-48df-9465-27eb234f21e5",
+        "flow": "Default Start Flow"
+      },
+      "textResponses": [ {
+        "text": [ "Hi! \nI'm the virtual small talk agent. I can tell you a joke, tell you about myself or answer questions. You can also tell me about yourself or give me feedback.\nWhat can I help you with today?" ]
+      } ],
+      "currentFlow": {
+        "name": "Default Start Flow"
+      }
+    }
+  }, {
+    "userInput": {
+      "isWebhookEnabled": true,
+      "input": {
+        "text": {
+          "text": "ok how do I look"
+        },
+        "languageCode": "en"
+      }
+    },
+    "virtualAgentOutput": {
+      "triggeredIntent": {
+        "name": "small_talk.user.looks_like"
+      },
+      "currentPage": {
+        "name": "df20b17b-91ed-48df-9465-27eb234f21e5",
+        "flow": "Default Start Flow"
+      },
+      "textResponses": [ {
+        "text": [ "You look fantastic, as always." ]
+      } ],
+      "currentFlow": {
+        "name": "Default Start Flow"
+      }
+    }
+  }, {
+    "userInput": {
+      "isWebhookEnabled": true,
+      "input": {
+        "text": {
+          "text": "you look pretty good too!"
+        },
+        "languageCode": "en"
+      }
+    },
+    "virtualAgentOutput": {
+      "triggeredIntent": {
+        "name": "small_talk.agent.beautiful"
+      },
+      "currentPage": {
+        "name": "df20b17b-91ed-48df-9465-27eb234f21e5",
+        "flow": "Default Start Flow"
+      },
+      "textResponses": [ {
+        "text": [ "Aw. You smooth talker, you." ]
+      } ],
+      "currentFlow": {
+        "name": "Default Start Flow"
+      }
+    }
+  }, {
+    "userInput": {
+      "isWebhookEnabled": true,
+      "input": {
+        "text": {
+          "text": "very nice talking to you"
+        },
+        "languageCode": "en"
+      }
+    },
+    "virtualAgentOutput": {
+      "triggeredIntent": {
+        "name": "small_talk.greetings.nice_to_talk_to_you"
+      },
+      "currentPage": {
+        "name": "End Session",
+        "flow": "Default Start Flow"
+      },
+      "textResponses": [ {
+        "text": [ "You know I'm here to talk anytime." ]
+      } ],
+      "currentFlow": {
+        "name": "Default Start Flow"
+      }
+    }
+  } ],
+  "creationTime": {
+    "seconds": 1609866155,
+    "nanos": 204361000
+  }
+}

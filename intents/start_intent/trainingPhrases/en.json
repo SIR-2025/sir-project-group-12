@@ -1,0 +1,35 @@
+{
+  "trainingPhrases": [ {
+    "parts": [ {
+      "text": "I'm going to start a story now."
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "I'm here to tell a story."
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Hi, let me tell you a story"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Hello! I will tell a story ",
+      "auto": true
+    }, {
+      "text": "today",
+      "parameterId": "date-time",
+      "auto": true
+    }, {
+      "text": ".",
+      "auto": true
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  } ]
+}

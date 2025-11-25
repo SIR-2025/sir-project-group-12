@@ -1,0 +1,41 @@
+{
+  "name": "d786ec7c-ba01-4d71-b1a0-57a1d4b2f5ed",
+  "displayName": "Cycle_Setup",
+  "form": {
+  
+  },
+  "entryFulfillment": {
+    "messages": [ {
+      "text": {
+        "text": [ "$session.params.robot_speech" ]
+      },
+      "languageCode": "en"
+    } ],
+    "generators": [ {
+      "generator": "projects/newagent-tcmq/locations/europe-west4/agents/5079e43a-fec2-441d-bf10-f23f292fbf15/generators/d615790b-cb2f-4cdd-8288-143fd0a263c7",
+      "outputParameter": "robot_speech"
+    } ]
+  },
+  "transitionRoutes": [ {
+    "condition": "true",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Data_Collection",
+    "name": "1fa78583-4608-41f7-9673-8f1adc9e877c"
+  }, {
+    "condition": "$session.params.current_cycle \u003c= 4",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Data_Collection",
+    "name": "bbee34c1-1736-4479-821b-f3f7fb29efdc"
+  }, {
+    "condition": "$session.params.current_cycle \u003e 4",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "End Session",
+    "name": "33389489-d5d9-4770-a5d5-234cceda06a2"
+  } ]
+}

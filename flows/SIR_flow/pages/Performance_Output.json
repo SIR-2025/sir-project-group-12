@@ -1,0 +1,40 @@
+{
+  "name": "c0a1926b-7f16-4448-bc44-283c3650e010",
+  "displayName": "Performance_Output",
+  "form": {
+  
+  },
+  "entryFulfillment": {
+    "messages": [ {
+      "payload": {
+        "robot_command": {
+          "led": "$session.params.generator_output.led_color",
+          "motion": "$session.params.generator_output.motion_tag",
+          "text": "$session.params.generator_output.story_text"
+        }
+      },
+      "languageCode": "en"
+    } ],
+    "setParameterActions": [ {
+      "parameter": "current_cycle",
+      "value": "$session.params.current_cycle + 1"
+    }, {
+      "parameter": "input_counter",
+      "value": 1
+    }, {
+      "parameter": "collected_words",
+      "value": ""
+    }, {
+      "parameter": "user_input",
+      "value": null
+    } ]
+  },
+  "transitionRoutes": [ {
+    "condition": "true",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Cycle_Setup",
+    "name": "a04f4b56-0200-4e2a-9f13-20a7fb234b63"
+  } ]
+}
