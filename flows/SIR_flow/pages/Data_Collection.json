@@ -1,0 +1,68 @@
+{
+  "name": "aa58aea7-d2a4-42d1-a475-6be63358d3a9",
+  "displayName": "Data_Collection",
+  "form": {
+    "parameters": [ {
+      "displayName": "user_input",
+      "required": true,
+      "entityType": "@sys.any",
+      "fillBehavior": {
+        "initialPromptFulfillment": {
+        
+        }
+      }
+    } ]
+  },
+  "entryFulfillment": {
+    "messages": [ {
+      "text": {
+        "text": [ "$session.params.robot_speech" ]
+      },
+      "languageCode": "en"
+    } ],
+    "generators": [ {
+      "generator": "projects/newagent-tcmq/locations/europe-west4/agents/5079e43a-fec2-441d-bf10-f23f292fbf15/generators/66324c87-ec43-4011-ba1e-a5f4f088d7b4",
+      "inputParameters": [ {
+        "key": "cycle_num",
+        "value": "$session.params.current_cycle"
+      }, {
+        "key": "input_count",
+        "value": "$session.params.input_counter"
+      } ],
+      "outputParameter": "robot_speech"
+    } ]
+  },
+  "transitionRoutes": [ {
+    "condition": "$page.params.status = \"FINAL\" AND $session.params.input_counter \u003c= 5",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "collected_words",
+        "value": "$session.params.collected_words + \", \" + $session.params.user_input"
+      }, {
+        "parameter": "input_counter",
+        "value": "$session.params.input_counter + 1"
+      }, {
+        "parameter": "user_input",
+        "value": null
+      } ]
+    },
+    "targetPage": "Data_Collection",
+    "name": "40185c41-55a1-41d8-9ba4-66b3e2a22807"
+  }, {
+    "condition": "$page.params.status = \"FINAL\" AND $session.params.input_counter \u003e 5",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "collected_words",
+        "value": "$session.params.collected_words + \", \" + $session.params.user_input"
+      }, {
+        "parameter": "input_counter",
+        "value": "$session.params.input_counter + 1"
+      }, {
+        "parameter": "user_input",
+        "value": null
+      } ]
+    },
+    "targetPage": "Narrative_Generation",
+    "name": "e74855b3-d1eb-4ad2-80eb-4680cb34694f"
+  } ]
+}

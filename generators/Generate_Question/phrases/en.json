@@ -1,0 +1,6 @@
+{
+  "promptTexts": [ {
+    "text": "The story so far: $session.params.conversation_history We need a new detail from the audience (like a name, location, or magical object). Write a 1-sentence question asking the audience for this detail.",
+    "languageCode": "en"
+  } ]
+}

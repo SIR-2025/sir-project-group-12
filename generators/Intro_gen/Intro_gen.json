@@ -1,0 +1,13 @@
+{
+  "name": "d615790b-cb2f-4cdd-8288-143fd0a263c7",
+  "displayName": "Intro_gen",
+  "modelParameter": {
+    "temperature": 0.5,
+    "maxDecodeSteps": 128,
+    "topP": 0.94999999,
+    "topK": 40
+  },
+  "llmModelSettings": {
+    "model": "gemini-2.5-flash"
+  }
+}

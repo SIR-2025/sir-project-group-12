@@ -1,0 +1,6 @@
+{
+  "name": "7d875147-03b7-4a2b-8164-eda4c7940dfa",
+  "displayName": "small_talk.agent.boss",
+  "priority": 500000,
+  "numTrainingPhrases": 11
+}

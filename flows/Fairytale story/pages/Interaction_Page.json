@@ -1,0 +1,40 @@
+{
+  "name": "72e9319b-7f2b-48ca-a853-7a552130904c",
+  "displayName": "Interaction_Page",
+  "form": {
+    "parameters": [ {
+      "displayName": "user_input",
+      "required": true,
+      "entityType": "@sys.any",
+      "fillBehavior": {
+        "initialPromptFulfillment": {
+        
+        }
+      }
+    } ]
+  },
+  "entryFulfillment": {
+    "messages": [ {
+      "text": {
+        "text": [ "$session.params.robot_speech" ]
+      },
+      "languageCode": "en"
+    } ],
+    "generators": [ {
+      "generator": "projects/newagent-tcmq/locations/europe-west4/agents/5079e43a-fec2-441d-bf10-f23f292fbf15/generators/8e3eb581-2cb3-49ef-91b8-16ea9796ed78",
+      "inputParameters": [ {
+        "key": "session",
+        "value": "$session.params.conversation_history"
+      } ],
+      "outputParameter": "$session.params.robot_speech"
+    } ]
+  },
+  "transitionRoutes": [ {
+    "condition": "$page.params.status = \"FINAL\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Acknowledgement_Logic",
+    "name": "84f4b4be-c029-4ea3-8d63-e9ad55c364f9"
+  } ]
+}

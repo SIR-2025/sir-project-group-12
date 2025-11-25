@@ -1,0 +1,6 @@
+{
+  "promptTexts": [ {
+    "text": "Task: You are initializing File 002 (Snow White). Instructions: Write this exact introduction (do not change the meaning, but you can add robotic beeps): \"Greetings. I have accessed File 002. This file contains a story about mirrors, poison, and sleeping. However, the data is severely damaged. I need you to provide new variables to make the story work again. Please wait for the microphone before speaking. I will need 4 or 5 words for each chapter. Let us begin.\"",
+    "languageCode": "en"
+  } ]
+}
