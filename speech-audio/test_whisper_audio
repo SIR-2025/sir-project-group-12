@@ -1,12 +1,21 @@
+# Import basic preliminaries
 from openai import api_key
 from sic_framework.core.sic_application import SICApplication
 from sic_framework.core import sic_logging
+
+# Import the device(s) we will be using
 from sic_framework.devices import Nao
+
+# Import message types
 from sic_framework.core.message_python2 import AudioRequest
+
+# Import libraries necessary for the demo
 from pathlib import Path
 import wave
 import os
 
+# OpenAI and audio processing imports
+# Note: Install with: pip install openai pydub
 try:
     from openai import OpenAI
     client = OpenAI(api_key="your_api_key")
@@ -16,9 +25,21 @@ except ImportError as e:
 
 
 class NaoWhisperTTSDemo(SICApplication):
+    """
+    NAO with OpenAI TTS demo application.
+    Demonstrates using OpenAI's TTS API to generate speech and play it through NAO's speakers.
+    
+    Prerequisites:
+    - pip install openai pydub
+    - Set OPENAI_API_KEY environment variable or configure it in the script
+    - Install ffmpeg for audio conversion (required by pydub)
+    """
+    
     def __init__(self, text_to_speak, voice="alloy", speed=1.0, model="gpt-4o-mini-tts", instructions=None):
+        # Call parent constructor (handles singleton initialization)
         super(NaoWhisperTTSDemo, self).__init__()
         
+        # Demo-specific initialization
         self.nao_ip = "10.0.0.181"
         self.text_to_speak = text_to_speak
         self.voice = voice
@@ -29,10 +50,37 @@ class NaoWhisperTTSDemo(SICApplication):
         self.speech_file_path = Path(__file__).parent / "whisper_speech.wav"
         
         self.set_log_level(sic_logging.INFO)
+        
+        # Log files will only be written if set_log_file is called. Must be a valid full path to a directory.
+        # self.set_log_file("/path/to/logs")
+        
         self.setup()
     
     def generate_speech_with_openai(self):
+        """
+        Generate speech using OpenAI's TTS API.
+        
+        Models:
+        - tts-1: Fast, standard quality
+        - tts-1-hd: High definition quality
+        - gpt-4o-mini-tts: Latest model with instruction support
+        
+        Voices (gpt-4o-mini-tts):
+        - alloy, ash, ballad, coral, echo, fable, onyx, nova, sage, shimmer, verse
+        
+        Parameters:
+        - speed: 0.25 to 4.0 (default: 1.0)
+        - response_format: mp3, opus, aac, flac, wav, pcm
+        """
         try:
+            self.logger.info("Generating speech with OpenAI TTS API...")
+            self.logger.info("Model: {}".format(self.model))
+            self.logger.info("Voice: {}".format(self.voice))
+            self.logger.info("Speed: {}".format(self.speed))
+            self.logger.info("Text: '{}'".format(self.text_to_speak))
+            
+            # Generate speech using OpenAI API with streaming response
+            # Using WAV format directly to skip MP3 conversion
             with client.audio.speech.with_streaming_response.create(
                 model=self.model,
                 voice=self.voice,
@@ -43,80 +91,143 @@ class NaoWhisperTTSDemo(SICApplication):
             ) as response:
                 response.stream_to_file(self.speech_file_path)
             
+            self.logger.info("Speech generated and saved to: {}".format(self.speech_file_path))
             return True
             
         except Exception as e:
+            self.logger.error("Failed to generate speech with OpenAI: {}".format(e))
             return False
     
     def verify_wav_format(self):
+        """
+        Verify and optionally convert WAV file to NAO-compatible format.
+        NAO requires 16-bit PCM WAV files. OpenAI typically outputs 24kHz,
+        which works with NAO, but we can optionally convert to 16kHz.
+        
+        Note: This step is optional since OpenAI WAV output is usually compatible.
+        Uncomment the conversion code if you experience issues.
+        """
         try:
+            self.logger.info("Verifying WAV format...")
+            
+            # Check current WAV specs
             with wave.open(str(self.speech_file_path), "rb") as wf:
                 sample_rate = wf.getframerate()
                 channels = wf.getnchannels()
                 sample_width = wf.getsampwidth()
+                
+                self.logger.info("OpenAI WAV specs:")
+                self.logger.info("  sample rate: {} Hz".format(sample_rate))
+                self.logger.info("  channels: {}".format(channels))
+                self.logger.info("  sample width: {} bytes".format(sample_width))
             
+            self.logger.info("WAV format verified - compatible with NAO")
             return True
             
         except Exception as e:
+            self.logger.error("Failed to verify WAV format: {}".format(e))
             return False
     
     def setup(self):
+        """Initialize and configure the NAO robot and generate speech."""
+        self.logger.info("Starting NAO OpenAI TTS Demo...")
+        
+        # Generate speech with OpenAI (already in WAV format)
         if not self.generate_speech_with_openai():
+            self.logger.error("Cannot proceed without generated speech")
             raise RuntimeError("Failed to generate speech with OpenAI")
         
+        # Verify WAV format (optional conversion if needed)
         if not self.verify_wav_format():
+            self.logger.error("Cannot proceed without valid WAV format")
             raise RuntimeError("Failed to verify WAV format")
         
+        # Initialize the NAO robot
+        self.logger.info("Connecting to NAO at {}...".format(self.nao_ip))
         self.nao = Nao(ip=self.nao_ip)
     
     def play_speech_on_nao(self):
+        """Play the generated WAV file through NAO's speakers."""
         try:
+            self.logger.info("Loading WAV file for playback...")
+            
+            # Read the WAV file
             with wave.open(str(self.speech_file_path), "rb") as wf:
                 samplerate = wf.getframerate()
                 sound = wf.readframes(wf.getnframes())
+                
+                self.logger.info("Audio file specs:")
+                self.logger.info("  sample rate: {}".format(samplerate))
+                self.logger.info("  length: {} frames".format(wf.getnframes()))
+                self.logger.info("  data size in bytes: {}".format(wf.getsampwidth()))
+                self.logger.info("  number of channels: {}".format(wf.getnchannels()))
             
+            # Send audio to NAO speakers
+            self.logger.info("Sending audio to NAO speakers...")
             message = AudioRequest(sample_rate=samplerate, waveform=sound)
             self.nao.speaker.request(message)
             
+            self.logger.info("Audio playback completed")
             return True
             
         except Exception as e:
+            self.logger.error("Error playing audio on NAO: {}".format(e))
             return False
     
     def cleanup_files(self):
+        """Clean up generated audio files."""
         try:
             if self.speech_file_path.exists():
                 os.remove(self.speech_file_path)
+                self.logger.info("Cleaned up WAV file")
                 
         except Exception as e:
-            pass
+            self.logger.warning("Failed to cleanup files: {}".format(e))
     
     def run(self):
+        """Main application logic."""
         try:
+            # Play the generated speech on NAO
             self.play_speech_on_nao()
             
+            self.logger.info("Demo completed successfully")
+            
         except Exception as e:
-            pass
+            self.logger.error("Error in demo: {}".format(e))
         finally:
+            # Clean up generated files
             self.cleanup_files()
+            
+            self.logger.info("Shutting down application")
             self.shutdown()
 
 
 if __name__ == "__main__":
+    # Configure TTS parameters here
+    #text_to_speak = "Hello! I am NAO robot speaking with OpenAI's text to speech technology. This is quite annoying, don't you think?"
     story_text = """
     Rain lashed against the window of the midnight bus, blurring the faces of the other passengers. A crumpled note sat in Leo's palm, reading only "Don't trust the woman in the red hat." He looked up, and his blood ran cold.
     """
+    # Voice options: alloy, ash, ballad, coral, echo, fable, onyx, nova, sage, shimmer, verse
     voice = "onyx"
+    
+    # Speed range: 0.25 to 4.0
     speed = 1.0
+
     audio_file = "./ghost-audio.wav"
+
+    # Instructions for voice style (only works with gpt-4o-mini-tts)
     instructions = """
     Voice: Deep, hushed, and enigmatic, with a slow, deliberate cadence that draws the listener in.
     Phrasing: Sentences are short and rhythmic, building tension with pauses and carefully placed suspense.
     Punctuation: Dramatic pauses, ellipses, and abrupt stops enhance the feeling of unease and anticipation.
     """
+    
+    # Model options: tts-1, tts-1-hd, gpt-4o-mini-tts
     model = "gpt-4o-mini-tts"
     
+    # Create the OpenAI TTS demo (this will generate the speech file and initialize NAO)
     demo = NaoWhisperTTSDemo(story_text, voice=voice, speed=speed, model=model, instructions=instructions)
-    demo.run()
+    demo.run()    # Load background audio and play intro using the same NAO instance
    
     
