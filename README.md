@@ -1,15 +1,59 @@
-[![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-22041afd0340ce965d47ae6ef1cefeee28c7c493a6346c4f15d667ab976d596c.svg)](https://classroom.github.com/a/18O6qkbP)
-# SIC-SIR Template
-Template for group projects of Socially Intelligent Robotics (SIR) of the Vrije Universiteit Amsterdam (VU) in 2025.
 
-# Instructions
-- You can follow the SIC installation instructions with this repository instead of sic_applications.
-- You can add all your project code in root and subfolders. 
-- Regularly commit and push your updates.
-- Make sure to acknowledge the contributions of involved team members (in commit messages and in individual logbook).
-- You will receive feedback on your code in week 5.
-- Your code will be graded in the end.
+# Project Structure
 
-# Information
-- More info about SIC: https://social-ai-vu.github.io/social-interaction-cloud/index.html
-- More info about SIR: Canvas
+This section describes the purpose of each folder in the project:
+
+## Core Configuration
+- **agent.json** - Main agent configuration file defining the Dialogflow agent settings, speech-to-text settings, and default flow.
+
+## emotion/
+Contains emotion-related animations and demonstrations for the NAO robot:
+- `eye_pulse_animator.py` - Reusable helper class for driving NAO's eye LEDs through color pulses to express emotions
+- `led_emotion_demo.py` - Demo script showcasing LED-based emotion expressions
+
+## flows/
+Contains Dialogflow conversation flow definitions:
+- **Default Start Flow/** - Initial conversation flow with transition route groups for Agent, Appraisal, Confirmation, Dialog, Emotions, Greetings, and User interactions
+- **Fairytale story/** - Flow for fairytale storytelling interactions with pages for acknowledgement logic, engine hub, interaction, performance, and story kickoff
+- **SIR_flow/** - Main SIR project flow with pages for cycle setup, data collection, narrative generation, performance output, and session end
+
+## generativeSettings/
+Contains language-specific settings for generative responses (e.g., `en.json` for English).
+
+## generators/
+Contains generator configurations for various content generation tasks. Each generator folder includes:
+- Generator configuration JSON file
+- Language-specific phrase files (e.g., `phrases/en.json`)
+
+Generators include:
+- Animation generation
+- Confirmation generation
+- Introduction generation
+- Name animation and reaction
+- Prompt generation
+- Question generation
+- Story generation and story segments
+- Narrative orchestration and weaving
+- Story kickoff generation
+
+## gesture_names.txt
+List of gesture/animation file paths available on the NAO robot for body language and movement animations.
+
+## intents/
+Contains Dialogflow intent definitions (188 JSON files) that define how the agent recognizes and responds to user inputs.
+
+## playbooks/
+Contains playbook configurations for structured interaction scenarios:
+- **Fairytale-playbook/** - Playbook for fairytale storytelling interactions
+
+## speech-audio/
+Contains scripts for speech and audio processing:
+- `demo_theatrical_preformance.py` - Demo script for theatrical performance with audio playback
+- `test_background+nao.py` - Testing script for background audio with NAO integration
+- `test_whisper_audio` - Audio testing script using Whisper
+
+## testCases/
+Contains test case definitions (40 JSON files) covering:
+- Happy path scenarios (greetings, jokes, conversations, user interactions)
+- Error handling scenarios (unexpected inputs, out-of-scope requests)
+
