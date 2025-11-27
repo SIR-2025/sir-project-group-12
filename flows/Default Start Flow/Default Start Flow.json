@@ -3,17 +3,17 @@
   "displayName": "Default Start Flow",
   "description": "A start flow created along with the agent",
   "transitionRoutes": [ {
-    "intent": "user_provides_word",
+    "intent": "user_provides_adjective",
     "triggerFulfillment": {
       "messages": [ {
         "text": {
-          "text": [ "The adjective is: $intent.params.any_word. Name a weird object to compare skin to." ]
+          "text": [ "The adjective is: $intent.params.adjective. Name a weird object to compare skin to." ]
         },
         "languageCode": "en"
       } ],
       "setParameterActions": [ {
         "parameter": "word_1",
-        "value": "$intent.params.any_word"
+        "value": "$intent.params.adjective"
       } ]
     },
     "targetFlow": "demo_cycle_1",

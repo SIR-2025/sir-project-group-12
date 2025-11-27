@@ -1,0 +1,10 @@
+{
+  "name": "be108cc9-9425-4cdd-b675-9851c76d6128",
+  "displayName": "user_provides_fruit",
+  "parameters": [ {
+    "id": "fruit",
+    "entityType": "@fruits"
+  } ],
+  "priority": 500000,
+  "numTrainingPhrases": 4
+}

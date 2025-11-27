@@ -13,20 +13,43 @@
     } ]
   },
   "transitionRoutes": [ {
-    "intent": "user_provides_word",
+    "intent": "user_provides_fruit",
     "triggerFulfillment": {
       "messages": [ {
         "text": {
-          "text": [ "\"Fruit: $intent.params.any_word. Are you ready for the story?\"" ]
+          "text": [ "\"Fruit: $intent.params.fruit. Are you ready for the story?\"" ]
         },
         "languageCode": "en"
       } ],
       "setParameterActions": [ {
         "parameter": "word_4",
-        "value": "$intent.params.any_word"
+        "value": "$intent.params.fruit"
       } ]
     },
     "targetPage": "05b_Confirm_Ready",
     "name": "a0ea6f50-bbaa-4a48-a9e1-3fef96d0f9e0"
+  } ],
+  "eventHandlers": [ {
+    "event": "sys.no-match-default",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "That doesn't sound like a fruit. Please name a fruit, like apple or banana." ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "name": "984f2d80-dddb-4a2d-aa53-16e37833edf7"
+  }, {
+    "event": "sys.no-input-default",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "\"I didn't hear anything. Please name a fruit.\"" ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "name": "9fa48a74-d63f-44fc-8a91-90b101771c65"
   } ]
 }

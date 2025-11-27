@@ -1,0 +1,10 @@
+{
+  "name": "47d51c4d-46cb-4895-9a01-9f7afefc8603",
+  "displayName": "user_provides_adjective",
+  "parameters": [ {
+    "id": "adjective",
+    "entityType": "@Adjectives"
+  } ],
+  "priority": 500000,
+  "numTrainingPhrases": 5
+}
