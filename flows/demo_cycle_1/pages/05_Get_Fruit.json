@@ -1,0 +1,32 @@
+{
+  "name": "b348cd43-0eda-4ff0-b98d-87cc28d34f77",
+  "displayName": "05_Get_Fruit",
+  "form": {
+  
+  },
+  "entryFulfillment": {
+    "messages": [ {
+      "text": {
+        "text": [ "Name a fruit" ]
+      },
+      "languageCode": "en"
+    } ]
+  },
+  "transitionRoutes": [ {
+    "intent": "user_provides_word",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "\"Fruit: $intent.params.any_word. Are you ready for the story?\"" ]
+        },
+        "languageCode": "en"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "word_4",
+        "value": "$intent.params.any_word"
+      } ]
+    },
+    "targetPage": "05b_Confirm_Ready",
+    "name": "a0ea6f50-bbaa-4a48-a9e1-3fef96d0f9e0"
+  } ]
+}

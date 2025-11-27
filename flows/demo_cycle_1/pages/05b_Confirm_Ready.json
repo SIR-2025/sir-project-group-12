@@ -1,0 +1,15 @@
+{
+  "name": "77521217-f585-4bed-963a-e0f9945b08ae",
+  "displayName": "05b_Confirm_Ready",
+  "form": {
+  
+  },
+  "transitionRoutes": [ {
+    "intent": "small_talk.confirmation.yes",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "06_Cycle1_Story",
+    "name": "9f06a243-34f2-478e-91a2-fcc9da66daac"
+  } ]
+}

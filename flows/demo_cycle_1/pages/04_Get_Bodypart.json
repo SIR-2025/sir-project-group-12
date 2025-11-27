@@ -1,0 +1,32 @@
+{
+  "name": "8f998b21-a1c4-45af-984c-be5a747fae07",
+  "displayName": "04_Get_Bodypart",
+  "form": {
+  
+  },
+  "entryFulfillment": {
+    "messages": [ {
+      "text": {
+        "text": [ "Name a body part." ]
+      },
+      "languageCode": "en"
+    } ]
+  },
+  "transitionRoutes": [ {
+    "intent": "user_provides_word",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Body Part: $intent.params.any_word. Name a fruit." ]
+        },
+        "languageCode": "en"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "word_3",
+        "value": "$intent.params.any_word"
+      } ]
+    },
+    "targetPage": "05_Get_Fruit",
+    "name": "64df555c-de84-48b1-bc1f-5e392d3dea27"
+  } ]
+}

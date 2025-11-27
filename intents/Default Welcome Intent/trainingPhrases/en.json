@@ -1,128 +1,14 @@
 {
   "trainingPhrases": [ {
-    "id": "19cd2285-4807-4ad5-b313-26f3191310e7",
     "parts": [ {
-      "text": "just going to say hi",
+      "text": "The adjective is:",
       "auto": true
     } ],
     "repeatCount": 1,
     "languageCode": "en"
   }, {
-    "id": "59f99b0b-054e-415b-802b-f5901fcaf8c3",
     "parts": [ {
-      "text": "heya",
-      "auto": true
-    } ],
-    "repeatCount": 1,
-    "languageCode": "en"
-  }, {
-    "id": "376a304c-7a09-450f-81fb-132344bf596c",
-    "parts": [ {
-      "text": "hello hi",
-      "auto": true
-    } ],
-    "repeatCount": 1,
-    "languageCode": "en"
-  }, {
-    "id": "6753c566-1f32-4d71-985b-9e358f620788",
-    "parts": [ {
-      "text": "howdy",
-      "auto": true
-    } ],
-    "repeatCount": 1,
-    "languageCode": "en"
-  }, {
-    "id": "30dd1be3-826d-4636-9b3e-c0c1f416dc7d",
-    "parts": [ {
-      "text": "hey there",
-      "auto": true
-    } ],
-    "repeatCount": 1,
-    "languageCode": "en"
-  }, {
-    "id": "435d5792-1296-4bac-a262-7cbe1c20dec0",
-    "parts": [ {
-      "text": "hi there",
-      "auto": true
-    } ],
-    "repeatCount": 2,
-    "languageCode": "en"
-  }, {
-    "id": "11b4c4e6-c028-4593-b535-163684fb2377",
-    "parts": [ {
-      "text": "greetings",
-      "auto": true
-    } ],
-    "repeatCount": 1,
-    "languageCode": "en"
-  }, {
-    "id": "fc3bf2c2-cd36-4c3e-91d3-2cce33dc1cc4",
-    "parts": [ {
-      "text": "hey",
-      "auto": true
-    } ],
-    "repeatCount": 1,
-    "languageCode": "en"
-  }, {
-    "id": "e8d1289c-e571-4fa5-bdc3-e4bc15d81ad8",
-    "parts": [ {
-      "text": "long time no see",
-      "auto": true
-    } ],
-    "repeatCount": 1,
-    "languageCode": "en"
-  }, {
-    "id": "8b39afd7-a382-42ed-8cbd-c37beb39095b",
-    "parts": [ {
-      "text": "hello",
-      "auto": true
-    } ],
-    "repeatCount": 1,
-    "languageCode": "en"
-  }, {
-    "id": "de648d59-c48d-4aea-95ec-79642dfffa82",
-    "parts": [ {
-      "text": "lovely day isn't it",
-      "auto": true
-    } ],
-    "repeatCount": 1,
-    "languageCode": "en"
-  }, {
-    "id": "74fb47d3-bcd2-4b31-9f4f-c8b8c30a5b09",
-    "parts": [ {
-      "text": "I greet you",
-      "auto": true
-    } ],
-    "repeatCount": 1,
-    "languageCode": "en"
-  }, {
-    "id": "a3539278-e2f8-42f3-a310-c40d12a14e79",
-    "parts": [ {
-      "text": "hello again",
-      "auto": true
-    } ],
-    "repeatCount": 1,
-    "languageCode": "en"
-  }, {
-    "id": "e618b127-711e-437b-8ec5-8f6458d1d888",
-    "parts": [ {
-      "text": "hi",
-      "auto": true
-    } ],
-    "repeatCount": 1,
-    "languageCode": "en"
-  }, {
-    "id": "b23ecfc4-18a8-48e2-99a9-2d097b9a5bfc",
-    "parts": [ {
-      "text": "hello there",
-      "auto": true
-    } ],
-    "repeatCount": 1,
-    "languageCode": "en"
-  }, {
-    "id": "2630a51a-822d-4dac-a80f-4c03ac35905a",
-    "parts": [ {
-      "text": "a good day",
+      "text": "The word is:",
       "auto": true
     } ],
     "repeatCount": 1,

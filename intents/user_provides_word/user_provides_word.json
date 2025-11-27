@@ -1,0 +1,10 @@
+{
+  "name": "a5c8f977-6a5a-42a7-b5cd-96de65710aaf",
+  "displayName": "user_provides_word",
+  "parameters": [ {
+    "id": "any_word",
+    "entityType": "@sys.any"
+  } ],
+  "priority": 500000,
+  "numTrainingPhrases": 12
+}

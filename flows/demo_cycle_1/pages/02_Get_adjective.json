@@ -1,0 +1,32 @@
+{
+  "name": "e09780e0-2dfb-49ec-9b57-822b0aa56356",
+  "displayName": "02_Get_adjective",
+  "form": {
+  
+  },
+  "entryFulfillment": {
+    "messages": [ {
+      "text": {
+        "text": [ "Name an adjective a Queen would want to be." ]
+      },
+      "languageCode": "en"
+    } ]
+  },
+  "transitionRoutes": [ {
+    "intent": "user_provides_word",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Adjective: $intent.params.any_word." ]
+        },
+        "languageCode": "en"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "word_1",
+        "value": "$intent.params.any_word"
+      } ]
+    },
+    "targetPage": "03_Get_object",
+    "name": "3fbc3666-c004-44c9-9cf2-96601b5d24ea"
+  } ]
+}
