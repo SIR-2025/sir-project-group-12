@@ -36,46 +36,42 @@ class OpeningScriptDemo(SICApplication):
 
         script = [
             {
-                "text": "\\style=joyful\\ Hello my name is Nao",
+                "text": "\\style=joyful\\ Hello \\pau=200\\ my name is \\emph=1\\ Nao \\eos=1\\",
                 "gesture": "animations/Stand/Gestures/Hey_5" # Wave
             },
             {
-                "text": "\\style=joyful\\ Today I will be telling a well-known fairy-tale story; \\pau=300\\ Snowwhite",
+                "text": "\\style=joyful\\ Today I will be telling a well-known fairy-tale story; \\pau=400\\ \\emph=1\\ Snowwhite \\eos=1\\",
                 "gesture": "animations/Stand/Gestures/Me_7" # Automic/Resting
             },
             {
-                "text": "\\rspd=100\\ We all know this childhood story, \\pau=200\\ but today we will tell it with a twist.",
+                "text": "\\style=joyful\\ We all know this childhood story, \\bound=W\\ but today we will tell it with a \\pau=200\\ \\emph=1\\ twist. \\eos=1\\",
                 "gesture": "animations/Stand/Gestures/YouKnowWhat_5" # Automic/Resting
             },
             {
-                "text": "\\vct=110\\ You guys will be helping me.",
+                "text": "\\style=didactic\\ You guys will be helping me. \\eos=1\\",
                 "gesture": "animations/Stand/Gestures/You_3" # Pointing
             },
             {
-                "text": "\\style=didactic\\ You will do so by giving me words to fill in the story.",
+                "text": "\\style=didactic\\ You will do so by giving me words to fill in the story. \\eos=1\\",
                 "gesture": "animations/Stand/Gestures/Joy_1" # Explaining
             },
             {
-                "text": "I will ask certain question for specific words",
+                "text": "\\style=neutral\\ I will ask certain question for \\emph=1\\ specific words \\eos=1\\",
                 "gesture": "animations/Stand/Gestures/Me_2" # Pointing to self
             },
             {
-                "text": "and my assistants will come to you guys to say the answer.",
+                "text": "\\style=neutral\\ and my \\emph=1\\ assistants \\bound=W\\ will come to you guys to say the answer. \\eos=1\\",
                 "gesture": "animations/Stand/Gestures/Thinking_2" # Pointing to us/audience
             },
             {
-                "text": "\\style=neutral\\ \\vct=95\\ I don't want to be the boring one, \\pau=300\\ but please keep the words family-friendly, \\pau=200\\ as I am not allowed to use offensive words.",
+                "text": "\\style=neutral\\ \\vct=95\\ I don't want to be the boring one, \\bound=S\\ but please keep the words \\emph=1\\ family-friendly, \\bound=W\\ as I am not allowed to use offensive words. \\eos=1\\",
                 "gesture": "animations/Stand/Gestures/Please_3" # Excused stance / begging
             },
             {
-                "text": "\\style=joyful\\ \\vct=110\\ Now that everything is clear, \\pau=300\\ Lets begin:",
+                "text": "\\style=joyful\\ \\vct=110\\ Now that everything is clear, \\pau=500\\ Lets begin: \\eos=1\\",
                 "gesture": "animations/Stand/Gestures/Enthusiastic_3" # Begin gesture
             }
         ]
-
-        # Check if Center_Explain_01 exists, if not use fallback
-        # I'll use Center_Strong_AFF_01 for the explanation part just to be safe based on animations.py list
-        script[4]["gesture"] = "animations/Stand/BodyTalk/BodyLanguage/NAO/Center_Strong_AFF_01"
 
         for line in script:
             text = line["text"]

@@ -29,11 +29,11 @@ except ImportError:
     from .leds import NaoLEDS
 
 
-class NaoMovementDemo(SICApplication):
+class NaoPerformanceDemo(SICApplication):
     """
-    A demo where NAO acts like it is moving in front of an audience.
+    A demo where NAO acts like it is performing in front of an audience.
     It uses Autonomous Life for basic awareness and idle movements,
-    and periodically plays gestures with synchronized LED emotions.
+    and periodically plays gestures with synchronized LED emotions and tts example sentences.
     """
 
     # Timing parameters for each intent (seconds)
@@ -183,16 +183,7 @@ class NaoMovementDemo(SICApplication):
                 # Trigger LED emotion in a separate thread
                 threading.Thread(target=self.emotions.express, args=(self.current_intent,), daemon=True).start()
 
-                # Perform motion and speech
-                # We want them to happen roughly together. 
-                # NaoqiAnimationRequest is blocking by default? No, usually it waits for completion.
-                # NaoqiTextToSpeechRequest is also blocking.
-                # To sync, we can run one in a thread or use 'block=False' if available/supported.
-                # But sic_framework requests are usually blocking unless handled otherwise.
-                # A simple way is to start speech (non-blocking if possible) then gesture.
-                # However, sic_framework's request() blocks until the device acknowledges or completes.
-                # Let's try running speech in a thread so gesture starts immediately.
-                
+                # Perform motion and speech in a separate thread               
                 def speak():
                     self.nao.tts.request(NaoqiTextToSpeechRequest(text_to_say))
 
