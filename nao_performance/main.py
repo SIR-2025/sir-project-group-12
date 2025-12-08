@@ -20,13 +20,17 @@ from sic_framework.devices.common_naoqi.naoqi_autonomous import (
 )
 from sic_framework.devices.common_naoqi.naoqi_motion import NaoqiAnimationRequest
 from sic_framework.devices.common_naoqi.naoqi_text_to_speech import NaoqiTextToSpeechRequest
+from sic_framework.core.message_python2 import AudioRequest
+import wave
 
 try:
     from animations import get_best_animation
     from leds import NaoLEDS
+    from tts_client import generate_audio
 except ImportError:
     from .animations import get_best_animation
     from .leds import NaoLEDS
+    from .tts_client import generate_audio
 
 
 class NaoPerformanceDemo(SICApplication):
@@ -38,7 +42,7 @@ class NaoPerformanceDemo(SICApplication):
 
     # Timing parameters for each intent (seconds)
     INTENT_PARAMS = {
-        "neutral": {"min_wait": 2.0, "max_wait": 5.0},
+        "neutral": {"min_wait": 0.0, "max_wait": 0.01},
         "enjoyment": {"min_wait": 1.0, "max_wait": 3.0},
         "surprise": {"min_wait": 0.5, "max_wait": 1.5},
         "angry": {"min_wait": 2.0, "max_wait": 4.0},
@@ -133,7 +137,7 @@ class NaoPerformanceDemo(SICApplication):
 
     def run(self):
         # Configuration: Set the initial intent here for testing
-        INITIAL_INTENT = "sadness" 
+        INITIAL_INTENT = "neutral" 
         self.set_intent(INITIAL_INTENT)
 
         self.logger.info(f"NAO is moving with intent '{self.current_intent}'... Press 'q' to stop.")
@@ -185,7 +189,23 @@ class NaoPerformanceDemo(SICApplication):
 
                 # Perform motion and speech in a separate thread               
                 def speak():
-                    self.nao.tts.request(NaoqiTextToSpeechRequest(text_to_say))
+                    # Generate audio file
+                    output_file = "temp_speech.wav"
+                    if generate_audio(text_to_say, output_file):
+                        try:
+                            # Read the wav file
+                            with wave.open(output_file, "rb") as wavefile:
+                                samplerate = wavefile.getframerate()
+                                sound = wavefile.readframes(wavefile.getnframes())
+                                message = AudioRequest(sample_rate=samplerate, waveform=sound)
+                                self.nao.speaker.request(message)
+                        except Exception as e:
+                            self.logger.error(f"Error playing audio: {e}")
+                            # Fallback to default TTS if audio playback fails
+                            self.nao.tts.request(NaoqiTextToSpeechRequest(text_to_say))
+                    else:
+                        self.logger.error("Failed to generate audio, falling back to default TTS")
+                        self.nao.tts.request(NaoqiTextToSpeechRequest(text_to_say))
 
                 speech_thread = threading.Thread(target=speak)
                 speech_thread.start()
@@ -223,5 +243,5 @@ class NaoPerformanceDemo(SICApplication):
 
 
 if __name__ == "__main__":
-    demo = NaoMovementDemo()
+    demo = NaoPerformanceDemo()
     demo.run()

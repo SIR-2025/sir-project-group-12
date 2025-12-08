@@ -1,3 +1,8 @@
+"""
+This module contains a structured database of NAO animations and a detailed selection logic.
+Animations are grouped by 'intent' (e.g., neutral, question, negation) and then by 'category'.
+The `get_best_animation` function analyzes input text to pick the most contextually appropriate animation.
+"""
 import random
 
 # Structured animations grouped by intent and category
@@ -202,56 +207,69 @@ ANIMATIONS_BY_CATEGORY = {
             "animations/Stand/Space & time/NAO/Right_Strong_SAT_04",
         ],
     },
-    "enjoyment": {
-        "default": [
-            "animations/Stand/Exclamation/NAO/Center_Strong_EXC_08",
-            "animations/Stand/Exclamation/NAO/Center_Slow_EXC_03",
-            "animations/Stand/Exclamation/NAO/Center_Strong_EXC_10",
-            "animations/Stand/Exclamation/NAO/Left_Neutral_EXC_05",
-            "animations/Stand/Exclamation/NAO/Center_Neutral_EXC_05",
-            "animations/Stand/Exclamation/NAO/Right_Strong_EXC_01",
-            "animations/Stand/Exclamation/NAO/Right_Strong_EXC_04",
-            "animations/Stand/Exclamation/NAO/Center_Neutral_EXC_06",
-            "animations/Stand/Exclamation/NAO/Left_Strong_EXC_01",
-            "animations/Stand/Exclamation/NAO/Center_Neutral_EXC_01",
-            "animations/Stand/Exclamation/NAO/Center_Strong_EXC_05",
-            "animations/Stand/Exclamation/NAO/Right_Strong_EXC_02",
-            "animations/Stand/Exclamation/NAO/Center_Neutral_EXC_07",
-            "animations/Stand/Exclamation/NAO/Left_Strong_EXC_04",
-            "animations/Stand/Exclamation/NAO/Right_Neutral_EXC_02",
-            "animations/Stand/Exclamation/NAO/Left_Strong_EXC_03",
-            "animations/Stand/Exclamation/NAO/Center_Strong_EXC_09",
-            "animations/Stand/Exclamation/NAO/Center_Strong_EXC_04",
-            "animations/Stand/Exclamation/NAO/Center_Neutral_EXC_04",
-            "animations/Stand/Exclamation/NAO/Left_Neutral_EXC_02",
-            "animations/Stand/Exclamation/NAO/Left_Strong_EXC_02",
-            "animations/Stand/Exclamation/NAO/Center_Neutral_EXC_03",
-            "animations/Stand/Exclamation/NAO/Center_Neutral_EXC_02",
-            "animations/Stand/Exclamation/NAO/Center_Neutral_EXC_08",
-            "animations/Stand/Exclamation/NAO/Center_Slow_EXC_02",
-            "animations/Stand/Exclamation/NAO/Center_Strong_EXC_06",
-            "animations/Stand/Exclamation/NAO/Center_Strong_EXC_03",
-            "animations/Stand/Exclamation/NAO/Right_Neutral_EXC_05",
-            "animations/Stand/Exclamation/NAO/Right_Strong_EXC_03",
-            "animations/Stand/Exclamation/NAO/Center_Slow_EXC_01",
-        ]
-    },
-    "angry": {
-        "default": [
-            "animations/Stand/Gestures/Reject_4",
-            "animations/Stand/Gestures/No_6",
-            "animations/Stand/Emotions/Negative/Angry_4",
-            "animations/Stand/Emotions/Negative/Angry_1",
-        ]
-    },
-    "sadness": {
-        "default": [
-            "animations/Stand/Gestures/Desperate_1",
-            "animations/Stand/Gestures/WhatSThis_13",
-            "animations/Stand/Emotions/Negative/Sad_2",
-            "animations/Stand/Emotions/Negative/Sad_1",
-        ]
-    },
+    # "enjoyment": {
+    #     "default": [
+    #         "animations/Stand/Exclamation/NAO/Center_Strong_EXC_08",
+    #         "animations/Stand/Exclamation/NAO/Center_Slow_EXC_03",
+    #         "animations/Stand/Exclamation/NAO/Center_Strong_EXC_10",
+    #         "animations/Stand/Exclamation/NAO/Left_Neutral_EXC_05",
+    #         "animations/Stand/Exclamation/NAO/Center_Neutral_EXC_05",
+    #         "animations/Stand/Exclamation/NAO/Right_Strong_EXC_01",
+    #         "animations/Stand/Exclamation/NAO/Right_Strong_EXC_04",
+    #         "animations/Stand/Exclamation/NAO/Center_Neutral_EXC_06",
+    #         "animations/Stand/Exclamation/NAO/Left_Strong_EXC_01",
+    #         "animations/Stand/Exclamation/NAO/Center_Neutral_EXC_01",
+    #         "animations/Stand/Exclamation/NAO/Center_Strong_EXC_05",
+    #         "animations/Stand/Exclamation/NAO/Right_Strong_EXC_02",
+    #         "animations/Stand/Exclamation/NAO/Center_Neutral_EXC_07",
+    #         "animations/Stand/Exclamation/NAO/Left_Strong_EXC_04",
+    #         "animations/Stand/Exclamation/NAO/Right_Neutral_EXC_02",
+    #         "animations/Stand/Exclamation/NAO/Left_Strong_EXC_03",
+    #         "animations/Stand/Exclamation/NAO/Center_Strong_EXC_09",
+    #         "animations/Stand/Exclamation/NAO/Center_Strong_EXC_04",
+    #         "animations/Stand/Exclamation/NAO/Center_Neutral_EXC_04",
+    #         "animations/Stand/Exclamation/NAO/Left_Neutral_EXC_02",
+    #         "animations/Stand/Exclamation/NAO/Left_Strong_EXC_02",
+    #         "animations/Stand/Exclamation/NAO/Center_Neutral_EXC_03",
+    #         "animations/Stand/Exclamation/NAO/Center_Neutral_EXC_02",
+    #         "animations/Stand/Exclamation/NAO/Center_Neutral_EXC_08",
+    #         "animations/Stand/Exclamation/NAO/Center_Slow_EXC_02",
+    #         "animations/Stand/Exclamation/NAO/Center_Strong_EXC_06",
+    #         "animations/Stand/Exclamation/NAO/Center_Strong_EXC_03",
+    #         "animations/Stand/Exclamation/NAO/Right_Neutral_EXC_05",
+    #         "animations/Stand/Exclamation/NAO/Right_Strong_EXC_03",
+    #         "animations/Stand/Exclamation/NAO/Center_Slow_EXC_01",
+    #     ]
+    # },
+    # "angry": {
+    #     "default": [
+    #         "animations/Stand/Gestures/Reject_1",
+    #         "animations/Stand/Gestures/Reject_2",
+    #         "animations/Stand/Gestures/Reject_3",
+    #         "animations/Stand/Gestures/Reject_4",
+    #         "animations/Stand/Gestures/Reject_5",
+    #         "animations/Stand/Gestures/Reject_6",
+    #         "animations/Stand/Gestures/No_6",
+    #         "animations/Stand/Gestures/No_5",
+    #         "animations/Stand/Gestures/No_8",
+    #         "animations/Stand/Gestures/No_1",
+    #         "animations/Stand/Gestures/No_2",
+    #         "animations/Stand/Gestures/No_9",
+    #         "animations/Stand/Gestures/No_7",
+    #         "animations/Stand/Gestures/No_3",
+    #         "animations/Stand/Gestures/No_4",            
+    #     ]
+    # },
+    # "sadness": {
+    #     "default": [
+    #         "animations/Stand/Gestures/Desperate_1",
+    #         "animations/Stand/Gestures/Desperate_2",
+    #         "animations/Stand/Gestures/Desperate_3",
+    #         "animations/Stand/Gestures/Desperate_4",
+    #         "animations/Stand/Gestures/Desperate_5",
+    #         "animations/Stand/Gestures/WhatSThis_13", # Potentially other 
+    #     ]
+    # },
 }
 
 # Flattened list for backward compatibility if needed, or we can just use the helper
@@ -274,8 +292,8 @@ def get_best_animation(intent: str, text: str = "") -> str:
     if len(categories) == 1:
         return random.choice(list(categories.values())[0])
 
-    # For neutral, we try to match text to categories
-    if intent == "neutral" and text:
+    # For neutral (or story telling), we try to match text to categories
+    if (intent == "neutral" or intent == "start_story") and text:
         text_lower = text.lower()
         
         # Keywords for categories
@@ -294,8 +312,11 @@ def get_best_animation(intent: str, text: str = "") -> str:
         if any(w in text_lower for w in ["here", "there", "now", "later", "today", "tomorrow", "yesterday", "far", "near"]):
             return random.choice(categories["space_time"])
 
-    # Default fallback: BodyLanguage for neutral, or random for others
-    if "body_language" in categories:
+    # Default fallback: BodyLanguage for neutral/story, or random for others
+    if "body_language" in categories or (intent == "start_story" and "body_language" in ANIMATIONS_BY_CATEGORY["neutral"]):
+        # If start_story doesn't have its own body_language, use neutral's
+        if intent == "start_story":
+             return random.choice(ANIMATIONS_BY_CATEGORY["neutral"]["body_language"])
         return random.choice(categories["body_language"])
     
     # Fallback to any random animation in the intent

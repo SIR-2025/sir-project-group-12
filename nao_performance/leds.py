@@ -6,6 +6,17 @@ from sic_framework.devices.common_naoqi.naoqi_leds import (
 from emotion.eye_pulse_animator import EyePulseAnimator
 
 class NaoLEDS:
+    """
+    Manages LED expressions for the NAO robot.
+    Supports the following emotions/intents:
+    - neutral
+    - enjoyment
+    - surprise
+    - angry
+    - disgust
+    - sadness
+    - fear
+    """
     def __init__(self, nao):
         self.nao = nao
         self.eye_animator = EyePulseAnimator(self.nao)

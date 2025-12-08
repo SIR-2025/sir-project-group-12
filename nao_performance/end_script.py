@@ -16,9 +16,9 @@ from sic_framework.devices.common_naoqi.naoqi_autonomous import (
 from sic_framework.devices.common_naoqi.naoqi_motion import NaoqiAnimationRequest
 from sic_framework.devices.common_naoqi.naoqi_text_to_speech import NaoqiTextToSpeechRequest
 
-class OpeningScriptDemo(SICApplication):
+class EndScriptDemo(SICApplication):
     """
-    The opening act for the performance.
+    The closing act for the performance.
     """
     def __init__(self):
         super().__init__()
@@ -35,53 +35,51 @@ class OpeningScriptDemo(SICApplication):
         self.nao.autonomous.request(NaoBlinkingRequest(True))
 
     def run(self):
-        self.logger.info("Starting opening script...")
+        self.logger.info("Starting end script...")
 
         script = [
             {
-                "text": "\\style=joyful\\ Hello \\pau=200\\ my name is \\emph=1\\ Nao \\eos=1\\",
-                "gesture": "animations/Stand/Gestures/Hey_5" # Wave
+                "text": "\\style=neutral\\ Well, that was it. \\pau=300\\ I thank you for listening \\bound=S\\ and I thank my assistants for helping. \\eos=1\\",
+                "gesture": "animations/Stand/Gestures/You_3" 
             },
             {
-                "text": "\\style=joyful\\ Today I will be telling a well-known fairy-tale story; \\pau=400\\ \\emph=1\\ Snowwhite \\eos=1\\",
-                "gesture": "animations/Stand/Gestures/Me_7" # Automic/Resting
+                "text": "\\style=neutral\\ I wish you guys a nice day further. \\eos=1\\",
+                "gesture": "animations/Stand/Gestures/You_4" 
             },
             {
-                "text": "\\style=joyful\\ We all know this childhood story, \\bound=W\\ but today we will tell it with a \\pau=200\\ \\emph=1\\ twist. \\eos=1\\",
-                "gesture": "animations/Stand/Gestures/YouKnowWhat_5" # Automic/Resting
+                "text": "\\style=neutral\\ \\vct=105\\ Oh! \\pau=200\\ I almost forgot. \\emph=1\\ Merry Christmas in advance! \\eos=1\\",
+                "gesture": "animations/Stand/Gestures/Me_2", 
+                "pre_delay": 1.0
             },
             {
-                "text": "\\style=didactic\\ You guys will be helping me. \\eos=1\\",
-                "gesture": "animations/Stand/Gestures/You_3" # Pointing
+                "text": "\\style=neutral\\ And... \\pau=300\\ have a \\emph=1\\ fantastic New Year as well! \\eos=1\\",
+                "gesture": "animations/Stand/Emotions/Positive/Laugh_2", 
+                "pre_delay": 2.0
             },
             {
-                "text": "\\style=didactic\\ You will do so by giving me words to fill in the story. \\eos=1\\",
-                "gesture": "animations/Stand/Gestures/Joy_1" # Explaining
+                "text": "\\style=neutral\\ Actually, \\pau=200\\ you know what? \\emph=1\\ Happy Easter too! \\eos=1\\",
+                "gesture": "animations/Stand/Emotions/Positive/Laugh_2", 
+                "pre_delay": 2.0
             },
             {
-                "text": "\\style=neutral\\ I will ask certain question for \\emph=1\\ specific words \\eos=1\\",
-                "gesture": "animations/Stand/Gestures/Me_2" # Pointing to self
-            },
-            {
-                "text": "\\style=neutral\\ and my \\emph=1\\ assistants \\bound=W\\ will come to you guys to say the answer. \\eos=1\\",
-                "gesture": "animations/Stand/Gestures/Thinking_2" # Pointing to us/audience
-            },
-            {
-                "text": "\\style=neutral\\ \\vct=95\\ I don't want to be the boring one, \\bound=S\\ but please keep the words \\emph=1\\ family-friendly, \\bound=W\\ as I am not allowed to use offensive words. \\eos=1\\",
-                "gesture": "animations/Stand/Gestures/Please_3" # Excused stance / begging
-            },
-            {
-                "text": "\\style=joyful\\ \\vct=110\\ Now that everything is clear, \\pau=500\\ Lets begin: \\eos=1\\",
-                "gesture": "animations/Stand/Gestures/Enthusiastic_3" # Begin gesture
+                "text": "\\style=neutral\\ Oke, \\pau=400\\ that is \\emph=1\\ really it. \\eos=1\\ Bye.",
+                "gesture": "animations/Stand/Gestures/Hey_6", 
+                "pre_delay": 2.0
             }
         ]
 
         for line in script:
             text = line["text"]
             gesture = line["gesture"]
+            pre_delay = line.get("pre_delay", 0)
+
+            if pre_delay > 0:
+                self.logger.info(f"Pausing for {pre_delay} seconds...")
+                time.sleep(pre_delay)
             
             self.logger.info(f"Saying: '{text}' with gesture: {gesture}")
             
+            # Start speech
             import threading
             def speak():
                 self.nao.tts.request(NaoqiTextToSpeechRequest(text))
@@ -92,8 +90,9 @@ class OpeningScriptDemo(SICApplication):
             # Small delay to sync
             time.sleep(0.3)
             
-            # Perform gesture
-            self.nao.motion.request(NaoqiAnimationRequest(gesture))
+            # Perform gesture if defined
+            if gesture:
+                self.nao.motion.request(NaoqiAnimationRequest(gesture))
             
             # Wait for speech to finish
             t.join()
@@ -111,5 +110,5 @@ class OpeningScriptDemo(SICApplication):
             self.nao.autonomous.request(NaoRestRequest())
 
 if __name__ == "__main__":
-    demo = OpeningScriptDemo()
+    demo = EndScriptDemo()
     demo.run()
