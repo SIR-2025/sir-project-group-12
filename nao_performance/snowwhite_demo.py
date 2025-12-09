@@ -48,8 +48,9 @@ class SnowWhiteDemo(SICApplication):
         self.music_player = MusicPlayer()
 
         # Parse the scene into smaller text chunks
-        full_text = "Once upon a time, there lived a princess called Snow White. Snow White was very beautiful. Then there was the Evil Queen who also was very beautiful. Every day she looked into her Magic Mirror. She asked: 'Mirror, Mirror, on the wall, who is the [Word 1] of them all?' The Mirror replied: 'Not you. It is Snow White. She has skin as white as [Word 2], and she has [Word 3] as big as a [Word 4].' The Queen was furious. “Snow White!” she hissed. “It cannot be!”. Then the Queen told the huntsman to find Snow White and kill her in the forest."
-        text_chunks = re.split(r'(?<=[.!?]) +', full_text)
+        full_text = """Once upon a time, there lived a princess called Snow White. Snow White was very beautiful. Then there was the Evil Queen who also was very beautiful. Every day she looked into her Magic Mirror. She asked: "Mirror, Mirror, on the wall, who is the [Word 1] of them all?" The Mirror replied: "It is Snow White. She has skin as white as [Word 2], and [Word 3] as big as a [Word 4]." The Queen was furious. "Snow White?!" she hissed. "It cannot be!". Then the Queen told the huntsman to find Snow White and kill her in the forest."""
+        # full_text = "Once upon a time, there lived a princess called Snow White."
+        text_chunks = re.split(r'(?<=[.!?:]) +', full_text)
         self.script = text_chunks
         
         # Music cues: {line_index: "path/to/music.wav"}
@@ -133,8 +134,6 @@ class SnowWhiteDemo(SICApplication):
                 
                 # Change music if specified
                 if music:
-                    # Use absolute path or relative to script? Assuming relative to project root or script.
-                    # Let's assume relative to project root for now, or handle in MusicPlayer
                     self.music_player.change_track(music)
 
                 self.logger.info(f"Playing line: '{text[:20]}...'")
