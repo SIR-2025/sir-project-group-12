@@ -1,0 +1,32 @@
+{
+  "name": "6c1981c7-da5c-4cd4-9317-67db8149b57f",
+  "displayName": "01_Get_thrash",
+  "form": {
+  
+  },
+  "entryFulfillment": {
+    "messages": [ {
+      "text": {
+        "text": [ "Name a type of trash." ]
+      },
+      "languageCode": "en"
+    } ]
+  },
+  "transitionRoutes": [ {
+    "intent": "user_provides_trash",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Type of trash: $session.params.word_5" ]
+        },
+        "languageCode": "en"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "word_5",
+        "value": "$intent.params.trash"
+      } ]
+    },
+    "targetPage": "02_Get_number",
+    "name": "0fba16c4-1bb2-49b6-aa29-d45b7789dd18"
+  } ]
+}

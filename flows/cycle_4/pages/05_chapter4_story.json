@@ -1,0 +1,15 @@
+{
+  "name": "17f93d14-2542-4ab7-a4f8-cb4a987bb690",
+  "displayName": "05_chapter4_story",
+  "form": {
+  
+  },
+  "entryFulfillment": {
+    "messages": [ {
+      "text": {
+        "text": [ "One day, a handsome Prince rode into the forest on a majestic $session.params.word_15. He was wearing only a $session.params.word_16. He saw Snow White sleeping and was in love. To break the spell, he decided to $session.params.word_17 her. It worked! She woke up instantly. The Wicked Queen's promise was broken. She thanked everyone and gave them each a kiss. They hopped on the $session.params.word_15 and rode all the way to $session.params.word_18. There they begin their new life. Filled with love and joy. The End." ]
+      },
+      "languageCode": "en"
+    } ]
+  }
+}

@@ -1,0 +1,73 @@
+{
+  "trainingPhrases": [ {
+    "parts": [ {
+      "text": "transparent plastic wrap",
+      "parameterId": "transparentMaterial"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "lucite",
+      "parameterId": "transparentMaterial"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "plexiglass",
+      "parameterId": "transparentMaterial"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "see-through film",
+      "parameterId": "transparentMaterial"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "clear acrylic",
+      "parameterId": "transparentMaterial"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "cellophane",
+      "parameterId": "transparentMaterial"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "plastic",
+      "parameterId": "transparentMaterial"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "water",
+      "parameterId": "transparentMaterial"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "foil",
+      "parameterId": "transparentMaterial"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "glass",
+      "parameterId": "transparentMaterial"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  } ]
+}

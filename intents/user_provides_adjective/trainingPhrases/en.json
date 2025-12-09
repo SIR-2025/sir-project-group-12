@@ -1,6 +1,27 @@
 {
   "trainingPhrases": [ {
     "parts": [ {
+      "text": "amazing",
+      "parameterId": "adjective"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "interesting",
+      "parameterId": "adjective"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "fun",
+      "parameterId": "adjective"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
       "text": "pretty",
       "parameterId": "adjective",
       "auto": true

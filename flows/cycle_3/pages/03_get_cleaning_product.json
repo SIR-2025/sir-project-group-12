@@ -1,0 +1,32 @@
+{
+  "name": "612fb6d3-d1a3-4c0a-bb15-aedbb2407d1f",
+  "displayName": "03_get_cleaning_product",
+  "form": {
+  
+  },
+  "entryFulfillment": {
+    "messages": [ {
+      "text": {
+        "text": [ "Next, name a cleaning product." ]
+      },
+      "languageCode": "en"
+    } ]
+  },
+  "transitionRoutes": [ {
+    "intent": "user_provides_cleaning_product",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "The cleaning product is $intent.params.cleaningProduct" ]
+        },
+        "languageCode": "en"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "word_12",
+        "value": "$intent.params.cleaningProduct"
+      } ]
+    },
+    "targetPage": "04_get_song_title",
+    "name": "1b75e44e-2035-43e8-ba68-7c9e5d8ae340"
+  } ]
+}

@@ -1,0 +1,23 @@
+{
+  "name": "07deb9e4-6e1d-4cc2-94e2-82d59b35cb19",
+  "displayName": "05b_confirm_ready",
+  "form": {
+  
+  },
+  "entryFulfillment": {
+    "messages": [ {
+      "text": {
+        "text": [ "Exciting stuff! Are you ready for the next chapter?" ]
+      },
+      "languageCode": "en"
+    } ]
+  },
+  "transitionRoutes": [ {
+    "intent": "small_talk.confirmation.yes",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "06_chapter3_story",
+    "name": "0a2818e5-00a3-4e34-8aee-d61d92bada1d"
+  } ]
+}

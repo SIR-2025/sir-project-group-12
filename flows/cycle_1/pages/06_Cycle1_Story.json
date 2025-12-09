@@ -1,0 +1,32 @@
+{
+  "name": "b7e755d3-1760-4517-9ac3-e4bc194ef17c",
+  "displayName": "06_Cycle1_Story",
+  "form": {
+  
+  },
+  "entryFulfillment": {
+    "messages": [ {
+      "text": {
+        "text": [ "Once upon a time, there lived a princess called Snow White. Snow White was very beautiful. Then there was the Evil Queen who also was very beautiful. Every day she looked into her Magic Mirror. She asked: 'Mirror, Mirror, on the wall, who is the  $session.params.word_1 of them all?' The Mirror replied: 'Not you. It is Snow White. She has skin as white as $session.params.word_2, and she has $session.params.word_3 as big as a $session.params.word_4.' The Queen was furious! \"Snow White!” she hissed. “It cannot be!”. Then the Queen told the huntsman to find Snow White and kill her in the forest. " ]
+      },
+      "languageCode": "en"
+    }, {
+      "payload": {
+        "robot_command": {
+          "led": "red",
+          "motion": "scary",
+          "text": "Generating Story... It is Snow White! The Evil Queen looked into her Magic Mirror. She asked: 'Mirror, Mirror, on the wall, who is the $session.params.word_1 of them all?' The Mirror replied: 'Not you. It is Snow White. She has skin as white as $session.params.word_2, and she has $session.params.word_3 as big as a $session.params.word_4.' The Queen was furious!"
+        }
+      },
+      "languageCode": "en"
+    } ]
+  },
+  "transitionRoutes": [ {
+    "condition": "true",
+    "triggerFulfillment": {
+    
+    },
+    "targetFlow": "cycle_2",
+    "name": "fbd916c3-1e0f-4a15-acf0-53546c72d473"
+  } ]
+}

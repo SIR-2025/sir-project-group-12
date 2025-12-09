@@ -1,0 +1,32 @@
+{
+  "name": "31ae8a51-4d7d-430b-9476-ee34b1335d9f",
+  "displayName": "02_Get_number",
+  "form": {
+  
+  },
+  "entryFulfillment": {
+    "messages": [ {
+      "text": {
+        "text": [ "Great. Now, give me a number between 2 and 100." ]
+      },
+      "languageCode": "en"
+    } ]
+  },
+  "transitionRoutes": [ {
+    "intent": "user_provides_number",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "The number is $intent.params.number" ]
+        },
+        "languageCode": "en"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "word_6",
+        "value": "$intent.params.number"
+      } ]
+    },
+    "targetPage": "03_Get_job_title",
+    "name": "5181c628-37aa-4168-a6c7-e91d02495ea4"
+  } ]
+}

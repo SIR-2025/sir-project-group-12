@@ -1,0 +1,23 @@
+{
+  "name": "200c92da-82c6-4764-ac1f-2f2d86b1b8c8",
+  "displayName": "06_Chapter2_story",
+  "form": {
+  
+  },
+  "entryFulfillment": {
+    "messages": [ {
+      "text": {
+        "text": [ "The huntsman led Snow White into the forest. Snow White ran away and found a tiny cottage. The floor was covered in piles of $session.params.word_5. The owners came home. It wasn't 7 Dwarfs. It was $session.params.word_6 tiny $session.params.word_7! Their leader, named $session.params.word_8, stepped forward. He was holding a giant $session.params.word_9. He said: 'You may stay, but don't touch our stuff.' Snow White was very happy that she could say and thanked $session.params.word_8. That evening the cottage was filled with music and laughter. The tiny $session.params.word_7 sang all night while $session.params.word_8 and Snow White were dancing." ]
+      },
+      "languageCode": "en"
+    } ]
+  },
+  "transitionRoutes": [ {
+    "condition": "true",
+    "triggerFulfillment": {
+    
+    },
+    "targetFlow": "cycle_3",
+    "name": "7b0dbdf2-187c-4092-9d26-bcbe19b72118"
+  } ]
+}

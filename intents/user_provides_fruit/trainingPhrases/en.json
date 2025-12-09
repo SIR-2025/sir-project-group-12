@@ -1,6 +1,21 @@
 {
   "trainingPhrases": [ {
     "parts": [ {
+      "text": "blueberry",
+      "parameterId": "fruit"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "strawberry",
+      "parameterId": "fruit",
+      "auto": true
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
       "text": "i choose ",
       "auto": true
     }, {

@@ -1,0 +1,23 @@
+{
+  "name": "07125a00-5091-4f57-996b-347a50e0dfaf",
+  "displayName": "04b_confirm_ready",
+  "form": {
+  
+  },
+  "entryFulfillment": {
+    "messages": [ {
+      "text": {
+        "text": [ "Are you ready for the final part?" ]
+      },
+      "languageCode": "en"
+    } ]
+  },
+  "transitionRoutes": [ {
+    "intent": "small_talk.confirmation.yes",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "05_chapter4_story",
+    "name": "49a4353d-7105-4b12-8bb5-b96d256db19b"
+  } ]
+}

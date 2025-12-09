@@ -1,0 +1,39 @@
+{
+  "entities": [ {
+    "value": "Lando Norris",
+    "synonyms": [ "F1 driver", "Formula 1 driver", "Lando Norris", "racing driver" ],
+    "languageCode": "en"
+  }, {
+    "value": "Miley Cyrus",
+    "synonyms": [ "Miley Cyrus", "musician", "singer", "songwriter" ],
+    "languageCode": "en"
+  }, {
+    "value": "Brad Pitt",
+    "synonyms": [ "actor", "Brad Pitt", "movie star", "William Bradley Pitt" ],
+    "languageCode": "en"
+  }, {
+    "value": "influencers",
+    "synonyms": [ "endorsers", "influencers", "marketers", "promoters" ],
+    "languageCode": "en"
+  }, {
+    "value": "sportswomen",
+    "synonyms": [ "athletes", "competitors", "players", "sportswomen" ],
+    "languageCode": "en"
+  }, {
+    "value": "sportsmen",
+    "synonyms": [ "athletes", "competitors", "players", "sportsmen" ],
+    "languageCode": "en"
+  }, {
+    "value": "presenters",
+    "synonyms": [ "announcers", "emcees", "hosts", "presenters" ],
+    "languageCode": "en"
+  }, {
+    "value": "singers",
+    "synonyms": [ "crooners", "musicians", "singers", "vocalists" ],
+    "languageCode": "en"
+  }, {
+    "value": "actors",
+    "synonyms": [ "actors", "artists", "performers", "thespians" ],
+    "languageCode": "en"
+  } ]
+}

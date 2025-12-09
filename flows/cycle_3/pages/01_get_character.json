@@ -1,0 +1,32 @@
+{
+  "name": "b82288b0-07aa-4bc1-b231-0a03de5ca779",
+  "displayName": "01_get_character",
+  "form": {
+  
+  },
+  "entryFulfillment": {
+    "messages": [ {
+      "text": {
+        "text": [ "The queen returns. Name a famous character." ]
+      },
+      "languageCode": "en"
+    } ]
+  },
+  "transitionRoutes": [ {
+    "intent": "user_provides_character",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Disguise: $intent.params.character" ]
+        },
+        "languageCode": "en"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "word_10",
+        "value": "$intent.params.character"
+      } ]
+    },
+    "targetPage": "02_get_gross_food",
+    "name": "20c27bf9-11c9-4b1e-997a-2c00227c6d33"
+  } ]
+}

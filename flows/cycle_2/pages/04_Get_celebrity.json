@@ -1,0 +1,32 @@
+{
+  "name": "eae0af8f-c04b-4dfa-a919-da76d994e24e",
+  "displayName": "04_Get_celebrity",
+  "form": {
+  
+  },
+  "entryFulfillment": {
+    "messages": [ {
+      "text": {
+        "text": [ "Name a celebrity." ]
+      },
+      "languageCode": "en"
+    } ]
+  },
+  "transitionRoutes": [ {
+    "intent": "user_provides_celebrity",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "The celebrity is $intent.params.celebrity, interesting!" ]
+        },
+        "languageCode": "en"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "word_8",
+        "value": "$intent.params.celebrity"
+      } ]
+    },
+    "targetPage": "05_Get_tool",
+    "name": "6a71bca4-629b-41b9-8c0d-0a0fda3f6c81"
+  } ]
+}

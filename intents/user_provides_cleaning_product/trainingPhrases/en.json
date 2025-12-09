@@ -1,0 +1,66 @@
+{
+  "trainingPhrases": [ {
+    "parts": [ {
+      "text": "dish soap",
+      "parameterId": "cleaningProduct"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "laundry detergent",
+      "parameterId": "cleaningProduct"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "disinfectant spray",
+      "parameterId": "cleaningProduct"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "hand sanitizer",
+      "parameterId": "cleaningProduct"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "glass cleaner",
+      "parameterId": "cleaningProduct"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "disinfectant wipes",
+      "parameterId": "cleaningProduct"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "desinfecting alcohol",
+      "parameterId": "cleaningProduct"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "multipurpose cleaner",
+      "parameterId": "cleaningProduct"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "bleach",
+      "parameterId": "cleaningProduct"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  } ]
+}

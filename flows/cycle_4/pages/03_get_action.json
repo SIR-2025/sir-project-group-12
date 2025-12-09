@@ -1,0 +1,32 @@
+{
+  "name": "5f1c6ee8-b182-4ed7-ae13-f6df3dcd31a0",
+  "displayName": "03_get_action",
+  "form": {
+  
+  },
+  "entryFulfillment": {
+    "messages": [ {
+      "text": {
+        "text": [ "Name an action or verb." ]
+      },
+      "languageCode": "en"
+    } ]
+  },
+  "transitionRoutes": [ {
+    "intent": "user_provides_action",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "The action is $intent.params.action" ]
+        },
+        "languageCode": "en"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "word_17",
+        "value": "$intent.params.action"
+      } ]
+    },
+    "targetPage": "04_get_fast_food_restaurant",
+    "name": "9e12815f-2265-4a1e-8d09-8a38ea9f90df"
+  } ]
+}

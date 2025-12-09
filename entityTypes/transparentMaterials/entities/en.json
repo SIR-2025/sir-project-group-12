@@ -1,0 +1,23 @@
+{
+  "entities": [ {
+    "value": "air",
+    "synonyms": [ "air", "atmosphere", "breeze", "wind" ],
+    "languageCode": "en"
+  }, {
+    "value": "liquids",
+    "synonyms": [ "beverage", "fluid", "liquids", "solution" ],
+    "languageCode": "en"
+  }, {
+    "value": "fabrics",
+    "synonyms": [ "cloth", "fabrics", "material", "textiles" ],
+    "languageCode": "en"
+  }, {
+    "value": "plastics",
+    "synonyms": [ "plastics", "polymeric material", "synthetic polymer", "vinyl" ],
+    "languageCode": "en"
+  }, {
+    "value": "glass",
+    "synonyms": [ "crystal", "glass", "pane", "window" ],
+    "languageCode": "en"
+  } ]
+}

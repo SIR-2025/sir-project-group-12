@@ -1,0 +1,32 @@
+{
+  "name": "0d705a98-1536-45db-ba11-635b75ce14b2",
+  "displayName": "03_Get_job_title",
+  "form": {
+  
+  },
+  "entryFulfillment": {
+    "messages": [ {
+      "text": {
+        "text": [ "Name a job title or profession." ]
+      },
+      "languageCode": "en"
+    } ]
+  },
+  "transitionRoutes": [ {
+    "intent": "user_provides_job_title",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Job title: $intent.params.job_title." ]
+        },
+        "languageCode": "en"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "word_7",
+        "value": "$intent.params.job_title"
+      } ]
+    },
+    "targetPage": "04_Get_celebrity",
+    "name": "1c95a02e-276a-45a2-b3ef-4e14b88197f3"
+  } ]
+}

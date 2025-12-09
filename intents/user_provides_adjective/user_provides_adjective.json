@@ -6,5 +6,5 @@
     "entityType": "@Adjectives"
   } ],
   "priority": 500000,
-  "numTrainingPhrases": 5
+  "numTrainingPhrases": 8
 }

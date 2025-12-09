@@ -1,9 +1,37 @@
 {
   "trainingPhrases": [ {
     "parts": [ {
+      "text": "hand",
+      "parameterId": "bodypart"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "feet",
+      "parameterId": "bodypart"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
       "text": "foot",
       "parameterId": "bodypart",
       "auto": true
+    } ],
+    "repeatCount": 2,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "ankle",
+      "parameterId": "bodypart"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "shoulder",
+      "parameterId": "bodypart"
     } ],
     "repeatCount": 1,
     "languageCode": "en"

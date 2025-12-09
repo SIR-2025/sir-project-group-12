@@ -1,0 +1,32 @@
+{
+  "name": "a7e61573-8682-459b-ab5b-1ea4e3925aaa",
+  "displayName": "04_get_song_title",
+  "form": {
+  
+  },
+  "entryFulfillment": {
+    "messages": [ {
+      "text": {
+        "text": [ "Name a song title." ]
+      },
+      "languageCode": "en"
+    } ]
+  },
+  "transitionRoutes": [ {
+    "intent": "user_provides_song_title",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Song: $intent.params.songTitle" ]
+        },
+        "languageCode": "en"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "word_13",
+        "value": "$intent.params.songTitle"
+      } ]
+    },
+    "targetPage": "05_get_transparent_material",
+    "name": "bc37f461-17ba-4216-8066-33e3eebbca39"
+  } ]
+}

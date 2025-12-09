@@ -1,0 +1,32 @@
+{
+  "name": "59168608-8a10-43c3-8fec-7df28925dc6d",
+  "displayName": "02_get_gross_food",
+  "form": {
+  
+  },
+  "entryFulfillment": {
+    "messages": [ {
+      "text": {
+        "text": [ "Now, name a gross food." ]
+      },
+      "languageCode": "en"
+    } ]
+  },
+  "transitionRoutes": [ {
+    "intent": "user_provides_food",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Food: $intent.params.grossFood" ]
+        },
+        "languageCode": "en"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "word_11",
+        "value": "$intent.params.grossFood"
+      } ]
+    },
+    "targetPage": "03_get_cleaning_product",
+    "name": "7a5bd783-c4ae-4be3-b468-c1d4e40570ed"
+  } ]
+}

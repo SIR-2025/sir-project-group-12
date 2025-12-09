@@ -1,0 +1,23 @@
+{
+  "name": "a190baaf-0a9e-4828-b25e-55f6aec5c6ce",
+  "displayName": "06_chapter3_story",
+  "form": {
+  
+  },
+  "entryFulfillment": {
+    "messages": [ {
+      "text": {
+        "text": [ "Down in the dungeon, the Queen cast a magic spell to disguise herself as $session.params.word_10. The Queen went into the forests to find Snow White. She found the tiny cottage and knocked on the door and sang $session.params.word_13 to trick Snow White. She offered Snow White a piece of $session.params.word_11 dipped in $session.params.word_12. Snow White took one bite and fell into a deep sleep. The wicked queen said, \"She will never be awake again!\" The Dwarfs chased the queen, until she fell from a mountain. To be never seen. The dwarfs cried and placed her in a coffin made of $session.params.word_14. To keep watch over snow white every day." ]
+      },
+      "languageCode": "en"
+    } ]
+  },
+  "transitionRoutes": [ {
+    "condition": "true",
+    "triggerFulfillment": {
+    
+    },
+    "targetFlow": "cycle_4",
+    "name": "8ae02e0f-8119-4765-834f-6c0438e2ba45"
+  } ]
+}

@@ -1,0 +1,10 @@
+{
+  "name": "cc43bbe2-348e-41d4-9228-10b0ea862ead",
+  "displayName": "user_provides_number",
+  "parameters": [ {
+    "id": "number",
+    "entityType": "@sys.number"
+  } ],
+  "priority": 500000,
+  "numTrainingPhrases": 8
+}

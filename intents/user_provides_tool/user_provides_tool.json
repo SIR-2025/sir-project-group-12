@@ -1,0 +1,10 @@
+{
+  "name": "86cec668-3bd3-4dfb-be4f-1d519c6df0b7",
+  "displayName": "user_provides_tool",
+  "parameters": [ {
+    "id": "tool",
+    "entityType": "@tools"
+  } ],
+  "priority": 500000,
+  "numTrainingPhrases": 9
+}

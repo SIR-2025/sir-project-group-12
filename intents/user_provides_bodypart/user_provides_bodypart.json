@@ -6,5 +6,5 @@
     "entityType": "@bodyParts"
   } ],
   "priority": 500000,
-  "numTrainingPhrases": 4
+  "numTrainingPhrases": 8
 }

@@ -1,0 +1,66 @@
+{
+  "trainingPhrases": [ {
+    "parts": [ {
+      "text": "Selena Gomez",
+      "parameterId": "celebrity"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Ryan Reynolds",
+      "parameterId": "celebrity"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Beyonce",
+      "parameterId": "celebrity"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Lando Norris",
+      "parameterId": "celebrity"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Angelina Jolie",
+      "parameterId": "celebrity"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Brad Pitt",
+      "parameterId": "celebrity"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Jennifer Aniston",
+      "parameterId": "celebrity"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Miley Cyrus",
+      "parameterId": "celebrity"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Tom Hanks",
+      "parameterId": "celebrity"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  } ]
+}

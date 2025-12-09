@@ -1,0 +1,32 @@
+{
+  "name": "b38ee8e8-e1f4-4bf4-933e-4932d47550af",
+  "displayName": "04_get_fast_food_restaurant",
+  "form": {
+  
+  },
+  "entryFulfillment": {
+    "messages": [ {
+      "text": {
+        "text": [ "Name a fast food restaurant." ]
+      },
+      "languageCode": "en"
+    } ]
+  },
+  "transitionRoutes": [ {
+    "intent": "user_provides_fastfood_restaurant",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "The fastfood restaurant: $intent.params.fastfoodRestaurant" ]
+        },
+        "languageCode": "en"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "word_18",
+        "value": "$intent.params.fastfoodRestaurant"
+      } ]
+    },
+    "targetPage": "04b_confirm_ready",
+    "name": "cb202e63-ca46-48d2-9ee4-1a2d859554d2"
+  } ]
+}

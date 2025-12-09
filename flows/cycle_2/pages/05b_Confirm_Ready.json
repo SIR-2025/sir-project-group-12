@@ -1,0 +1,23 @@
+{
+  "name": "d2846e67-6107-4c94-9a13-44ae08eafcf0",
+  "displayName": "05b_Confirm_Ready",
+  "form": {
+  
+  },
+  "entryFulfillment": {
+    "messages": [ {
+      "text": {
+        "text": [ "Thank you for your input, are we ready for the second chapter?" ]
+      },
+      "languageCode": "en"
+    } ]
+  },
+  "transitionRoutes": [ {
+    "intent": "small_talk.confirmation.yes",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "06_Chapter2_story",
+    "name": "accd164c-eb05-46e4-aa5a-71f4f2ceef1d"
+  } ]
+}

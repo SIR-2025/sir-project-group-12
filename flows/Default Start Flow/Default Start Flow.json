@@ -16,7 +16,7 @@
         "value": "$intent.params.adjective"
       } ]
     },
-    "targetFlow": "demo_cycle_1",
+    "targetFlow": "cycle_1",
     "name": "89f272a9-fdbd-452b-923e-933c256c11de"
   }, {
     "intent": "Default Welcome Intent",
@@ -32,14 +32,14 @@
         "value": "$intent.params.any_word"
       } ]
     },
-    "targetFlow": "demo_cycle_1",
+    "targetFlow": "cycle_1",
     "name": "d0b998fc-429f-4e55-ab39-e2dc22e97632"
   }, {
     "condition": "true",
     "triggerFulfillment": {
     
     },
-    "targetFlow": "demo_cycle_1",
+    "targetFlow": "cycle_1",
     "name": "8837cab9-f3a6-4661-be23-7aed98972362"
   } ],
   "eventHandlers": [ {

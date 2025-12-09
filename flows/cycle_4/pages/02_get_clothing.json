@@ -1,0 +1,32 @@
+{
+  "name": "3d007ccc-ad3f-4da9-8b42-ea733803c583",
+  "displayName": "02_get_clothing",
+  "form": {
+  
+  },
+  "entryFulfillment": {
+    "messages": [ {
+      "text": {
+        "text": [ "Name an item of clothing." ]
+      },
+      "languageCode": "en"
+    } ]
+  },
+  "transitionRoutes": [ {
+    "intent": "user_provides_clothing",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Piece of clothing: $intent.params.clothing" ]
+        },
+        "languageCode": "en"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "word_16",
+        "value": "$intent.params.clothing"
+      } ]
+    },
+    "targetPage": "03_get_action",
+    "name": "07852cfa-511a-4d22-b9b5-d9542a7a0214"
+  } ]
+}

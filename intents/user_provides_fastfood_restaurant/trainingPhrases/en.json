@@ -1,0 +1,59 @@
+{
+  "trainingPhrases": [ {
+    "parts": [ {
+      "text": "Pizza Hut",
+      "parameterId": "fastfoodRestaurant"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Dominos",
+      "parameterId": "fastfoodRestaurant"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Taco Bell",
+      "parameterId": "fastfoodRestaurant"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Subway",
+      "parameterId": "fastfoodRestaurant"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Burger King",
+      "parameterId": "fastfoodRestaurant"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Wendy's",
+      "parameterId": "fastfoodRestaurant"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "KFC",
+      "parameterId": "fastfoodRestaurant"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "McDonalds",
+      "parameterId": "fastfoodRestaurant"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  } ]
+}
