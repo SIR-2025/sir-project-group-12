@@ -1,0 +1,8 @@
+client.py
+conf/
+demos/
+venv_sic/
+emotion/
+labeling_tool/
+music/
+output*
