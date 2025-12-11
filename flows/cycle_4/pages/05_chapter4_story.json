@@ -7,9 +7,26 @@
   "entryFulfillment": {
     "messages": [ {
       "text": {
-        "text": [ "One day, a handsome Prince rode into the forest on a majestic $session.params.word_15. He was wearing only a $session.params.word_16. He saw Snow White sleeping and was in love. To break the spell, he decided to $session.params.word_17 her. It worked! She woke up instantly. The Wicked Queen's promise was broken. She thanked everyone and gave them each a kiss. They hopped on the $session.params.word_15 and rode all the way to $session.params.word_18. There they begin their new life. Filled with love and joy. The End." ]
+        "text": [ "$request.generative.text" ]
       },
       "languageCode": "en"
+    }, {
+      "payload": {
+        "robot_command": {
+          "led": "blue",
+          "motion": "neutral",
+          "text": "$request.generative.text"
+        }
+      },
+      "languageCode": "en"
+    } ],
+    "generators": [ {
+      "generator": "projects/newagent-tcmq/locations/europe-west4/agents/5079e43a-fec2-441d-bf10-f23f292fbf15/generators/1dbfc50f-8adf-4af9-ac80-9ede791c95dd",
+      "inputParameters": [ {
+        "key": "session",
+        "value": "$session.params"
+      } ],
+      "outputParameter": "$request.generative.text"
     } ]
   }
 }

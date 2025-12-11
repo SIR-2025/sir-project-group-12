@@ -28,5 +28,30 @@
     },
     "targetPage": "05_get_transparent_material",
     "name": "bc37f461-17ba-4216-8066-33e3eebbca39"
+  } ],
+  "eventHandlers": [ {
+    "targetPage": "04_get_song_title",
+    "event": "sys.no-input-default",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "I didn't hear you. Can you say it again?" ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "name": "71bdbd44-5f65-4d6a-ba52-ae7eefc1a2a0"
+  }, {
+    "targetPage": "04_get_song_title",
+    "event": "sys.no-match-default",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "This does not sound like a song title. Please provide a song like Thriller or Bohemian Rhapsody." ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "name": "a225050f-5192-413e-b65f-b7153d8aab9b"
   } ]
 }

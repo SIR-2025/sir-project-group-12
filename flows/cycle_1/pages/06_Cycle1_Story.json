@@ -7,18 +7,26 @@
   "entryFulfillment": {
     "messages": [ {
       "text": {
-        "text": [ "Once upon a time, there lived a princess called Snow White. Snow White was very beautiful. Then there was the Evil Queen who also was very beautiful. Every day she looked into her Magic Mirror. She asked: 'Mirror, Mirror, on the wall, who is the  $session.params.word_1 of them all?' The Mirror replied: 'Not you. It is Snow White. She has skin as white as $session.params.word_2, and she has $session.params.word_3 as big as a $session.params.word_4.' The Queen was furious! \"Snow White!” she hissed. “It cannot be!”. Then the Queen told the huntsman to find Snow White and kill her in the forest. " ]
+        "text": [ "$request.generative.text" ]
       },
       "languageCode": "en"
     }, {
       "payload": {
         "robot_command": {
           "led": "red",
-          "motion": "scary",
-          "text": "Generating Story... It is Snow White! The Evil Queen looked into her Magic Mirror. She asked: 'Mirror, Mirror, on the wall, who is the $session.params.word_1 of them all?' The Mirror replied: 'Not you. It is Snow White. She has skin as white as $session.params.word_2, and she has $session.params.word_3 as big as a $session.params.word_4.' The Queen was furious!"
+          "motion": "neutral",
+          "text": "$request.generative.text"
         }
       },
       "languageCode": "en"
+    } ],
+    "generators": [ {
+      "generator": "projects/newagent-tcmq/locations/europe-west4/agents/5079e43a-fec2-441d-bf10-f23f292fbf15/generators/c65921e1-c0fe-4a92-b680-80300a1ef193",
+      "inputParameters": [ {
+        "key": "session",
+        "value": "$session.params"
+      } ],
+      "outputParameter": "$request.generative.text"
     } ]
   },
   "transitionRoutes": [ {

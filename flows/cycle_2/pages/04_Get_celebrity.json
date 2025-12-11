@@ -28,5 +28,30 @@
     },
     "targetPage": "05_Get_tool",
     "name": "6a71bca4-629b-41b9-8c0d-0a0fda3f6c81"
+  } ],
+  "eventHandlers": [ {
+    "targetPage": "04_Get_celebrity",
+    "event": "sys.no-input-default",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "I didn't hear what you said, can you repeat?" ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "name": "2fa43f63-d871-42d7-92e4-8a824ad2ca83"
+  }, {
+    "targetPage": "04_Get_celebrity",
+    "event": "sys.no-match-default",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "I don't know this celebrity. Please name someone like Beyonce or Tom Hanks." ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "name": "bdbccbd4-fdc2-434e-b08d-ad690b19b152"
   } ]
 }

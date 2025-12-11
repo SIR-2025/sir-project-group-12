@@ -28,5 +28,30 @@
     },
     "targetPage": "04_Get_celebrity",
     "name": "1c95a02e-276a-45a2-b3ef-4e14b88197f3"
+  } ],
+  "eventHandlers": [ {
+    "targetPage": "03_Get_job_title",
+    "event": "sys.no-input-default",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "I couldn't hear what you were saying. Can you repeat?" ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "name": "f5c879bc-30c2-484a-b58c-0476a3941237"
+  }, {
+    "targetPage": "03_Get_job_title",
+    "event": "sys.no-match-default",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "That doesn't sound like a job, please provide a profession such as teacher or police officer." ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "name": "e2ff2ec3-b3f7-4034-b9f7-6e5a321c3d3e"
   } ]
 }

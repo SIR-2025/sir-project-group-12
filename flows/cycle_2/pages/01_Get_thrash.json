@@ -28,5 +28,30 @@
     },
     "targetPage": "02_Get_number",
     "name": "0fba16c4-1bb2-49b6-aa29-d45b7789dd18"
+  } ],
+  "eventHandlers": [ {
+    "targetPage": "01_Get_thrash",
+    "event": "sys.no-match-default",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "That doesn't sound like a type of trash. Please name something like a glass bottle or cardboard." ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "name": "2c6eefb2-0559-496c-85e1-588cbebcbb31"
+  }, {
+    "targetPage": "01_Get_thrash",
+    "event": "sys.no-input-default",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Sorry, I didn't understand you. Can you repeat?" ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "name": "90f41db2-fbd9-41f9-8dc5-4ab01b51d51a"
   } ]
 }

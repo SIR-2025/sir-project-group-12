@@ -19,5 +19,30 @@
     },
     "targetPage": "05_chapter4_story",
     "name": "49a4353d-7105-4b12-8bb5-b96d256db19b"
+  } ],
+  "eventHandlers": [ {
+    "targetPage": "04b_confirm_ready",
+    "event": "sys.no-input-default",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "I didn't hear you. Are you ready?" ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "name": "948eb388-a51f-492e-a8ba-292d612e16d6"
+  }, {
+    "targetPage": "04b_confirm_ready",
+    "event": "sys.no-match-default",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Please confirm that you are ready for the story by replying yes!" ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "name": "3925eed0-5c58-4a0a-b0f9-4191d8cc9010"
   } ]
 }

@@ -28,5 +28,18 @@
     },
     "targetPage": "05b_confirm_ready",
     "name": "92ee1a10-377c-4ae8-ab91-7d07503fe7e8"
+  } ],
+  "eventHandlers": [ {
+    "targetPage": "05_get_transparent_material",
+    "event": "sys.no-input-default",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "I couldn't understand you. Can you say it again?" ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "name": "2ec45b65-66a7-4229-b3d4-107660dc3b38"
   } ]
 }

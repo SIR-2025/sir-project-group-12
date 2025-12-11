@@ -28,5 +28,30 @@
     },
     "targetPage": "04_get_fast_food_restaurant",
     "name": "9e12815f-2265-4a1e-8d09-8a38ea9f90df"
+  } ],
+  "eventHandlers": [ {
+    "targetPage": "03_get_action",
+    "event": "sys.no-input-default",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "I couldn't understand you. Can you repeat?" ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "name": "c9fcf6aa-9a36-47a1-bdf5-fb92bcf12063"
+  }, {
+    "targetPage": "03_get_action",
+    "event": "sys.no-match-default",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "That does not sound like a verb or action. Please provide something like diving or jumping." ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "name": "cf8c858c-94f0-42fd-81e3-ec602dd906fe"
   } ]
 }

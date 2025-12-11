@@ -28,5 +28,30 @@
     },
     "targetPage": "03_Get_job_title",
     "name": "5181c628-37aa-4168-a6c7-e91d02495ea4"
+  } ],
+  "eventHandlers": [ {
+    "targetPage": "02_Get_number",
+    "event": "sys.no-match-default",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "That does not sound like a number. Please provide a number between 2 and 100." ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "name": "fa7f9872-3c42-4052-baa7-a35eca17b78b"
+  }, {
+    "targetPage": "02_Get_number",
+    "event": "sys.no-input-default",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "I missed it. What did you say?" ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "name": "41ca3515-c850-4cd2-85fa-423fb6a4163b"
   } ]
 }

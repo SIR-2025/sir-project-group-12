@@ -28,5 +28,30 @@
     },
     "targetPage": "03_get_cleaning_product",
     "name": "7a5bd783-c4ae-4be3-b468-c1d4e40570ed"
+  } ],
+  "eventHandlers": [ {
+    "targetPage": "02_get_gross_food",
+    "event": "sys.no-input-default",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "I did not hear you properly. Can you repeat?" ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "name": "119857da-5cd7-43d6-8f8d-dccb6284c900"
+  }, {
+    "targetPage": "02_get_gross_food",
+    "event": "sys.no-match-default",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "That does not sound like a gross food. Please provide something like escargots or oysters." ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "name": "68b222d5-1f12-4efa-96ad-08beccb0b5fb"
   } ]
 }

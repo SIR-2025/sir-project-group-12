@@ -28,5 +28,30 @@
     },
     "targetPage": "04b_confirm_ready",
     "name": "cb202e63-ca46-48d2-9ee4-1a2d859554d2"
+  } ],
+  "eventHandlers": [ {
+    "targetPage": "04_get_fast_food_restaurant",
+    "event": "sys.no-input-default",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "I didn't pick up what you said. Can you repeat?" ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "name": "c42d287f-181f-4555-ac8b-217c956e7281"
+  }, {
+    "targetPage": "04_get_fast_food_restaurant",
+    "event": "sys.no-match-default",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "This does not sound like a fast food restaurant. Please say something like McDonalds or KFC." ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "name": "ceed2a70-71b9-46d4-bd3d-ce1159bb70ea"
   } ]
 }

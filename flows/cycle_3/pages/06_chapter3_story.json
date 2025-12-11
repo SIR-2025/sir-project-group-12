@@ -7,9 +7,26 @@
   "entryFulfillment": {
     "messages": [ {
       "text": {
-        "text": [ "Down in the dungeon, the Queen cast a magic spell to disguise herself as $session.params.word_10. The Queen went into the forests to find Snow White. She found the tiny cottage and knocked on the door and sang $session.params.word_13 to trick Snow White. She offered Snow White a piece of $session.params.word_11 dipped in $session.params.word_12. Snow White took one bite and fell into a deep sleep. The wicked queen said, \"She will never be awake again!\" The Dwarfs chased the queen, until she fell from a mountain. To be never seen. The dwarfs cried and placed her in a coffin made of $session.params.word_14. To keep watch over snow white every day." ]
+        "text": [ "$request.generative.text" ]
       },
       "languageCode": "en"
+    }, {
+      "payload": {
+        "robot_command": {
+          "led": "purple",
+          "motion": "neutral",
+          "text": "$request.generative.text"
+        }
+      },
+      "languageCode": "en"
+    } ],
+    "generators": [ {
+      "generator": "projects/newagent-tcmq/locations/europe-west4/agents/5079e43a-fec2-441d-bf10-f23f292fbf15/generators/e862fc65-b044-4981-9756-e86ce17a0818",
+      "inputParameters": [ {
+        "key": "session",
+        "value": "$session.params"
+      } ],
+      "outputParameter": "$request.generative.text"
     } ]
   },
   "transitionRoutes": [ {

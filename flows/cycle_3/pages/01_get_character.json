@@ -28,5 +28,29 @@
     },
     "targetPage": "02_get_gross_food",
     "name": "20c27bf9-11c9-4b1e-997a-2c00227c6d33"
+  } ],
+  "eventHandlers": [ {
+    "targetPage": "01_get_character",
+    "event": "sys.no-input-default",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "I did not understand you. Can you say it again?" ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "name": "b8bd826e-6921-4f65-a22e-c43f9e96e781"
+  }, {
+    "event": "sys.no-match-default",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "I don't know this character. Please provide a name like Mickey Mouse or Snoopy." ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "name": "3bdcdfce-e831-441e-9d29-235ed3b71e4a"
   } ]
 }
