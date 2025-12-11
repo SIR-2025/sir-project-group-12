@@ -39,11 +39,11 @@ class OpeningScriptDemo(SICApplication):
 
         script = [
             {
-                "text": "\\style=joyful\\ Hello \\pau=200\\ my name is \\emph=1\\ Nao \\eos=1\\",
+                "text": "\\style=neutral\\ Hello \\pau=200\\ my name is \\emph=1\\ Nao \\eos=1\\",
                 "gesture": "animations/Stand/Gestures/Hey_5" # Wave
             },
             {
-                "text": "\\style=joyful\\ Today I will be telling a well-known fairy-tale story; \\pau=400\\ \\emph=1\\ Snowwhite \\eos=1\\",
+                "text": "\\style=neutral\\ Today I will be telling a well-known fairy-tale story; \\pau=400\\ \\emph=1\\ Snowwhite \\eos=1\\",
                 "gesture": "animations/Stand/Gestures/Me_7" # Automic/Resting
             },
             {
@@ -71,7 +71,7 @@ class OpeningScriptDemo(SICApplication):
                 "gesture": "animations/Stand/Gestures/Please_3" # Excused stance / begging
             },
             {
-                "text": "\\style=joyful\\ \\vct=110\\ Now that everything is clear, \\pau=500\\ Lets begin: \\eos=1\\",
+                "text": "\\style=neutral\\ \\vct=110\\ Now that everything is clear, \\pau=500\\ Lets begin: \\eos=1\\",
                 "gesture": "animations/Stand/Gestures/Enthusiastic_3" # Begin gesture
             }
         ]

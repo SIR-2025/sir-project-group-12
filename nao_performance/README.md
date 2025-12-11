@@ -5,7 +5,7 @@ This folder contains scripts and modules for running various interactive perform
 ## Contents
 
 ### Main Scripts
-- **`main.py`**: The central performance demo. It executes a continuous performance where NAO demonstrates "awareness", expresses emotions via LEDs, and speaks/gestures based on "intents" (neutral, enjoyment, angry, etc.). This is based on example sentences which it will play at a uniform time distribution (used to show how the tts could be combined with gestures and emotion).
+- **`snowwhite_interactive.py`**: The primary interactive application. It uses Google Speech-to-Text to listen to the user, Dialogflow CX to manage the conversation, and triggers theatrical performances (gestures + TTS) when the story intent is detected.
 - **`snowwhite_demo.py`**: A storytelling demo ("Snow White") that is 'based' on the first scene of our performance. This is just to demonstrate how the performance could look like if every part of the performance is combined.
 - **`opening_script.py`**: An introductory script where NAO introduces itself and the upcoming performance (Snow White).
 - **`end_script.py`**: A closing script where NAO thanks the audience and says goodbye.
@@ -25,28 +25,32 @@ This folder contains scripts and modules for running various interactive perform
     ```
 - **SIC Framework**: The `social-interaction-cloud` package is included in the requirements.
 - **Network**: The computer must be on the same network as the NAO robot.
-- **Redis Server**: The system requires a Redis server running before you can communicate with the robot. 
+- **Redis Server**: The system requires a Redis server running locally.
   Navigate to the `conf/redis` directory in the project root and run:
   ```bash
   .\redis-server.exe .\redis.conf
   ```
-- **TTS Server**: The `tts_client.py` expects a TTS server running at `http://tts.twin-tails.org:80/tts`.
+- **Google STT Service**: Open a separate terminal and run:
+  ```bash
+  run-google-stt
+  ```
+- **TTS Server**: The `tts_client.py` expects a TTS server running at `http://tts.twin-tails.org:80/tts` (internet connection required).
 
+### Running the Interactive App
+**This is the main demo.**
+```bash
+python snowwhite_interactive.py
+```
+*Note: Make sure your `conf/google/google-key.json` is present and valid.*
 
-### Running the Demos
+### Running Other Demos
 
-1.  **Main Performance**:
-    ```bash
-    python main.py
-    ```
-    Press `q` to stop the loop.
-
-2.  **Snow White Story**:
+1.  **Snow White Story (Non-Interactive)**:
     ```bash
     python snowwhite_demo.py
     ```
 
-3.  **Opening/Closing Scripts**:
+2.  **Opening/Closing Scripts**:
     ```bash
     python opening_script.py
     python end_script.py
