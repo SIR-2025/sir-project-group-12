@@ -270,6 +270,16 @@ ANIMATIONS_BY_CATEGORY = {
             "animations/Stand/Gestures/WhatSThis_13", 
         ]
     },
+    "dance": {
+        "default": [
+            "animations/Stand/Emotions/Positive/Happy_1",
+            "animations/Stand/Emotions/Positive/Happy_2",
+            "animations/Stand/Emotions/Positive/Happy_3",
+            "animations/Stand/Emotions/Positive/Happy_4",
+            "animations/Stand/Gestures/Enthusiastic_4",
+            "animations/Stand/Gestures/Enthusiastic_5",
+        ]
+    },
 }
 
 # Flattened list for backward compatibility if needed, or we can just use the helper

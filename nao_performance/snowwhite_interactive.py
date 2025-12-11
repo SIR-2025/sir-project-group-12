@@ -87,38 +87,38 @@ class SnowWhiteInteractive(SICApplication):
     """
 
     OPENING_SCRIPT = [
-        # {
-        #     "text": "\\style=neutral\\ Hello \\pau=200\\ my name is \\emph=1\\ Nao \\eos=1\\",
-        #     "gesture": "animations/Stand/Gestures/Hey_5"  # Wave
-        # },
-        # {
-        #     "text": "\\style=neutral\\ Today I will be telling a well-known fairy-tale story; \\pau=400\\ \\emph=1\\ Snowwhite \\eos=1\\",
-        #     "gesture": "animations/Stand/Gestures/Me_7"  # Automic/Resting
-        # },
-        # {
-        #     "text": "\\style=neutral\\ We all know this childhood story, \\bound=W\\ but today we will tell it with a \\pau=200\\ \\emph=1\\ twist. \\eos=1\\",
-        #     "gesture": "animations/Stand/Gestures/YouKnowWhat_5"  # Automic/Resting
-        # },
-        # {
-        #     "text": "\\style=didactic\\ You guys will be helping me. \\eos=1\\",
-        #     "gesture": "animations/Stand/Gestures/You_3"  # Pointing
-        # },
-        # {
-        #     "text": "\\style=didactic\\ You will do so by giving me words to fill in the story. \\eos=1\\",
-        #     "gesture": "animations/Stand/Gestures/Joy_1"  # Explaining
-        # },
-        # {
-        #     "text": "\\style=neutral\\ I will ask certain question for \\emph=1\\ specific words \\eos=1\\",
-        #     "gesture": "animations/Stand/Gestures/Me_2"  # Pointing to self
-        # },
-        # {
-        #     "text": "\\style=neutral\\ and my \\emph=1\\ assistants \\bound=W\\ will come to you guys to say the answer. \\eos=1\\",
-        #     "gesture": "animations/Stand/Gestures/Thinking_2"  # Pointing to us/audience
-        # },
-        # {
-        #     "text": "\\style=neutral\\ \\vct=95\\ I don't want to be the boring one, \\bound=S\\ but please keep the words \\emph=1\\ family-friendly, \\bound=W\\ as I am not allowed to use offensive words. \\eos=1\\",
-        #     "gesture": "animations/Stand/Gestures/Please_3"  # Excused stance / begging
-        # },
+        {
+            "text": "\\style=neutral\\ Hello \\pau=200\\ my name is \\emph=1\\ Nao \\eos=1\\",
+            "gesture": "animations/Stand/Gestures/Hey_5"  # Wave
+        },
+        {
+            "text": "\\style=neutral\\ Today I will be telling a well-known fairy-tale story; \\pau=400\\ \\emph=1\\ Snowwhite \\eos=1\\",
+            "gesture": "animations/Stand/Gestures/Me_7"  # Automic/Resting
+        },
+        {
+            "text": "\\style=neutral\\ We all know this childhood story, \\bound=W\\ but today we will tell it with a \\pau=200\\ \\emph=1\\ twist. \\eos=1\\",
+            "gesture": "animations/Stand/Gestures/YouKnowWhat_5"  # Automic/Resting
+        },
+        {
+            "text": "\\style=didactic\\ You guys will be helping me. \\eos=1\\",
+            "gesture": "animations/Stand/Gestures/You_3"  # Pointing
+        },
+        {
+            "text": "\\style=didactic\\ You will do so by giving me words to fill in the story. \\eos=1\\",
+            "gesture": "animations/Stand/Gestures/Joy_1"  # Explaining
+        },
+        {
+            "text": "\\style=neutral\\ I will ask certain question for \\emph=1\\ specific words \\eos=1\\",
+            "gesture": "animations/Stand/Gestures/Me_2"  # Pointing to self
+        },
+        {
+            "text": "\\style=neutral\\ and my \\emph=1\\ assistants \\bound=W\\ will come to you guys to say the answer. \\eos=1\\",
+            "gesture": "animations/Stand/Gestures/Thinking_2"  # Pointing to us/audience
+        },
+        {
+            "text": "\\style=neutral\\ \\vct=95\\ I don't want to be the boring one, \\bound=S\\ but please keep the words \\emph=1\\ family-friendly, \\bound=W\\ as I am not allowed to use offensive words. \\eos=1\\",
+            "gesture": "animations/Stand/Gestures/Please_3"  # Excused stance / begging
+        },
         {
             "text": "\\style=neutral\\ \\vct=110\\ Now that everything is clear, \\pau=500\\ Lets begin: \\eos=1\\",
             "gesture": "animations/Stand/Gestures/Enthusiastic_3"  # Begin gesture
@@ -167,7 +167,13 @@ class SnowWhiteInteractive(SICApplication):
         # Update these with your specific Agent details if they differ
         self.agent_id = "5079e43a-fec2-441d-bf10-f23f292fbf15"
         self.location = "europe-west4"
-        self.flow_id = "c5eacb8c-2410-47b0-a51a-02c96c998c08" # Demo Cycle 1
+        # Define the sequence of flows to execute
+        self.flows = [
+            "c5eacb8c-2410-47b0-a51a-02c96c998c08", # Cycle 1
+            "35b11713-c8ba-4c88-968a-1acbd74a43a8", # Cycle 2
+            "511ba425-a19b-48fc-83ae-31b6cd3f7fdb", # Cycle 3
+            "d0fb63a8-bc82-4440-a7b0-2360c2a16723", # Cycle 4
+        ]
         
         self.session_id = str(uuid.uuid4())
         
@@ -446,39 +452,53 @@ class SnowWhiteInteractive(SICApplication):
     def run(self):
         """Main Loop."""
         try:
-            # 1. Start Flow - Perform Opening Script First
+            # 1. Start - Perform Opening Script ONCE
             self.perform_script(self.OPENING_SCRIPT, name="Opening")
 
-            self.logger.info(f"Starting Dialogflow Flow {self.flow_id}...")
-            response = self.dialogflow_client.execute_flow(self.flow_id, self.session_id)
-            parsed = self.dialogflow_client.parse_response(response)
-            
-            # Allow robot to speak initial greeting from Dialogflow
-            self.process_turn_response(parsed)
-
-            # 2. Loop
-            while not self.shutdown_event.is_set():
-                # Listen
-                user_text = self.get_user_input()
-                if not user_text:
-                    continue
-                
-                if user_text.lower() in ["quit", "exit", "stop"]:
-                    self.nao_say("Goodbye!")
+            # 2. Iterate through each Flow in sequence
+            for i, flow_id in enumerate(self.flows):
+                if self.shutdown_event.is_set():
                     break
+                    
+                self.logger.info(f"--- Starting Flow Cycle {i+1}/{len(self.flows)}: {flow_id} ---")
                 
-                # Send to Dialogflow
-                resp = self.dialogflow_client.detect_intent_text(user_text, self.session_id)
-                parsed = self.dialogflow_client.parse_response(resp)
+                # Start the specific flow
+                response = self.dialogflow_client.execute_flow(flow_id, self.session_id)
+                parsed = self.dialogflow_client.parse_response(response)
                 
+                # Speak initial greeting for this flow
                 self.process_turn_response(parsed)
-                
-                if parsed['end_interaction']:
-                    self.logger.info("End of interaction.")
-                    break
-            
-            # 3. Perform Closing Script at the end
-            self.perform_script(self.CLOSING_SCRIPT, name="Closing")
+
+                # Interaction Loop for this Flow
+                flow_active = True
+                while flow_active and not self.shutdown_event.is_set():
+                    # Listen
+                    user_text = self.get_user_input()
+                    if not user_text:
+                        continue
+                    
+                    if user_text.lower() in ["quit", "exit", "stop"]:
+                        self.nao_say("Goodbye!")
+                        self.shutdown_event.set() # Stop everything
+                        break
+                    
+                    # Send to Dialogflow
+                    resp = self.dialogflow_client.detect_intent_text(user_text, self.session_id)
+                    parsed = self.dialogflow_client.parse_response(resp)
+                    
+                    self.process_turn_response(parsed)
+                    
+                    if parsed['end_interaction']:
+                        self.logger.info(f"End of Flow Cycle {i+1}.")
+                        flow_active = False # Break inner loop, proceed to next flow
+                        
+                        # Small pause before next flow
+                        time.sleep(2.0)
+                        break
+
+            # 3. Perform Closing Script at the very end
+            if not self.shutdown_event.is_set():
+                self.perform_script(self.CLOSING_SCRIPT, name="Closing")
                     
         except KeyboardInterrupt:
             self.logger.info("Interrupted.")
@@ -495,12 +515,16 @@ class SnowWhiteInteractive(SICApplication):
         # 1. Check for Payloads (Story Mode)
         story_text = self.handle_payloads(parsed['payload_messages'])
         
+        # Log Generative Info if present
+        if parsed.get('generative_info'):
+            self.logger.info(f"Generative Info received: {parsed['generative_info']}")
+
         # 2. FALLBACK: Check for Text Payload (if Dialogflow config is missing Custom Payload)
         # If no payload commands found, check if the text response itself looks like the story.
         if not story_text:
             all_text = " ".join(parsed['fulfillment_messages'])
             # Trigger if we see specific story keywords
-            if "Once upon a time" in all_text or "Generating Story" in all_text:
+            if "Once upon a time" in all_text or "Generating Story" in all_text or "The huntsman" in all_text:
                  self.logger.info("Text Keyword Detected! Treating response as Story.")
                  story_text = all_text
 

@@ -141,7 +141,8 @@ class DialogflowCXDirectClient:
             "current_flow_name": query_result.get("currentFlow", {}).get("displayName", ""),
             "current_flow_path": query_result.get("currentFlow", {}).get("name", ""),
             "response_id": response.get("responseId", ""),
-            "end_interaction": False
+            "end_interaction": False,
+            "generative_info": query_result.get("generativeInfo", response.get("generativeInfo", {})) # Check both locations
         }
         
         # Extract intent information
@@ -337,6 +338,10 @@ def display_response(parsed):
     
     if parsed['end_interaction']:
         print("\n  [END OF INTERACTION]")
+
+    if parsed.get('generative_info'):
+        print(f"\n  GENERATIVE INFO:")
+        print(f"    {json.dumps(parsed['generative_info'], indent=2)}")
     
     print("-" * 70)
 
@@ -361,8 +366,9 @@ def main():
     FLOWS = {
         "demo_cycle_1": "c5eacb8c-2410-47b0-a51a-02c96c998c08",
         "demo_cycle_2": "35b11713-c8ba-4c88-968a-1acbd74a43a8",
+        "demo_cycle_3": "511ba425-a19b-48fc-83ae-31b6cd3f7fdb",
+        "demo_cycle_4": "d0fb63a8-bc82-4440-a7b0-2360c2a16723",
         # Add more flows here as needed
-        # "your_flow_name": "your-flow-id-here",
     }
     
     # Select which flow to execute
