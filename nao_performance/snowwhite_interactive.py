@@ -70,12 +70,11 @@ except ImportError:
 try:
     from tts_client import generate_audio
     from animations import get_best_animation
-    from music_player import MusicPlayer
     from leds import NaoLEDS
 except ImportError:
     from .tts_client import generate_audio
     from .animations import get_best_animation
-    from .music_player import MusicPlayer
+    from .leds import NaoLEDS
     from .leds import NaoLEDS
 
 
@@ -182,16 +181,12 @@ class SnowWhiteInteractive(SICApplication):
         self.dialogflow_client = None
         self.speech_to_text = None
         self.emotions = None
-        self.music_player = MusicPlayer()
         
         # Performance/Audio Queue (Producer-Consumer)
         self.audio_queue = queue.Queue()
         self.current_proc_thread = None
         
-        # Music cues map
-        self.music_cues = {
-            0: "music/intro.wav",
-        }
+ 
 
         self.set_log_level(sic_logging.INFO)
         self.setup()
