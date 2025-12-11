@@ -4,12 +4,7 @@
   "transitionRoutes": [ {
     "condition": "true",
     "triggerFulfillment": {
-      "messages": [ {
-        "text": {
-          "text": [ "Let's continue!" ]
-        },
-        "languageCode": "en"
-      } ]
+    
     },
     "targetPage": "01_Get_thrash",
     "name": "7bbfe902-a64d-42b9-a192-c602eb6d5e62"

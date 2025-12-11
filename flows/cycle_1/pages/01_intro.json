@@ -5,12 +5,7 @@
   
   },
   "entryFulfillment": {
-    "messages": [ {
-      "text": {
-        "text": [ "Hello all! I have accessed File 001. This file contains a story about mirrors, poison, and sleeping. However, the data is severely damaged. I need you to provide new variables to make the story work again. Please wait for the microphone before speaking. I will need 4 words for this chapter. Let us begin." ]
-      },
-      "languageCode": "en"
-    } ]
+  
   },
   "transitionRoutes": [ {
     "condition": "true",

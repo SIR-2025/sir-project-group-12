@@ -28,5 +28,13 @@
       } ],
       "outputParameter": "$request.generative.text"
     } ]
-  }
+  },
+  "transitionRoutes": [ {
+    "condition": "true",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "End Flow",
+    "name": "1b5e5263-b3c5-46b7-b59b-04468da13ef2"
+  } ]
 }
