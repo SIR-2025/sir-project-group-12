@@ -1,6 +1,62 @@
 {
   "trainingPhrases": [ {
     "parts": [ {
+      "text": "In-N-Out Burger",
+      "parameterId": "fastfoodRestaurant"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Five Guys",
+      "parameterId": "fastfoodRestaurant"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Whataburger",
+      "parameterId": "fastfoodRestaurant"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Chick-fil-A",
+      "parameterId": "fastfoodRestaurant"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Arby's",
+      "parameterId": "fastfoodRestaurant"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Popeyes",
+      "parameterId": "fastfoodRestaurant"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Dairy Queen",
+      "parameterId": "fastfoodRestaurant"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Little Caesars",
+      "parameterId": "fastfoodRestaurant"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
       "text": "Pizza Hut",
       "parameterId": "fastfoodRestaurant"
     } ],

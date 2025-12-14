@@ -1,6 +1,83 @@
 {
   "trainingPhrases": [ {
     "parts": [ {
+      "text": "Margot Robbie",
+      "parameterId": "celebrity"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Chris Hemsworth",
+      "parameterId": "celebrity"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Robert Downey Jr.",
+      "parameterId": "celebrity"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Zendaya",
+      "parameterId": "celebrity"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Will Smith",
+      "parameterId": "celebrity"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Chris Pratt",
+      "parameterId": "celebrity"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Scarlett Johansson",
+      "parameterId": "celebrity"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Leonardo DiCaprio",
+      "parameterId": "celebrity"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Dwayne Johnson",
+      "parameterId": "celebrity"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Tom Cruise",
+      "parameterId": "celebrity"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Taylor Swift",
+      "parameterId": "celebrity"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
       "text": "Selena Gomez",
       "parameterId": "celebrity"
     } ],

@@ -6,5 +6,5 @@
     "entityType": "@fruits"
   } ],
   "priority": 500000,
-  "numTrainingPhrases": 6
+  "numTrainingPhrases": 20
 }

@@ -1,6 +1,62 @@
 {
   "trainingPhrases": [ {
     "parts": [ {
+      "text": "expensive",
+      "parameterId": "adjective"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "slow",
+      "parameterId": "adjective"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "fast",
+      "parameterId": "adjective"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "clumsy",
+      "parameterId": "adjective"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "graceful",
+      "parameterId": "adjective"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "silly",
+      "parameterId": "adjective"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "horrible",
+      "parameterId": "adjective"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "fantastic",
+      "parameterId": "adjective"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
       "text": "amazing",
       "parameterId": "adjective"
     } ],

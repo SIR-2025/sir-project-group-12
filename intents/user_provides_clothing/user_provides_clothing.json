@@ -6,5 +6,5 @@
     "entityType": "@clothing"
   } ],
   "priority": 500000,
-  "numTrainingPhrases": 11
+  "numTrainingPhrases": 20
 }

@@ -1,6 +1,27 @@
 {
   "trainingPhrases": [ {
     "parts": [ {
+      "text": "Glass cleaner",
+      "parameterId": "cleaningProduct"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Toilet bowl cleaner",
+      "parameterId": "cleaningProduct"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Degreaser",
+      "parameterId": "cleaningProduct"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
       "text": "dish soap",
       "parameterId": "cleaningProduct"
     } ],

@@ -1,6 +1,132 @@
 {
   "trainingPhrases": [ {
     "parts": [ {
+      "text": "I want a "
+    }, {
+      "text": "pomegranate",
+      "parameterId": "fruit"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "I am going to choose a "
+    }, {
+      "text": "tangerine",
+      "parameterId": "fruit"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "I select a "
+    }, {
+      "text": "lime",
+      "parameterId": "fruit"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "My selection is a "
+    }, {
+      "text": "lemon",
+      "parameterId": "fruit"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "I will choose a "
+    }, {
+      "text": "pear",
+      "parameterId": "fruit"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "I pick a "
+    }, {
+      "text": "peach",
+      "parameterId": "fruit"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "I like "
+    }, {
+      "text": "plum",
+      "parameterId": "fruit"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "I pick a "
+    }, {
+      "text": "coconut",
+      "parameterId": "fruit"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "I want a "
+    }, {
+      "text": "raspberry",
+      "parameterId": "fruit"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "I'd like a "
+    }, {
+      "text": "kiwi",
+      "parameterId": "fruit"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "My favorite is "
+    }, {
+      "text": "cherry",
+      "parameterId": "fruit"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "I want a "
+    }, {
+      "text": "watermelon",
+      "parameterId": "fruit"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "My choice is a "
+    }, {
+      "text": "pineapple",
+      "parameterId": "fruit"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "I would like an "
+    }, {
+      "text": "orange",
+      "parameterId": "fruit"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
       "text": "blueberry",
       "parameterId": "fruit"
     } ],

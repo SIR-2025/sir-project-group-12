@@ -6,5 +6,5 @@
     "entityType": "@celebrities"
   } ],
   "priority": 500000,
-  "numTrainingPhrases": 9
+  "numTrainingPhrases": 20
 }

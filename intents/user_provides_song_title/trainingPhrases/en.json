@@ -1,6 +1,76 @@
 {
   "trainingPhrases": [ {
     "parts": [ {
+      "text": "Hallelujah",
+      "parameterId": "songTitle"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Livin' on a Prayer",
+      "parameterId": "songTitle"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Free Bird",
+      "parameterId": "songTitle"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Wonderwall",
+      "parameterId": "songTitle"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "All Along the Watchtower",
+      "parameterId": "songTitle"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Purple Haze",
+      "parameterId": "songTitle"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Billie Jean",
+      "parameterId": "songTitle"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Hotel California",
+      "parameterId": "songTitle"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Let it Be",
+      "parameterId": "songTitle"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Hello",
+      "parameterId": "songTitle"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
       "text": "Hey Jude",
       "parameterId": "songTitle"
     } ],

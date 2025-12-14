@@ -6,5 +6,5 @@
     "entityType": "@transparentMaterials"
   } ],
   "priority": 500000,
-  "numTrainingPhrases": 10
+  "numTrainingPhrases": 20
 }

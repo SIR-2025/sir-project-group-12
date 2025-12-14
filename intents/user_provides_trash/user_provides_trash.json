@@ -6,5 +6,5 @@
     "entityType": "@trashTypes"
   } ],
   "priority": 500000,
-  "numTrainingPhrases": 9
+  "numTrainingPhrases": 20
 }

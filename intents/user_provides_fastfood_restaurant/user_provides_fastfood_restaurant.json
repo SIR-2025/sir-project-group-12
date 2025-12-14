@@ -6,5 +6,5 @@
     "entityType": "@fastFoodRestaurants"
   } ],
   "priority": 500000,
-  "numTrainingPhrases": 8
+  "numTrainingPhrases": 16
 }

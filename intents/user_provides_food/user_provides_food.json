@@ -6,5 +6,5 @@
     "entityType": "@grossFoods"
   } ],
   "priority": 500000,
-  "numTrainingPhrases": 7
+  "numTrainingPhrases": 13
 }

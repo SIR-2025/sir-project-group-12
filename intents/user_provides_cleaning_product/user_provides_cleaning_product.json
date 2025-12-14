@@ -6,5 +6,5 @@
     "entityType": "@cleaningProducts"
   } ],
   "priority": 500000,
-  "numTrainingPhrases": 9
+  "numTrainingPhrases": 12
 }
