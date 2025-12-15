@@ -205,12 +205,8 @@ class SnowWhiteInteractive(SICApplication):
         # 1. Initialize NAO & LEDs
         self.nao = Nao(ip=self.nao_ip)
         self.emotions = NaoLEDS(self.nao)
-<<<<<<< HEAD
-
-=======
         self.desktop = Desktop(mic_conf=MicrophoneConf(device_index=2))
         
->>>>>>> feature/led-emotion-demo
         # 2. Autonomous Life & Awareness (Face Tracking)
         self.logger.info("Setting up Autonomous Life...")
         self.nao.autonomous.request(NaoWakeUpRequest())
@@ -244,13 +240,7 @@ class SnowWhiteInteractive(SICApplication):
                 language="en-US",
                 interim_results=False,
             )
-<<<<<<< HEAD
-            self.speech_to_text = GoogleSpeechToText(
-                conf=stt_conf, input_source=self.nao.mic
-            )
-=======
             self.speech_to_text = GoogleSpeechToText(conf=stt_conf, input_source=self.desktop.mic)
->>>>>>> feature/led-emotion-demo
         except Exception as e:
             self.logger.error(f"Failed to init STT: {e}")
             raise
