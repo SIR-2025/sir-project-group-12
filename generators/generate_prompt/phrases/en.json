@@ -1,6 +1,0 @@
-{
-  "promptTexts": [ {
-    "text": "You are a storyteller robot. The story just started with: \"$_intro\".\nGenerate ONLY a 1-sentence question asking for the main character's name. Do not use any other text.",
-    "languageCode": "en"
-  } ]
-}
