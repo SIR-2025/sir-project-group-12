@@ -1,2 +1,0 @@
-lib
-sic_framework

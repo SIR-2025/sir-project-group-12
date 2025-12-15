@@ -34,4 +34,4 @@ conf/.env
 conf/google/*.json
 
 #Ignore virtual environment folder
-# .venv*/
+.venv*/
