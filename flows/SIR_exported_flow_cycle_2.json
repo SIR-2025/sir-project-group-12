@@ -1,0 +1,2306 @@
+{
+  "flow": {
+    "flow": {
+      "flowId": "35b11713-c8ba-4c88-968a-1acbd74a43a8",
+      "displayName": "cycle_2",
+      "transitionEvents": [ {
+        "condition": {
+          "restriction": {
+            "comparator": "GLOBAL",
+            "rhs": {
+              "value": "true"
+            }
+          }
+        },
+        "transitionEventHandler": {
+          "beforeTransition": {
+          
+          },
+          "targetPageId": "6c1981c7-da5c-4cd4-9317-67db8149b57f"
+        },
+        "name": "7bbfe902-a64d-42b9-a192-c602eb6d5e62",
+        "conditionString": "true"
+      } ],
+      "modelIdentifier": {
+        "modelId": "f6545a8b-9b82-426a-960b-4f2e0fec6fde"
+      },
+      "conversationEvents": [ {
+        "event": "sys.no-match-default",
+        "handler": {
+          "beforeTransition": {
+            "staticUserResponse": {
+              "candidates": [ {
+                "selector": {
+                  "platform": [ "PLATFORM_UNSPECIFIED" ],
+                  "lang": "en"
+                },
+                "responses": [ {
+                  "text": {
+                    "variants": [ {
+                      "text": "Let's continue!"
+                    } ]
+                  }
+                } ]
+              } ]
+            }
+          },
+          "targetPageId": "6c1981c7-da5c-4cd4-9317-67db8149b57f"
+        },
+        "name": "17dbbc85-0594-4bc4-a0b8-638c2322567f"
+      }, {
+        "event": "sys.no-input-default",
+        "handler": {
+          "beforeTransition": {
+            "staticUserResponse": {
+              "candidates": [ {
+                "selector": {
+                  "platform": [ "PLATFORM_UNSPECIFIED" ],
+                  "lang": "en"
+                },
+                "responses": [ {
+                  "text": {
+                    "variants": [ {
+                      "text": "Let's continue!"
+                    } ]
+                  }
+                } ]
+              } ]
+            }
+          },
+          "targetPageId": "6c1981c7-da5c-4cd4-9317-67db8149b57f"
+        },
+        "name": "9b0055a5-02f6-4c24-ba14-364fcdd48a26"
+      } ],
+      "nluSettings": {
+        "classificationThreshold": 0.30000001,
+        "modelType": "MODEL_TYPE_ADVANCED",
+        "customConfigKey": "78875d3b-489e-4bea-a911-0423cddc8cb8"
+      },
+      "etag": "693aa3b6",
+      "nluSettingsMapping": [ {
+        "key": "en",
+        "value": {
+          "classificationThreshold": 0.30000001,
+          "modelType": "MODEL_TYPE_ADVANCED",
+          "customConfigKey": "78875d3b-489e-4bea-a911-0423cddc8cb8",
+          "languageCode": "en"
+        }
+      } ]
+    },
+    "intents": [ {
+      "meta": {
+        "id": "a4e79093-537d-484c-8eee-beec501b0161",
+        "displayName": "user_provides_trash",
+        "priority": 500000,
+        "parameters": [ {
+          "id": "trash",
+          "displayName": "trash",
+          "value": "$trash",
+          "entityTypeDisplayName": "@trashTypes"
+        } ],
+        "etag": "693aa572"
+      },
+      "trainingPhrases": [ {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "cereal boxes",
+          "entityType": "@trashTypes",
+          "alias": "trash",
+          "userDefined": true
+        } ],
+        "timesAddedCount": 1,
+        "lang": "en"
+      }, {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "milk cartons",
+          "entityType": "@trashTypes",
+          "alias": "trash",
+          "userDefined": true
+        } ],
+        "timesAddedCount": 1,
+        "lang": "en"
+      }, {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "tin cans",
+          "entityType": "@trashTypes",
+          "alias": "trash",
+          "userDefined": true
+        } ],
+        "timesAddedCount": 1,
+        "lang": "en"
+      }, {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "garden waste",
+          "entityType": "@trashTypes",
+          "alias": "trash",
+          "userDefined": true
+        } ],
+        "timesAddedCount": 1,
+        "lang": "en"
+      }, {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "compostable materials",
+          "entityType": "@trashTypes",
+          "alias": "trash",
+          "userDefined": true
+        } ],
+        "timesAddedCount": 1,
+        "lang": "en"
+      }, {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "styrofoam",
+          "entityType": "@trashTypes",
+          "alias": "trash",
+          "userDefined": true
+        } ],
+        "timesAddedCount": 1,
+        "lang": "en"
+      }, {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "plastic containers",
+          "entityType": "@trashTypes",
+          "alias": "trash",
+          "userDefined": true
+        } ],
+        "timesAddedCount": 1,
+        "lang": "en"
+      }, {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "broken glass",
+          "userDefined": true
+        } ],
+        "timesAddedCount": 1,
+        "lang": "en"
+      }, {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "paper bags",
+          "entityType": "@trashTypes",
+          "alias": "trash",
+          "userDefined": true
+        } ],
+        "timesAddedCount": 1,
+        "lang": "en"
+      }, {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "yard waste",
+          "entityType": "@trashTypes",
+          "alias": "trash",
+          "userDefined": true
+        } ],
+        "timesAddedCount": 1,
+        "lang": "en"
+      }, {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "aluminum foil",
+          "entityType": "@trashTypes",
+          "alias": "trash",
+          "userDefined": true
+        } ],
+        "timesAddedCount": 1,
+        "lang": "en"
+      }, {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "glass bottles",
+          "entityType": "@trashTypes",
+          "alias": "trash",
+          "userDefined": true
+        } ],
+        "timesAddedCount": 1,
+        "lang": "en"
+      }, {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "newspapers and magazines",
+          "entityType": "@trashTypes",
+          "alias": "trash",
+          "userDefined": true
+        } ],
+        "timesAddedCount": 1,
+        "lang": "en"
+      }, {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "food scraps",
+          "entityType": "@trashTypes",
+          "alias": "trash",
+          "userDefined": true
+        } ],
+        "timesAddedCount": 1,
+        "lang": "en"
+      }, {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "cans and bottles",
+          "entityType": "@trashTypes",
+          "alias": "trash",
+          "userDefined": true
+        } ],
+        "timesAddedCount": 1,
+        "lang": "en"
+      }, {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "pizza boxes",
+          "entityType": "@trashTypes",
+          "alias": "trash",
+          "userDefined": true
+        } ],
+        "timesAddedCount": 1,
+        "lang": "en"
+      }, {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "cardboard boxes",
+          "entityType": "@trashTypes",
+          "alias": "trash",
+          "userDefined": true
+        } ],
+        "timesAddedCount": 1,
+        "lang": "en"
+      }, {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "plastic",
+          "entityType": "@trashTypes",
+          "alias": "trash",
+          "userDefined": true
+        } ],
+        "timesAddedCount": 1,
+        "lang": "en"
+      }, {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "cartons",
+          "entityType": "@trashTypes",
+          "alias": "trash",
+          "userDefined": true
+        } ],
+        "timesAddedCount": 1,
+        "lang": "en"
+      }, {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "bin bag",
+          "entityType": "@trashTypes",
+          "alias": "trash",
+          "userDefined": true
+        } ],
+        "timesAddedCount": 1,
+        "lang": "en"
+      } ]
+    }, {
+      "meta": {
+        "id": "cc43bbe2-348e-41d4-9228-10b0ea862ead",
+        "displayName": "user_provides_number",
+        "priority": 500000,
+        "parameters": [ {
+          "id": "number",
+          "displayName": "number",
+          "value": "$number",
+          "entityTypeDisplayName": "@sys.number"
+        } ],
+        "etag": "693f0c3e"
+      },
+      "trainingPhrases": [ {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "1000",
+          "entityType": "@sys.number",
+          "alias": "number"
+        } ],
+        "timesAddedCount": 1,
+        "lang": "en"
+      }, {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "10",
+          "entityType": "@sys.number",
+          "alias": "number"
+        } ],
+        "timesAddedCount": 1,
+        "lang": "en"
+      }, {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "a million",
+          "entityType": "@sys.number",
+          "alias": "number"
+        } ],
+        "timesAddedCount": 1,
+        "lang": "en"
+      }, {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "5",
+          "entityType": "@sys.number",
+          "alias": "number"
+        } ],
+        "timesAddedCount": 1,
+        "lang": "en"
+      }, {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "thousand",
+          "entityType": "@sys.number",
+          "alias": "number"
+        } ],
+        "timesAddedCount": 1,
+        "lang": "en"
+      }, {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "three",
+          "entityType": "@sys.number",
+          "alias": "number"
+        } ],
+        "timesAddedCount": 1,
+        "lang": "en"
+      }, {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "two",
+          "entityType": "@sys.number",
+          "alias": "number"
+        } ],
+        "timesAddedCount": 1,
+        "lang": "en"
+      }, {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "one",
+          "entityType": "@sys.number",
+          "alias": "number"
+        } ],
+        "timesAddedCount": 1,
+        "lang": "en"
+      } ]
+    }, {
+      "meta": {
+        "id": "9db06575-da73-437f-b131-63b5a6635442",
+        "displayName": "user_provides_job_title",
+        "priority": 500000,
+        "parameters": [ {
+          "id": "job_title",
+          "displayName": "job_title",
+          "value": "$job_title",
+          "entityTypeDisplayName": "@jobTitles"
+        } ],
+        "etag": "69380815"
+      },
+      "trainingPhrases": [ {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "Sales Representative",
+          "entityType": "@jobTitles",
+          "alias": "job_title",
+          "userDefined": true
+        } ],
+        "timesAddedCount": 1,
+        "lang": "en"
+      }, {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "Marketing Manager",
+          "entityType": "@jobTitles",
+          "alias": "job_title",
+          "userDefined": true
+        } ],
+        "timesAddedCount": 1,
+        "lang": "en"
+      }, {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "Data Scientist",
+          "entityType": "@jobTitles",
+          "alias": "job_title",
+          "userDefined": true
+        } ],
+        "timesAddedCount": 1,
+        "lang": "en"
+      }, {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "Project Manager",
+          "entityType": "@jobTitles",
+          "alias": "job_title",
+          "userDefined": true
+        } ],
+        "timesAddedCount": 1,
+        "lang": "en"
+      }, {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "Accountant",
+          "entityType": "@jobTitles",
+          "alias": "job_title",
+          "userDefined": true
+        } ],
+        "timesAddedCount": 1,
+        "lang": "en"
+      }, {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "Software Engineer",
+          "entityType": "@jobTitles",
+          "alias": "job_title",
+          "userDefined": true
+        } ],
+        "timesAddedCount": 1,
+        "lang": "en"
+      }, {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "nurse",
+          "entityType": "@jobTitles",
+          "alias": "job_title",
+          "userDefined": true
+        } ],
+        "timesAddedCount": 1,
+        "lang": "en"
+      }, {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "doctor",
+          "entityType": "@jobTitles",
+          "alias": "job_title",
+          "userDefined": true
+        } ],
+        "timesAddedCount": 1,
+        "lang": "en"
+      }, {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "teacher",
+          "entityType": "@jobTitles",
+          "alias": "job_title",
+          "userDefined": true
+        } ],
+        "timesAddedCount": 1,
+        "lang": "en"
+      }, {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "police officer",
+          "entityType": "@jobTitles",
+          "alias": "job_title",
+          "userDefined": true
+        } ],
+        "timesAddedCount": 1,
+        "lang": "en"
+      } ]
+    }, {
+      "meta": {
+        "id": "86cec668-3bd3-4dfb-be4f-1d519c6df0b7",
+        "displayName": "user_provides_tool",
+        "priority": 500000,
+        "parameters": [ {
+          "id": "tool",
+          "displayName": "tool",
+          "value": "$tool",
+          "entityTypeDisplayName": "@tools"
+        } ],
+        "etag": "693aa61f"
+      },
+      "trainingPhrases": [ {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "ratchet",
+          "entityType": "@tools",
+          "alias": "tool",
+          "userDefined": true
+        } ],
+        "timesAddedCount": 1,
+        "lang": "en"
+      }, {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "allen wrench",
+          "entityType": "@tools",
+          "alias": "tool",
+          "userDefined": true
+        } ],
+        "timesAddedCount": 1,
+        "lang": "en"
+      }, {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "paintbrush",
+          "entityType": "@tools",
+          "alias": "tool",
+          "userDefined": true
+        } ],
+        "timesAddedCount": 1,
+        "lang": "en"
+      }, {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "sandpaper",
+          "entityType": "@tools",
+          "alias": "tool",
+          "userDefined": true
+        } ],
+        "timesAddedCount": 1,
+        "lang": "en"
+      }, {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "chisel",
+          "entityType": "@tools",
+          "alias": "tool",
+          "userDefined": true
+        } ],
+        "timesAddedCount": 1,
+        "lang": "en"
+      }, {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "tape measure",
+          "entityType": "@tools",
+          "alias": "tool",
+          "userDefined": true
+        } ],
+        "timesAddedCount": 1,
+        "lang": "en"
+      }, {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "pliers",
+          "entityType": "@tools",
+          "alias": "tool",
+          "userDefined": true
+        } ],
+        "timesAddedCount": 1,
+        "lang": "en"
+      }, {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "mallet",
+          "entityType": "@tools",
+          "alias": "tool",
+          "userDefined": true
+        } ],
+        "timesAddedCount": 1,
+        "lang": "en"
+      }, {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "measuring tape",
+          "entityType": "@tools",
+          "alias": "tool",
+          "userDefined": true
+        } ],
+        "timesAddedCount": 1,
+        "lang": "en"
+      }, {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "socket wrench",
+          "entityType": "@tools",
+          "alias": "tool",
+          "userDefined": true
+        } ],
+        "timesAddedCount": 1,
+        "lang": "en"
+      }, {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "paint brush",
+          "entityType": "@tools",
+          "alias": "tool",
+          "userDefined": true
+        } ],
+        "timesAddedCount": 1,
+        "lang": "en"
+      }, {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "knife",
+          "entityType": "@tools",
+          "alias": "tool",
+          "userDefined": true
+        } ],
+        "timesAddedCount": 1,
+        "lang": "en"
+      }, {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "gloves",
+          "entityType": "@tools",
+          "alias": "tool",
+          "userDefined": true
+        } ],
+        "timesAddedCount": 1,
+        "lang": "en"
+      }, {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "ruler",
+          "entityType": "@tools",
+          "alias": "tool",
+          "userDefined": true
+        } ],
+        "timesAddedCount": 1,
+        "lang": "en"
+      }, {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "level",
+          "entityType": "@tools",
+          "alias": "tool",
+          "userDefined": true
+        } ],
+        "timesAddedCount": 1,
+        "lang": "en"
+      }, {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "drill",
+          "entityType": "@tools",
+          "alias": "tool",
+          "userDefined": true
+        } ],
+        "timesAddedCount": 1,
+        "lang": "en"
+      }, {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "wrench",
+          "entityType": "@tools",
+          "alias": "tool",
+          "userDefined": true
+        } ],
+        "timesAddedCount": 1,
+        "lang": "en"
+      }, {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "screwdriver",
+          "entityType": "@tools",
+          "alias": "tool",
+          "userDefined": true
+        } ],
+        "timesAddedCount": 1,
+        "lang": "en"
+      }, {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "saw",
+          "entityType": "@tools",
+          "alias": "tool",
+          "userDefined": true
+        } ],
+        "timesAddedCount": 1,
+        "lang": "en"
+      }, {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "hammer",
+          "entityType": "@tools",
+          "alias": "tool",
+          "userDefined": true
+        } ],
+        "timesAddedCount": 1,
+        "lang": "en"
+      } ]
+    }, {
+      "meta": {
+        "id": "f4f99e59-a9af-44fd-9f95-d0a8d8008547",
+        "displayName": "user_provides_celebrity",
+        "priority": 500000,
+        "parameters": [ {
+          "id": "celebrity",
+          "displayName": "celebrity",
+          "value": "$celebrity",
+          "entityTypeDisplayName": "@celebrities"
+        } ],
+        "etag": "693f0bdd"
+      },
+      "trainingPhrases": [ {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "Margot Robbie",
+          "entityType": "@celebrities",
+          "alias": "celebrity",
+          "userDefined": true
+        } ],
+        "timesAddedCount": 1,
+        "lang": "en"
+      }, {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "Chris Hemsworth",
+          "entityType": "@celebrities",
+          "alias": "celebrity",
+          "userDefined": true
+        } ],
+        "timesAddedCount": 1,
+        "lang": "en"
+      }, {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "Robert Downey Jr.",
+          "entityType": "@celebrities",
+          "alias": "celebrity",
+          "userDefined": true
+        } ],
+        "timesAddedCount": 1,
+        "lang": "en"
+      }, {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "Zendaya",
+          "entityType": "@celebrities",
+          "alias": "celebrity",
+          "userDefined": true
+        } ],
+        "timesAddedCount": 1,
+        "lang": "en"
+      }, {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "Will Smith",
+          "entityType": "@celebrities",
+          "alias": "celebrity",
+          "userDefined": true
+        } ],
+        "timesAddedCount": 1,
+        "lang": "en"
+      }, {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "Chris Pratt",
+          "entityType": "@celebrities",
+          "alias": "celebrity",
+          "userDefined": true
+        } ],
+        "timesAddedCount": 1,
+        "lang": "en"
+      }, {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "Scarlett Johansson",
+          "entityType": "@celebrities",
+          "alias": "celebrity",
+          "userDefined": true
+        } ],
+        "timesAddedCount": 1,
+        "lang": "en"
+      }, {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "Leonardo DiCaprio",
+          "entityType": "@celebrities",
+          "alias": "celebrity",
+          "userDefined": true
+        } ],
+        "timesAddedCount": 1,
+        "lang": "en"
+      }, {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "Dwayne Johnson",
+          "entityType": "@celebrities",
+          "alias": "celebrity",
+          "userDefined": true
+        } ],
+        "timesAddedCount": 1,
+        "lang": "en"
+      }, {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "Tom Cruise",
+          "entityType": "@celebrities",
+          "alias": "celebrity",
+          "userDefined": true
+        } ],
+        "timesAddedCount": 1,
+        "lang": "en"
+      }, {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "Taylor Swift",
+          "entityType": "@celebrities",
+          "alias": "celebrity",
+          "userDefined": true
+        } ],
+        "timesAddedCount": 1,
+        "lang": "en"
+      }, {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "Selena Gomez",
+          "entityType": "@celebrities",
+          "alias": "celebrity",
+          "userDefined": true
+        } ],
+        "timesAddedCount": 1,
+        "lang": "en"
+      }, {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "Ryan Reynolds",
+          "entityType": "@celebrities",
+          "alias": "celebrity",
+          "userDefined": true
+        } ],
+        "timesAddedCount": 1,
+        "lang": "en"
+      }, {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "Beyonce",
+          "entityType": "@celebrities",
+          "alias": "celebrity",
+          "userDefined": true
+        } ],
+        "timesAddedCount": 1,
+        "lang": "en"
+      }, {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "Lando Norris",
+          "entityType": "@celebrities",
+          "alias": "celebrity",
+          "userDefined": true
+        } ],
+        "timesAddedCount": 1,
+        "lang": "en"
+      }, {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "Angelina Jolie",
+          "entityType": "@celebrities",
+          "alias": "celebrity",
+          "userDefined": true
+        } ],
+        "timesAddedCount": 1,
+        "lang": "en"
+      }, {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "Brad Pitt",
+          "entityType": "@celebrities",
+          "alias": "celebrity",
+          "userDefined": true
+        } ],
+        "timesAddedCount": 1,
+        "lang": "en"
+      }, {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "Jennifer Aniston",
+          "entityType": "@celebrities",
+          "alias": "celebrity",
+          "userDefined": true
+        } ],
+        "timesAddedCount": 1,
+        "lang": "en"
+      }, {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "Miley Cyrus",
+          "entityType": "@celebrities",
+          "alias": "celebrity",
+          "userDefined": true
+        } ],
+        "timesAddedCount": 1,
+        "lang": "en"
+      }, {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "Tom Hanks",
+          "entityType": "@celebrities",
+          "alias": "celebrity",
+          "userDefined": true
+        } ],
+        "timesAddedCount": 1,
+        "lang": "en"
+      } ]
+    }, {
+      "meta": {
+        "id": "aa4c42e1-f734-4c74-a177-8dc8c7234249",
+        "displayName": "small_talk.confirmation.yes",
+        "priority": 500000
+      },
+      "trainingPhrases": [ {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "yup"
+        } ],
+        "timesAddedCount": 1,
+        "lang": "en"
+      }, {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "yes sure"
+        } ],
+        "timesAddedCount": 1,
+        "lang": "en"
+      }, {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "that is ok"
+        } ],
+        "timesAddedCount": 1,
+        "lang": "en"
+      }, {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "yes for sure"
+        } ],
+        "timesAddedCount": 1,
+        "lang": "en"
+      }, {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "yes I do"
+        } ],
+        "timesAddedCount": 1,
+        "lang": "en"
+      }, {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "yeah sure"
+        } ],
+        "timesAddedCount": 1,
+        "lang": "en"
+      }, {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "yes it is correct"
+        } ],
+        "timesAddedCount": 1,
+        "lang": "en"
+      }, {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "ok thank you"
+        } ],
+        "timesAddedCount": 1,
+        "lang": "en"
+      }, {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "sure why not"
+        } ],
+        "timesAddedCount": 1,
+        "lang": "en"
+      }, {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "of course why not"
+        } ],
+        "timesAddedCount": 1,
+        "lang": "en"
+      }, {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "yeah of course"
+        } ],
+        "timesAddedCount": 1,
+        "lang": "en"
+      }, {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "nevermind its okay"
+        } ],
+        "timesAddedCount": 1,
+        "lang": "en"
+      }, {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "of course"
+        } ],
+        "timesAddedCount": 1,
+        "lang": "en"
+      }, {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "yes this is correct"
+        } ],
+        "timesAddedCount": 1,
+        "lang": "en"
+      }, {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "ye"
+        } ],
+        "timesAddedCount": 1,
+        "lang": "en"
+      }, {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "yes of course"
+        } ],
+        "timesAddedCount": 1,
+        "lang": "en"
+      }, {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "ok you can"
+        } ],
+        "timesAddedCount": 1,
+        "lang": "en"
+      }, {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "confirmed"
+        } ],
+        "timesAddedCount": 1,
+        "lang": "en"
+      }, {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "definitely"
+        } ],
+        "timesAddedCount": 1,
+        "lang": "en"
+      }, {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "ok sure"
+        } ],
+        "timesAddedCount": 1,
+        "lang": "en"
+      }, {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "obviously"
+        } ],
+        "timesAddedCount": 1,
+        "lang": "en"
+      }, {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "yes it is"
+        } ],
+        "timesAddedCount": 1,
+        "lang": "en"
+      }, {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "oh yes"
+        } ],
+        "timesAddedCount": 1,
+        "lang": "en"
+      }, {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "ok"
+        } ],
+        "timesAddedCount": 1,
+        "lang": "en"
+      }, {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "certainly"
+        } ],
+        "timesAddedCount": 1,
+        "lang": "en"
+      }, {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "correct"
+        } ],
+        "timesAddedCount": 1,
+        "lang": "en"
+      }, {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "looks good"
+        } ],
+        "timesAddedCount": 1,
+        "lang": "en"
+      }, {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "go ahead"
+        } ],
+        "timesAddedCount": 1,
+        "lang": "en"
+      }, {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "yes correct"
+        } ],
+        "timesAddedCount": 1,
+        "lang": "en"
+      }, {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "yea"
+        } ],
+        "timesAddedCount": 1,
+        "lang": "en"
+      }, {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "okie dokie"
+        } ],
+        "timesAddedCount": 1,
+        "lang": "en"
+      }, {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "right"
+        } ],
+        "timesAddedCount": 1,
+        "lang": "en"
+      }, {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "yes indeed"
+        } ],
+        "timesAddedCount": 1,
+        "lang": "en"
+      }, {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "sounds good"
+        } ],
+        "timesAddedCount": 1,
+        "lang": "en"
+      }, {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "that's okay"
+        } ],
+        "timesAddedCount": 1,
+        "lang": "en"
+      }, {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "I don't mind"
+        } ],
+        "timesAddedCount": 1,
+        "lang": "en"
+      }, {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "yeah go ahead"
+        } ],
+        "timesAddedCount": 1,
+        "lang": "en"
+      }, {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "go for it"
+        } ],
+        "timesAddedCount": 1,
+        "lang": "en"
+      }, {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "yeah I'm sure"
+        } ],
+        "timesAddedCount": 1,
+        "lang": "en"
+      }, {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "yes right"
+        } ],
+        "timesAddedCount": 1,
+        "lang": "en"
+      }, {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "affirmative"
+        } ],
+        "timesAddedCount": 1,
+        "lang": "en"
+      }, {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "yes"
+        } ],
+        "timesAddedCount": 1,
+        "lang": "en"
+      }, {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "sure thing"
+        } ],
+        "timesAddedCount": 1,
+        "lang": "en"
+      }, {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "I do"
+        } ],
+        "timesAddedCount": 1,
+        "lang": "en"
+      }, {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "yeah right"
+        } ],
+        "timesAddedCount": 1,
+        "lang": "en"
+      }, {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "okay that's fine"
+        } ],
+        "timesAddedCount": 1,
+        "lang": "en"
+      }, {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "confirm"
+        } ],
+        "timesAddedCount": 1,
+        "lang": "en"
+      }, {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "yes I would like to"
+        } ],
+        "timesAddedCount": 1,
+        "lang": "en"
+      }, {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "sure is"
+        } ],
+        "timesAddedCount": 1,
+        "lang": "en"
+      }, {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "ok go ahead"
+        } ],
+        "timesAddedCount": 1,
+        "lang": "en"
+      }, {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "yes that's fine"
+        } ],
+        "timesAddedCount": 1,
+        "lang": "en"
+      }, {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "alrighty"
+        } ],
+        "timesAddedCount": 1,
+        "lang": "en"
+      }, {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "yes definitely"
+        } ],
+        "timesAddedCount": 1,
+        "lang": "en"
+      }, {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "why not"
+        } ],
+        "timesAddedCount": 1,
+        "lang": "en"
+      }, {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "yeh"
+        } ],
+        "timesAddedCount": 1,
+        "lang": "en"
+      }, {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "k"
+        } ],
+        "timesAddedCount": 1,
+        "lang": "en"
+      }, {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "okay then"
+        } ],
+        "timesAddedCount": 1,
+        "lang": "en"
+      }, {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "this is correct"
+        } ],
+        "timesAddedCount": 1,
+        "lang": "en"
+      }, {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "okay sounds good"
+        } ],
+        "timesAddedCount": 1,
+        "lang": "en"
+      }, {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "yap"
+        } ],
+        "timesAddedCount": 1,
+        "lang": "en"
+      }, {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "ok yes"
+        } ],
+        "timesAddedCount": 1,
+        "lang": "en"
+      }, {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "yeah exactly"
+        } ],
+        "timesAddedCount": 1,
+        "lang": "en"
+      }, {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "please do"
+        } ],
+        "timesAddedCount": 1,
+        "lang": "en"
+      }, {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "all right"
+        } ],
+        "timesAddedCount": 1,
+        "lang": "en"
+      }, {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "okay"
+        } ],
+        "timesAddedCount": 1,
+        "lang": "en"
+      }, {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "yeah that's right"
+        } ],
+        "timesAddedCount": 1,
+        "lang": "en"
+      }, {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "I think so"
+        } ],
+        "timesAddedCount": 1,
+        "lang": "en"
+      }, {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "yep"
+        } ],
+        "timesAddedCount": 1,
+        "lang": "en"
+      }, {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "ya"
+        } ],
+        "timesAddedCount": 1,
+        "lang": "en"
+      }, {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "I agree"
+        } ],
+        "timesAddedCount": 1,
+        "lang": "en"
+      }, {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "yes you may"
+        } ],
+        "timesAddedCount": 1,
+        "lang": "en"
+      }, {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "yes I agree"
+        } ],
+        "timesAddedCount": 1,
+        "lang": "en"
+      }, {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "yeah"
+        } ],
+        "timesAddedCount": 1,
+        "lang": "en"
+      }, {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "absolutely"
+        } ],
+        "timesAddedCount": 1,
+        "lang": "en"
+      }, {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "okey"
+        } ],
+        "timesAddedCount": 1,
+        "lang": "en"
+      }, {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "I guess"
+        } ],
+        "timesAddedCount": 1,
+        "lang": "en"
+      }, {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "exactly"
+        } ],
+        "timesAddedCount": 1,
+        "lang": "en"
+      }, {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "that's correct"
+        } ],
+        "timesAddedCount": 1,
+        "lang": "en"
+      }, {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "yes thank you"
+        } ],
+        "timesAddedCount": 1,
+        "lang": "en"
+      }, {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "sure"
+        } ],
+        "timesAddedCount": 1,
+        "lang": "en"
+      }, {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "do it"
+        } ],
+        "timesAddedCount": 1,
+        "lang": "en"
+      } ]
+    }, {
+      "meta": {
+        "id": "00000000-0000-0000-0000-000000000001",
+        "displayName": "Default Negative Intent",
+        "priority": 500000,
+        "isFallback": true
+      },
+      "trainingPhrases": [ {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "What's your zodiac sign?"
+        } ],
+        "timesAddedCount": 1,
+        "lang": "en"
+      }, {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "I'd like to order a ",
+          "userDefined": true
+        }, {
+          "text": "burger"
+        } ],
+        "timesAddedCount": 1,
+        "lang": "en"
+      }, {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "What is your gender?"
+        } ],
+        "timesAddedCount": 1,
+        "lang": "en"
+      }, {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "What's your favorite color?"
+        } ],
+        "timesAddedCount": 1,
+        "lang": "en"
+      } ]
+    } ],
+    "entities": [ {
+      "id": "c7855938-833b-4f1e-9794-174b65082159",
+      "displayName": "celebrities",
+      "kind": "KIND_MAP",
+      "entries": [ {
+        "value": "Lando Norris",
+        "synonyms": [ "F1 driver", "Formula 1 driver", "Lando Norris", "racing driver" ],
+        "lang": "en"
+      }, {
+        "value": "Miley Cyrus",
+        "synonyms": [ "Miley Cyrus", "musician", "singer", "songwriter" ],
+        "lang": "en"
+      }, {
+        "value": "Brad Pitt",
+        "synonyms": [ "actor", "Brad Pitt", "movie star", "William Bradley Pitt" ],
+        "lang": "en"
+      }, {
+        "value": "influencers",
+        "synonyms": [ "endorsers", "influencers", "marketers", "promoters" ],
+        "lang": "en"
+      }, {
+        "value": "sportswomen",
+        "synonyms": [ "athletes", "competitors", "players", "sportswomen" ],
+        "lang": "en"
+      }, {
+        "value": "sportsmen",
+        "synonyms": [ "athletes", "competitors", "players", "sportsmen" ],
+        "lang": "en"
+      }, {
+        "value": "presenters",
+        "synonyms": [ "announcers", "emcees", "hosts", "presenters" ],
+        "lang": "en"
+      }, {
+        "value": "singers",
+        "synonyms": [ "crooners", "musicians", "singers", "vocalists" ],
+        "lang": "en"
+      }, {
+        "value": "actors",
+        "synonyms": [ "actors", "artists", "performers", "thespians" ],
+        "lang": "en"
+      } ],
+      "nluSettings": {
+      
+      }
+    }, {
+      "id": "ea815e07-6c61-4c8d-8925-1ad71fa95dc2",
+      "displayName": "jobTitles",
+      "kind": "KIND_MAP",
+      "entries": [ {
+        "value": "doctors",
+        "synonyms": [ "doctors", "medical practitioners", "physicians" ],
+        "lang": "en"
+      }, {
+        "value": "emergency workers",
+        "synonyms": [ "emergency workers", "first responders", "paramedics" ],
+        "lang": "en"
+      }, {
+        "value": "teachers",
+        "synonyms": [ "educators", "instructors", "teachers" ],
+        "lang": "en"
+      }, {
+        "value": "engineers",
+        "synonyms": [ "engineering professionals", "engineers", "technical experts" ],
+        "lang": "en"
+      } ],
+      "nluSettings": {
+      
+      }
+    }, {
+      "id": "fe182614-5ccf-42dc-84c4-b2a71909acb6",
+      "displayName": "trashTypes",
+      "kind": "KIND_MAP",
+      "entries": [ {
+        "value": "glass containers",
+        "synonyms": [ "bottles", "glass containers", "glassware" ],
+        "lang": "en"
+      }, {
+        "value": "cardboards",
+        "synonyms": [ "cardboards", "paperboard", "pasteboard" ],
+        "lang": "en"
+      }, {
+        "value": "cartons",
+        "synonyms": [ "boxes", "cartons", "containers" ],
+        "lang": "en"
+      }, {
+        "value": "bags",
+        "synonyms": [ "bags", "pouches", "sacks" ],
+        "lang": "en"
+      }, {
+        "value": "materials",
+        "synonyms": [ "ingredients", "materials", "stuff" ],
+        "lang": "en"
+      } ],
+      "nluSettings": {
+      
+      }
+    }, {
+      "id": "38b4eb72-009a-4de2-a2bc-3bacc594da87",
+      "displayName": "tools",
+      "kind": "KIND_MAP",
+      "entries": [ {
+        "value": "painting tools",
+        "synonyms": [ "decorating tools", "paint supplies", "painter's implements", "painting tools" ],
+        "lang": "en"
+      }, {
+        "value": "ironwork tools",
+        "synonyms": [ "blacksmith tools", "ironwork tools", "metalworking tools", "smithy tools" ],
+        "lang": "en"
+      }, {
+        "value": "wood tools",
+        "synonyms": [ "carpentry tools", "lumber tools", "wood tools", "woodworking tools" ],
+        "lang": "en"
+      } ],
+      "nluSettings": {
+      
+      }
+    } ],
+    "pages": [ {
+      "key": "0d705a98-1536-45db-ba11-635b75ce14b2",
+      "value": {
+        "displayName": "03_Get_job_title",
+        "onLoad": {
+          "staticUserResponse": {
+            "candidates": [ {
+              "selector": {
+                "platform": [ "PLATFORM_UNSPECIFIED" ],
+                "lang": "en"
+              },
+              "responses": [ {
+                "text": {
+                  "variants": [ {
+                    "text": "Name a job title or profession."
+                  } ]
+                }
+              } ]
+            } ]
+          }
+        },
+        "transitionEvents": [ {
+          "triggerIntentId": "9db06575-da73-437f-b131-63b5a6635442",
+          "transitionEventHandler": {
+            "beforeTransition": {
+              "staticUserResponse": {
+                "candidates": [ {
+                  "selector": {
+                    "platform": [ "PLATFORM_UNSPECIFIED" ],
+                    "lang": "en"
+                  },
+                  "responses": [ {
+                    "text": {
+                      "variants": [ {
+                        "text": "Job title: $intent.params.job_title."
+                      } ]
+                    }
+                  } ]
+                } ]
+              },
+              "setParameterActions": [ {
+                "parameter": "word_7",
+                "value": "$intent.params.job_title"
+              } ]
+            },
+            "targetPageId": "eae0af8f-c04b-4dfa-a919-da76d994e24e"
+          },
+          "name": "1c95a02e-276a-45a2-b3ef-4e14b88197f3"
+        } ],
+        "conversationEvents": [ {
+          "event": "sys.no-input-default",
+          "handler": {
+            "beforeTransition": {
+              "staticUserResponse": {
+                "candidates": [ {
+                  "selector": {
+                    "platform": [ "PLATFORM_UNSPECIFIED" ],
+                    "lang": "en"
+                  },
+                  "responses": [ {
+                    "text": {
+                      "variants": [ {
+                        "text": "I couldn't hear what you were saying. Can you repeat?"
+                      } ]
+                    }
+                  } ]
+                } ]
+              }
+            },
+            "targetPageId": "0d705a98-1536-45db-ba11-635b75ce14b2"
+          },
+          "name": "f5c879bc-30c2-484a-b58c-0476a3941237"
+        }, {
+          "event": "sys.no-match-default",
+          "handler": {
+            "beforeTransition": {
+              "staticUserResponse": {
+                "candidates": [ {
+                  "selector": {
+                    "platform": [ "PLATFORM_UNSPECIFIED" ],
+                    "lang": "en"
+                  },
+                  "responses": [ {
+                    "text": {
+                      "variants": [ {
+                        "text": "That doesn't sound like a job, please provide a profession such as teacher or police officer."
+                      } ]
+                    }
+                  } ]
+                } ]
+              }
+            },
+            "targetPageId": "0d705a98-1536-45db-ba11-635b75ce14b2"
+          },
+          "name": "e2ff2ec3-b3f7-4034-b9f7-6e5a321c3d3e"
+        } ],
+        "etag": "693a93bd"
+      }
+    }, {
+      "key": "200c92da-82c6-4764-ac1f-2f2d86b1b8c8",
+      "value": {
+        "displayName": "06_Chapter2_story",
+        "onLoad": {
+          "staticUserResponse": {
+            "candidates": [ {
+              "selector": {
+                "platform": [ "PLATFORM_UNSPECIFIED" ],
+                "lang": "en"
+              },
+              "responses": [ {
+                "text": {
+                  "variants": [ {
+                    "text": "$request.generative.text"
+                  } ]
+                }
+              } ]
+            }, {
+              "selector": {
+                "platform": [ "PLATFORM_UNSPECIFIED" ],
+                "lang": "en"
+              },
+              "responses": [ {
+                "payload": {
+                  "robot_command": {
+                    "led": "green",
+                    "motion": "neutral",
+                    "text": "$request.generative.text"
+                  }
+                }
+              } ]
+            } ]
+          },
+          "generators": [ {
+            "generatorId": "f64be7b8-a106-44c0-980b-07e8202a6c8f",
+            "inputParameters": [ {
+              "key": "session",
+              "value": "$session.params"
+            } ],
+            "outputParameter": "$request.generative.text"
+          } ]
+        },
+        "transitionEvents": [ {
+          "condition": {
+            "restriction": {
+              "comparator": "GLOBAL",
+              "rhs": {
+                "value": "true"
+              }
+            }
+          },
+          "transitionEventHandler": {
+            "beforeTransition": {
+            
+            },
+            "targetFlowId": "511ba425-a19b-48fc-83ae-31b6cd3f7fdb"
+          },
+          "name": "7b0dbdf2-187c-4092-9d26-bcbe19b72118",
+          "conditionString": "true"
+        } ],
+        "etag": "693a9e32"
+      }
+    }, {
+      "key": "31ae8a51-4d7d-430b-9476-ee34b1335d9f",
+      "value": {
+        "displayName": "02_Get_number",
+        "onLoad": {
+          "staticUserResponse": {
+            "candidates": [ {
+              "selector": {
+                "platform": [ "PLATFORM_UNSPECIFIED" ],
+                "lang": "en"
+              },
+              "responses": [ {
+                "text": {
+                  "variants": [ {
+                    "text": "Great. Now, give me a number between 2 and 100."
+                  } ]
+                }
+              } ]
+            } ]
+          }
+        },
+        "transitionEvents": [ {
+          "triggerIntentId": "cc43bbe2-348e-41d4-9228-10b0ea862ead",
+          "transitionEventHandler": {
+            "beforeTransition": {
+              "staticUserResponse": {
+                "candidates": [ {
+                  "selector": {
+                    "platform": [ "PLATFORM_UNSPECIFIED" ],
+                    "lang": "en"
+                  },
+                  "responses": [ {
+                    "text": {
+                      "variants": [ {
+                        "text": "The number is $intent.params.number"
+                      } ]
+                    }
+                  } ]
+                } ]
+              },
+              "setParameterActions": [ {
+                "parameter": "word_6",
+                "value": "$intent.params.number"
+              } ]
+            },
+            "targetPageId": "0d705a98-1536-45db-ba11-635b75ce14b2"
+          },
+          "name": "5181c628-37aa-4168-a6c7-e91d02495ea4"
+        } ],
+        "conversationEvents": [ {
+          "event": "sys.no-match-default",
+          "handler": {
+            "beforeTransition": {
+              "staticUserResponse": {
+                "candidates": [ {
+                  "selector": {
+                    "platform": [ "PLATFORM_UNSPECIFIED" ],
+                    "lang": "en"
+                  },
+                  "responses": [ {
+                    "text": {
+                      "variants": [ {
+                        "text": "That does not sound like a number. Please provide a number between 2 and 100."
+                      } ]
+                    }
+                  } ]
+                } ]
+              }
+            },
+            "targetPageId": "31ae8a51-4d7d-430b-9476-ee34b1335d9f"
+          },
+          "name": "fa7f9872-3c42-4052-baa7-a35eca17b78b"
+        }, {
+          "event": "sys.no-input-default",
+          "handler": {
+            "beforeTransition": {
+              "staticUserResponse": {
+                "candidates": [ {
+                  "selector": {
+                    "platform": [ "PLATFORM_UNSPECIFIED" ],
+                    "lang": "en"
+                  },
+                  "responses": [ {
+                    "text": {
+                      "variants": [ {
+                        "text": "I missed it. What did you say?"
+                      } ]
+                    }
+                  } ]
+                } ]
+              }
+            },
+            "targetPageId": "31ae8a51-4d7d-430b-9476-ee34b1335d9f"
+          },
+          "name": "41ca3515-c850-4cd2-85fa-423fb6a4163b"
+        } ],
+        "etag": "693a9359"
+      }
+    }, {
+      "key": "573b9528-2bcd-4a06-bf91-5cfc6d5d9f99",
+      "value": {
+        "displayName": "05_Get_tool",
+        "onLoad": {
+          "staticUserResponse": {
+            "candidates": [ {
+              "selector": {
+                "platform": [ "PLATFORM_UNSPECIFIED" ],
+                "lang": "en"
+              },
+              "responses": [ {
+                "text": {
+                  "variants": [ {
+                    "text": "Now, name a tool."
+                  } ]
+                }
+              } ]
+            } ]
+          }
+        },
+        "transitionEvents": [ {
+          "triggerIntentId": "86cec668-3bd3-4dfb-be4f-1d519c6df0b7",
+          "transitionEventHandler": {
+            "beforeTransition": {
+              "setParameterActions": [ {
+                "parameter": "word_9",
+                "value": "$intent.params.tool"
+              } ]
+            },
+            "targetPageId": "d2846e67-6107-4c94-9a13-44ae08eafcf0"
+          },
+          "name": "b72719d4-4383-4ff1-8b4a-ba465affae19"
+        } ],
+        "conversationEvents": [ {
+          "event": "sys.no-input-default",
+          "handler": {
+            "beforeTransition": {
+              "staticUserResponse": {
+                "candidates": [ {
+                  "selector": {
+                    "platform": [ "PLATFORM_UNSPECIFIED" ],
+                    "lang": "en"
+                  },
+                  "responses": [ {
+                    "text": {
+                      "variants": [ {
+                        "text": "I didn't hear your response. Can you say it again?"
+                      } ]
+                    }
+                  } ]
+                } ]
+              }
+            },
+            "targetPageId": "573b9528-2bcd-4a06-bf91-5cfc6d5d9f99"
+          },
+          "name": "bc7ad4bf-7784-444e-be88-98f9ab4ff692"
+        }, {
+          "event": "sys.no-match-default",
+          "handler": {
+            "beforeTransition": {
+              "staticUserResponse": {
+                "candidates": [ {
+                  "selector": {
+                    "platform": [ "PLATFORM_UNSPECIFIED" ],
+                    "lang": "en"
+                  },
+                  "responses": [ {
+                    "text": {
+                      "variants": [ {
+                        "text": "This does not really sound like a tool. Please name a tool, like hammer or ruler."
+                      } ]
+                    }
+                  } ]
+                } ]
+              }
+            },
+            "targetPageId": "573b9528-2bcd-4a06-bf91-5cfc6d5d9f99"
+          },
+          "name": "5cf2d150-5631-4936-8966-68c91353dbc7"
+        } ],
+        "etag": "693a9fa2"
+      }
+    }, {
+      "key": "6c1981c7-da5c-4cd4-9317-67db8149b57f",
+      "value": {
+        "displayName": "01_Get_thrash",
+        "onLoad": {
+          "staticUserResponse": {
+            "candidates": [ {
+              "selector": {
+                "platform": [ "PLATFORM_UNSPECIFIED" ],
+                "lang": "en"
+              },
+              "responses": [ {
+                "text": {
+                  "variants": [ {
+                    "text": "Name a type of trash."
+                  } ]
+                }
+              } ]
+            } ]
+          }
+        },
+        "transitionEvents": [ {
+          "triggerIntentId": "a4e79093-537d-484c-8eee-beec501b0161",
+          "transitionEventHandler": {
+            "beforeTransition": {
+              "staticUserResponse": {
+                "candidates": [ {
+                  "selector": {
+                    "platform": [ "PLATFORM_UNSPECIFIED" ],
+                    "lang": "en"
+                  },
+                  "responses": [ {
+                    "text": {
+                      "variants": [ {
+                        "text": "Type of trash: $session.params.word_5"
+                      } ]
+                    }
+                  } ]
+                } ]
+              },
+              "setParameterActions": [ {
+                "parameter": "word_5",
+                "value": "$intent.params.trash"
+              } ]
+            },
+            "targetPageId": "31ae8a51-4d7d-430b-9476-ee34b1335d9f"
+          },
+          "name": "0fba16c4-1bb2-49b6-aa29-d45b7789dd18"
+        } ],
+        "conversationEvents": [ {
+          "event": "sys.no-match-default",
+          "handler": {
+            "beforeTransition": {
+              "staticUserResponse": {
+                "candidates": [ {
+                  "selector": {
+                    "platform": [ "PLATFORM_UNSPECIFIED" ],
+                    "lang": "en"
+                  },
+                  "responses": [ {
+                    "text": {
+                      "variants": [ {
+                        "text": "That doesn't sound like a type of trash. Please name something like a glass bottle or cardboard."
+                      } ]
+                    }
+                  } ]
+                } ]
+              }
+            },
+            "targetPageId": "6c1981c7-da5c-4cd4-9317-67db8149b57f"
+          },
+          "name": "2c6eefb2-0559-496c-85e1-588cbebcbb31"
+        }, {
+          "event": "sys.no-input-default",
+          "handler": {
+            "beforeTransition": {
+              "staticUserResponse": {
+                "candidates": [ {
+                  "selector": {
+                    "platform": [ "PLATFORM_UNSPECIFIED" ],
+                    "lang": "en"
+                  },
+                  "responses": [ {
+                    "text": {
+                      "variants": [ {
+                        "text": "Sorry, I didn't understand you. Can you repeat?"
+                      } ]
+                    }
+                  } ]
+                } ]
+              }
+            },
+            "targetPageId": "6c1981c7-da5c-4cd4-9317-67db8149b57f"
+          },
+          "name": "90f41db2-fbd9-41f9-8dc5-4ab01b51d51a"
+        } ],
+        "etag": "693a92bf"
+      }
+    }, {
+      "key": "d2846e67-6107-4c94-9a13-44ae08eafcf0",
+      "value": {
+        "displayName": "05b_Confirm_Ready",
+        "onLoad": {
+          "staticUserResponse": {
+            "candidates": [ {
+              "selector": {
+                "platform": [ "PLATFORM_UNSPECIFIED" ],
+                "lang": "en"
+              },
+              "responses": [ {
+                "text": {
+                  "variants": [ {
+                    "text": "Thank you for your input, are we ready for the second chapter?"
+                  } ]
+                }
+              } ]
+            } ]
+          }
+        },
+        "transitionEvents": [ {
+          "triggerIntentId": "aa4c42e1-f734-4c74-a177-8dc8c7234249",
+          "transitionEventHandler": {
+            "beforeTransition": {
+            
+            },
+            "targetPageId": "200c92da-82c6-4764-ac1f-2f2d86b1b8c8"
+          },
+          "name": "accd164c-eb05-46e4-aa5a-71f4f2ceef1d"
+        } ],
+        "conversationEvents": [ {
+          "event": "sys.no-input-default",
+          "handler": {
+            "beforeTransition": {
+              "staticUserResponse": {
+                "candidates": [ {
+                  "selector": {
+                    "platform": [ "PLATFORM_UNSPECIFIED" ],
+                    "lang": "en"
+                  },
+                  "responses": [ {
+                    "text": {
+                      "variants": [ {
+                        "text": "I didn't hear you. Are you ready?"
+                      } ]
+                    }
+                  } ]
+                } ]
+              }
+            },
+            "targetPageId": "d2846e67-6107-4c94-9a13-44ae08eafcf0"
+          },
+          "name": "e4b847f4-325c-460c-ad0c-4c943b69baea"
+        }, {
+          "event": "sys.no-match-default",
+          "handler": {
+            "beforeTransition": {
+              "staticUserResponse": {
+                "candidates": [ {
+                  "selector": {
+                    "platform": [ "PLATFORM_UNSPECIFIED" ],
+                    "lang": "en"
+                  },
+                  "responses": [ {
+                    "text": {
+                      "variants": [ {
+                        "text": "Please confirm that you are ready for the story by replying yes!"
+                      } ]
+                    }
+                  } ]
+                } ]
+              }
+            },
+            "targetPageId": "d2846e67-6107-4c94-9a13-44ae08eafcf0"
+          },
+          "name": "19fd87b3-e149-4dfe-86ce-e75c3809d2e0"
+        } ],
+        "etag": "693aa0ec"
+      }
+    }, {
+      "key": "eae0af8f-c04b-4dfa-a919-da76d994e24e",
+      "value": {
+        "displayName": "04_Get_celebrity",
+        "onLoad": {
+          "staticUserResponse": {
+            "candidates": [ {
+              "selector": {
+                "platform": [ "PLATFORM_UNSPECIFIED" ],
+                "lang": "en"
+              },
+              "responses": [ {
+                "text": {
+                  "variants": [ {
+                    "text": "Name a celebrity."
+                  } ]
+                }
+              } ]
+            } ]
+          }
+        },
+        "transitionEvents": [ {
+          "triggerIntentId": "f4f99e59-a9af-44fd-9f95-d0a8d8008547",
+          "transitionEventHandler": {
+            "beforeTransition": {
+              "staticUserResponse": {
+                "candidates": [ {
+                  "selector": {
+                    "platform": [ "PLATFORM_UNSPECIFIED" ],
+                    "lang": "en"
+                  },
+                  "responses": [ {
+                    "text": {
+                      "variants": [ {
+                        "text": "The celebrity is $intent.params.celebrity, interesting!"
+                      } ]
+                    }
+                  } ]
+                } ]
+              },
+              "setParameterActions": [ {
+                "parameter": "word_8",
+                "value": "$intent.params.celebrity"
+              } ]
+            },
+            "targetPageId": "573b9528-2bcd-4a06-bf91-5cfc6d5d9f99"
+          },
+          "name": "6a71bca4-629b-41b9-8c0d-0a0fda3f6c81"
+        } ],
+        "conversationEvents": [ {
+          "event": "sys.no-input-default",
+          "handler": {
+            "beforeTransition": {
+              "staticUserResponse": {
+                "candidates": [ {
+                  "selector": {
+                    "platform": [ "PLATFORM_UNSPECIFIED" ],
+                    "lang": "en"
+                  },
+                  "responses": [ {
+                    "text": {
+                      "variants": [ {
+                        "text": "I didn't hear what you said, can you repeat?"
+                      } ]
+                    }
+                  } ]
+                } ]
+              }
+            },
+            "targetPageId": "eae0af8f-c04b-4dfa-a919-da76d994e24e"
+          },
+          "name": "2fa43f63-d871-42d7-92e4-8a824ad2ca83"
+        }, {
+          "event": "sys.no-match-default",
+          "handler": {
+            "beforeTransition": {
+              "staticUserResponse": {
+                "candidates": [ {
+                  "selector": {
+                    "platform": [ "PLATFORM_UNSPECIFIED" ],
+                    "lang": "en"
+                  },
+                  "responses": [ {
+                    "text": {
+                      "variants": [ {
+                        "text": "I don't know this celebrity. Please name someone like Beyonce or Tom Hanks."
+                      } ]
+                    }
+                  } ]
+                } ]
+              }
+            },
+            "targetPageId": "eae0af8f-c04b-4dfa-a919-da76d994e24e"
+          },
+          "name": "bdbccbd4-fdc2-434e-b08d-ad690b19b152"
+        } ],
+        "etag": "693a9410"
+      }
+    } ],
+    "generators": [ {
+      "key": "f64be7b8-a106-44c0-980b-07e8202a6c8f",
+      "value": {
+        "id": "f64be7b8-a106-44c0-980b-07e8202a6c8f",
+        "displayName": "correct_story_second_chapter",
+        "phrases": [ {
+          "text": "You are a Mad Libs game engine. \nInput: A story template with user-provided words.\nTask: Output the story with the user's words inserted.\nCRITICAL RULES:\n1. Semantic nonsense is required. Do NOT change the user's words.\n2. Fix ONLY grammar:\n   - Pluralize \"Trash\": When inserting $session.params.word_5 after \"piles of...\", ensure it is pluralized if it is a countable object (e.g., \"piles of bottles\" not \"piles of bottle\"). Leave mass nouns (like \"dirt\") alone.\n   - Number Agreement: If $session.params.word_6 is greater than 1, ensure $session.params.word_7 is plural (e.g., \"100 doctors\").\n3. Do not add intro text. Just the story.\n\nContext Variables:\n- Trash: $session.params.word_5\n- Number: $session.params.word_6\n- Job Title: $session.params.word_7\n- Celebrity: $session.params.word_8\n- Tool: $session.params.word_9\n\nStory:\nThe huntsman led Snow White into the forest. Snow White ran away and found a tiny cottage. The floor was covered in piles of $session.params.word_5. The owners came home. It wasn't 7 Dwarfs. It was $session.params.word_6 tiny $session.params.word_7! Their leader, named $session.params.word_8, stepped forward. He was holding a giant $session.params.word_9. He said: 'You may stay, but don't touch our stuff.' Snow White was very happy that she could stay and thanked $session.params.word_8. That evening the cottage was filled with music and laughter. The tiny $session.params.word_7 sang all night while $session.params.word_8 and Snow White were dancing.",
+          "languageCode": "en"
+        } ],
+        "placeholders": [ {
+          "id": "session",
+          "name": "session"
+        } ],
+        "etag": "693aad51",
+        "modelParameter": {
+          "temperature": 0.5,
+          "maxDecodeSteps": 128,
+          "topP": 0.94999999,
+          "topK": 40
+        },
+        "llmModelSettings": {
+          "model": "gemini-2.5-flash"
+        }
+      }
+    } ]
+  }
+}

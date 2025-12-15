@@ -1,0 +1,2309 @@
+{
+  "flow": {
+    "flow": {
+      "flowId": "511ba425-a19b-48fc-83ae-31b6cd3f7fdb",
+      "displayName": "cycle_3",
+      "transitionEvents": [ {
+        "condition": {
+          "restriction": {
+            "comparator": "GLOBAL",
+            "rhs": {
+              "value": "true"
+            }
+          }
+        },
+        "transitionEventHandler": {
+          "beforeTransition": {
+          
+          },
+          "targetPageId": "b82288b0-07aa-4bc1-b231-0a03de5ca779"
+        },
+        "name": "bb7628bf-aa15-4406-bdab-3dd33c7d8cd2",
+        "conditionString": "true"
+      } ],
+      "modelIdentifier": {
+        "modelId": "11fbd6ef-86fb-409d-a7ea-2d73d8e3217f"
+      },
+      "conversationEvents": [ {
+        "event": "sys.no-match-default",
+        "handler": {
+          "beforeTransition": {
+            "staticUserResponse": {
+              "candidates": [ {
+                "selector": {
+                  "platform": [ "PLATFORM_UNSPECIFIED" ],
+                  "lang": "en"
+                },
+                "responses": [ {
+                  "text": {
+                    "variants": [ {
+                      "text": "Here we go again!"
+                    } ]
+                  }
+                } ]
+              } ]
+            }
+          },
+          "targetPageId": "b82288b0-07aa-4bc1-b231-0a03de5ca779"
+        },
+        "name": "0caf1480-dabd-4c30-8191-0a142b6a5fb7"
+      }, {
+        "event": "sys.no-input-default",
+        "handler": {
+          "beforeTransition": {
+            "staticUserResponse": {
+              "candidates": [ {
+                "selector": {
+                  "platform": [ "PLATFORM_UNSPECIFIED" ],
+                  "lang": "en"
+                },
+                "responses": [ {
+                  "text": {
+                    "variants": [ {
+                      "text": "Here we go again!"
+                    } ]
+                  }
+                } ]
+              } ]
+            }
+          },
+          "targetPageId": "b82288b0-07aa-4bc1-b231-0a03de5ca779"
+        },
+        "name": "e1ee8cfd-cd28-4f74-86a0-88fa1bbaad07"
+      } ],
+      "nluSettings": {
+        "classificationThreshold": 0.30000001,
+        "modelType": "MODEL_TYPE_ADVANCED",
+        "customConfigKey": "e8cfff78-6c84-4ce2-990e-7b58f0618be5"
+      },
+      "etag": "69386a7b",
+      "nluSettingsMapping": [ {
+        "key": "en",
+        "value": {
+          "classificationThreshold": 0.30000001,
+          "modelType": "MODEL_TYPE_ADVANCED",
+          "customConfigKey": "e8cfff78-6c84-4ce2-990e-7b58f0618be5",
+          "languageCode": "en"
+        }
+      } ]
+    },
+    "intents": [ {
+      "meta": {
+        "id": "842dd464-f844-4dd5-8780-2005def83f55",
+        "displayName": "user_provides_song_title",
+        "priority": 500000,
+        "parameters": [ {
+          "id": "songTitle",
+          "displayName": "songTitle",
+          "value": "$songTitle",
+          "entityTypeDisplayName": "@songTitles"
+        } ],
+        "etag": "693aa690"
+      },
+      "trainingPhrases": [ {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "Hallelujah",
+          "entityType": "@songTitles",
+          "alias": "songTitle",
+          "userDefined": true
+        } ],
+        "timesAddedCount": 1,
+        "lang": "en"
+      }, {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "Livin' on a Prayer",
+          "entityType": "@songTitles",
+          "alias": "songTitle",
+          "userDefined": true
+        } ],
+        "timesAddedCount": 1,
+        "lang": "en"
+      }, {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "Free Bird",
+          "entityType": "@songTitles",
+          "alias": "songTitle",
+          "userDefined": true
+        } ],
+        "timesAddedCount": 1,
+        "lang": "en"
+      }, {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "Wonderwall",
+          "entityType": "@songTitles",
+          "alias": "songTitle",
+          "userDefined": true
+        } ],
+        "timesAddedCount": 1,
+        "lang": "en"
+      }, {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "All Along the Watchtower",
+          "entityType": "@songTitles",
+          "alias": "songTitle",
+          "userDefined": true
+        } ],
+        "timesAddedCount": 1,
+        "lang": "en"
+      }, {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "Purple Haze",
+          "entityType": "@songTitles",
+          "alias": "songTitle",
+          "userDefined": true
+        } ],
+        "timesAddedCount": 1,
+        "lang": "en"
+      }, {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "Billie Jean",
+          "entityType": "@songTitles",
+          "alias": "songTitle",
+          "userDefined": true
+        } ],
+        "timesAddedCount": 1,
+        "lang": "en"
+      }, {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "Hotel California",
+          "entityType": "@songTitles",
+          "alias": "songTitle",
+          "userDefined": true
+        } ],
+        "timesAddedCount": 1,
+        "lang": "en"
+      }, {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "Let it Be",
+          "entityType": "@songTitles",
+          "alias": "songTitle",
+          "userDefined": true
+        } ],
+        "timesAddedCount": 1,
+        "lang": "en"
+      }, {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "Hello",
+          "entityType": "@songTitles",
+          "alias": "songTitle",
+          "userDefined": true
+        } ],
+        "timesAddedCount": 1,
+        "lang": "en"
+      }, {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "Hey Jude",
+          "entityType": "@songTitles",
+          "alias": "songTitle",
+          "userDefined": true
+        } ],
+        "timesAddedCount": 1,
+        "lang": "en"
+      }, {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "Imagine",
+          "entityType": "@songTitles",
+          "alias": "songTitle",
+          "userDefined": true
+        } ],
+        "timesAddedCount": 1,
+        "lang": "en"
+      }, {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "Yesterday",
+          "entityType": "@songTitles",
+          "alias": "songTitle",
+          "userDefined": true
+        } ],
+        "timesAddedCount": 1,
+        "lang": "en"
+      }, {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "Like a Rolling Stone",
+          "entityType": "@songTitles",
+          "alias": "songTitle",
+          "userDefined": true
+        } ],
+        "timesAddedCount": 1,
+        "lang": "en"
+      }, {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "Stairway to Heaven",
+          "entityType": "@songTitles",
+          "alias": "songTitle",
+          "userDefined": true
+        } ],
+        "timesAddedCount": 1,
+        "lang": "en"
+      }, {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "Smells Like Teen Spirit",
+          "entityType": "@songTitles",
+          "alias": "songTitle",
+          "userDefined": true
+        } ],
+        "timesAddedCount": 1,
+        "lang": "en"
+      }, {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "Blinding Lights",
+          "entityType": "@songTitles",
+          "alias": "songTitle",
+          "userDefined": true
+        } ],
+        "timesAddedCount": 1,
+        "lang": "en"
+      }, {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "Thriller",
+          "entityType": "@songTitles",
+          "alias": "songTitle",
+          "userDefined": true
+        } ],
+        "timesAddedCount": 1,
+        "lang": "en"
+      }, {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "Bohemian Rhapsody",
+          "entityType": "@songTitles",
+          "alias": "songTitle",
+          "userDefined": true
+        } ],
+        "timesAddedCount": 1,
+        "lang": "en"
+      }, {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "I believe I can Fly",
+          "entityType": "@songTitles",
+          "alias": "songTitle",
+          "userDefined": true
+        } ],
+        "timesAddedCount": 1,
+        "lang": "en"
+      } ]
+    }, {
+      "meta": {
+        "id": "675136b4-2384-45eb-939d-bbd7de4caa53",
+        "displayName": "user_provides_character",
+        "priority": 500000,
+        "parameters": [ {
+          "id": "character",
+          "displayName": "character",
+          "value": "$character",
+          "entityTypeDisplayName": "@characters"
+        } ],
+        "etag": "69386ad9"
+      },
+      "trainingPhrases": [ {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "Sylvester the Cat",
+          "entityType": "@characters",
+          "alias": "character",
+          "userDefined": true
+        } ],
+        "timesAddedCount": 1,
+        "lang": "en"
+      }, {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "Tweety Bird",
+          "entityType": "@characters",
+          "alias": "character",
+          "userDefined": true
+        } ],
+        "timesAddedCount": 1,
+        "lang": "en"
+      }, {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "Daffy Duck",
+          "entityType": "@characters",
+          "alias": "character",
+          "userDefined": true
+        } ],
+        "timesAddedCount": 1,
+        "lang": "en"
+      }, {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "Goofy",
+          "entityType": "@characters",
+          "alias": "character",
+          "userDefined": true
+        } ],
+        "timesAddedCount": 1,
+        "lang": "en"
+      }, {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "Minnie Mouse",
+          "entityType": "@characters",
+          "alias": "character",
+          "userDefined": true
+        } ],
+        "timesAddedCount": 1,
+        "lang": "en"
+      }, {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "Garfield",
+          "entityType": "@characters",
+          "alias": "character",
+          "userDefined": true
+        } ],
+        "timesAddedCount": 1,
+        "lang": "en"
+      }, {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "Snoopy",
+          "entityType": "@characters",
+          "alias": "character",
+          "userDefined": true
+        } ],
+        "timesAddedCount": 1,
+        "lang": "en"
+      }, {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "Bugs Bunny",
+          "entityType": "@characters",
+          "alias": "character",
+          "userDefined": true
+        } ],
+        "timesAddedCount": 1,
+        "lang": "en"
+      }, {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "Mickey Mouse",
+          "entityType": "@characters",
+          "alias": "character",
+          "userDefined": true
+        } ],
+        "timesAddedCount": 1,
+        "lang": "en"
+      }, {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "Donald Duck",
+          "entityType": "@characters",
+          "alias": "character",
+          "userDefined": true
+        } ],
+        "timesAddedCount": 1,
+        "lang": "en"
+      } ]
+    }, {
+      "meta": {
+        "id": "7bf86e9e-54b1-45e2-aee2-f65eb998834d",
+        "displayName": "user_provides_cleaning_product",
+        "priority": 500000,
+        "parameters": [ {
+          "id": "cleaningProduct",
+          "displayName": "cleaningProduct",
+          "value": "$cleaningProduct",
+          "entityTypeDisplayName": "@cleaningProducts"
+        } ],
+        "etag": "693f0b1f"
+      },
+      "trainingPhrases": [ {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "Glass cleaner",
+          "entityType": "@cleaningProducts",
+          "alias": "cleaningProduct",
+          "userDefined": true
+        } ],
+        "timesAddedCount": 1,
+        "lang": "en"
+      }, {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "Toilet bowl cleaner",
+          "entityType": "@cleaningProducts",
+          "alias": "cleaningProduct",
+          "userDefined": true
+        } ],
+        "timesAddedCount": 1,
+        "lang": "en"
+      }, {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "Degreaser",
+          "entityType": "@cleaningProducts",
+          "alias": "cleaningProduct",
+          "userDefined": true
+        } ],
+        "timesAddedCount": 1,
+        "lang": "en"
+      }, {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "dish soap",
+          "entityType": "@cleaningProducts",
+          "alias": "cleaningProduct",
+          "userDefined": true
+        } ],
+        "timesAddedCount": 1,
+        "lang": "en"
+      }, {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "laundry detergent",
+          "entityType": "@cleaningProducts",
+          "alias": "cleaningProduct",
+          "userDefined": true
+        } ],
+        "timesAddedCount": 1,
+        "lang": "en"
+      }, {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "disinfectant spray",
+          "entityType": "@cleaningProducts",
+          "alias": "cleaningProduct",
+          "userDefined": true
+        } ],
+        "timesAddedCount": 1,
+        "lang": "en"
+      }, {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "hand sanitizer",
+          "entityType": "@cleaningProducts",
+          "alias": "cleaningProduct",
+          "userDefined": true
+        } ],
+        "timesAddedCount": 1,
+        "lang": "en"
+      }, {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "glass cleaner",
+          "entityType": "@cleaningProducts",
+          "alias": "cleaningProduct",
+          "userDefined": true
+        } ],
+        "timesAddedCount": 1,
+        "lang": "en"
+      }, {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "disinfectant wipes",
+          "entityType": "@cleaningProducts",
+          "alias": "cleaningProduct",
+          "userDefined": true
+        } ],
+        "timesAddedCount": 1,
+        "lang": "en"
+      }, {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "desinfecting alcohol",
+          "entityType": "@cleaningProducts",
+          "alias": "cleaningProduct",
+          "userDefined": true
+        } ],
+        "timesAddedCount": 1,
+        "lang": "en"
+      }, {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "multipurpose cleaner",
+          "entityType": "@cleaningProducts",
+          "alias": "cleaningProduct",
+          "userDefined": true
+        } ],
+        "timesAddedCount": 1,
+        "lang": "en"
+      }, {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "bleach",
+          "entityType": "@cleaningProducts",
+          "alias": "cleaningProduct",
+          "userDefined": true
+        } ],
+        "timesAddedCount": 1,
+        "lang": "en"
+      } ]
+    }, {
+      "meta": {
+        "id": "aa4c42e1-f734-4c74-a177-8dc8c7234249",
+        "displayName": "small_talk.confirmation.yes",
+        "priority": 500000
+      },
+      "trainingPhrases": [ {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "yup"
+        } ],
+        "timesAddedCount": 1,
+        "lang": "en"
+      }, {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "yes sure"
+        } ],
+        "timesAddedCount": 1,
+        "lang": "en"
+      }, {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "that is ok"
+        } ],
+        "timesAddedCount": 1,
+        "lang": "en"
+      }, {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "yes for sure"
+        } ],
+        "timesAddedCount": 1,
+        "lang": "en"
+      }, {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "yes I do"
+        } ],
+        "timesAddedCount": 1,
+        "lang": "en"
+      }, {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "yeah sure"
+        } ],
+        "timesAddedCount": 1,
+        "lang": "en"
+      }, {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "yes it is correct"
+        } ],
+        "timesAddedCount": 1,
+        "lang": "en"
+      }, {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "ok thank you"
+        } ],
+        "timesAddedCount": 1,
+        "lang": "en"
+      }, {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "sure why not"
+        } ],
+        "timesAddedCount": 1,
+        "lang": "en"
+      }, {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "of course why not"
+        } ],
+        "timesAddedCount": 1,
+        "lang": "en"
+      }, {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "yeah of course"
+        } ],
+        "timesAddedCount": 1,
+        "lang": "en"
+      }, {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "nevermind its okay"
+        } ],
+        "timesAddedCount": 1,
+        "lang": "en"
+      }, {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "of course"
+        } ],
+        "timesAddedCount": 1,
+        "lang": "en"
+      }, {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "yes this is correct"
+        } ],
+        "timesAddedCount": 1,
+        "lang": "en"
+      }, {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "ye"
+        } ],
+        "timesAddedCount": 1,
+        "lang": "en"
+      }, {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "yes of course"
+        } ],
+        "timesAddedCount": 1,
+        "lang": "en"
+      }, {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "ok you can"
+        } ],
+        "timesAddedCount": 1,
+        "lang": "en"
+      }, {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "confirmed"
+        } ],
+        "timesAddedCount": 1,
+        "lang": "en"
+      }, {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "definitely"
+        } ],
+        "timesAddedCount": 1,
+        "lang": "en"
+      }, {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "ok sure"
+        } ],
+        "timesAddedCount": 1,
+        "lang": "en"
+      }, {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "obviously"
+        } ],
+        "timesAddedCount": 1,
+        "lang": "en"
+      }, {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "yes it is"
+        } ],
+        "timesAddedCount": 1,
+        "lang": "en"
+      }, {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "oh yes"
+        } ],
+        "timesAddedCount": 1,
+        "lang": "en"
+      }, {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "ok"
+        } ],
+        "timesAddedCount": 1,
+        "lang": "en"
+      }, {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "certainly"
+        } ],
+        "timesAddedCount": 1,
+        "lang": "en"
+      }, {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "correct"
+        } ],
+        "timesAddedCount": 1,
+        "lang": "en"
+      }, {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "looks good"
+        } ],
+        "timesAddedCount": 1,
+        "lang": "en"
+      }, {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "go ahead"
+        } ],
+        "timesAddedCount": 1,
+        "lang": "en"
+      }, {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "yes correct"
+        } ],
+        "timesAddedCount": 1,
+        "lang": "en"
+      }, {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "yea"
+        } ],
+        "timesAddedCount": 1,
+        "lang": "en"
+      }, {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "okie dokie"
+        } ],
+        "timesAddedCount": 1,
+        "lang": "en"
+      }, {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "right"
+        } ],
+        "timesAddedCount": 1,
+        "lang": "en"
+      }, {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "yes indeed"
+        } ],
+        "timesAddedCount": 1,
+        "lang": "en"
+      }, {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "sounds good"
+        } ],
+        "timesAddedCount": 1,
+        "lang": "en"
+      }, {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "that's okay"
+        } ],
+        "timesAddedCount": 1,
+        "lang": "en"
+      }, {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "I don't mind"
+        } ],
+        "timesAddedCount": 1,
+        "lang": "en"
+      }, {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "yeah go ahead"
+        } ],
+        "timesAddedCount": 1,
+        "lang": "en"
+      }, {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "go for it"
+        } ],
+        "timesAddedCount": 1,
+        "lang": "en"
+      }, {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "yeah I'm sure"
+        } ],
+        "timesAddedCount": 1,
+        "lang": "en"
+      }, {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "yes right"
+        } ],
+        "timesAddedCount": 1,
+        "lang": "en"
+      }, {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "affirmative"
+        } ],
+        "timesAddedCount": 1,
+        "lang": "en"
+      }, {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "yes"
+        } ],
+        "timesAddedCount": 1,
+        "lang": "en"
+      }, {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "sure thing"
+        } ],
+        "timesAddedCount": 1,
+        "lang": "en"
+      }, {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "I do"
+        } ],
+        "timesAddedCount": 1,
+        "lang": "en"
+      }, {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "yeah right"
+        } ],
+        "timesAddedCount": 1,
+        "lang": "en"
+      }, {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "okay that's fine"
+        } ],
+        "timesAddedCount": 1,
+        "lang": "en"
+      }, {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "confirm"
+        } ],
+        "timesAddedCount": 1,
+        "lang": "en"
+      }, {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "yes I would like to"
+        } ],
+        "timesAddedCount": 1,
+        "lang": "en"
+      }, {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "sure is"
+        } ],
+        "timesAddedCount": 1,
+        "lang": "en"
+      }, {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "ok go ahead"
+        } ],
+        "timesAddedCount": 1,
+        "lang": "en"
+      }, {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "yes that's fine"
+        } ],
+        "timesAddedCount": 1,
+        "lang": "en"
+      }, {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "alrighty"
+        } ],
+        "timesAddedCount": 1,
+        "lang": "en"
+      }, {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "yes definitely"
+        } ],
+        "timesAddedCount": 1,
+        "lang": "en"
+      }, {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "why not"
+        } ],
+        "timesAddedCount": 1,
+        "lang": "en"
+      }, {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "yeh"
+        } ],
+        "timesAddedCount": 1,
+        "lang": "en"
+      }, {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "k"
+        } ],
+        "timesAddedCount": 1,
+        "lang": "en"
+      }, {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "okay then"
+        } ],
+        "timesAddedCount": 1,
+        "lang": "en"
+      }, {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "this is correct"
+        } ],
+        "timesAddedCount": 1,
+        "lang": "en"
+      }, {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "okay sounds good"
+        } ],
+        "timesAddedCount": 1,
+        "lang": "en"
+      }, {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "yap"
+        } ],
+        "timesAddedCount": 1,
+        "lang": "en"
+      }, {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "ok yes"
+        } ],
+        "timesAddedCount": 1,
+        "lang": "en"
+      }, {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "yeah exactly"
+        } ],
+        "timesAddedCount": 1,
+        "lang": "en"
+      }, {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "please do"
+        } ],
+        "timesAddedCount": 1,
+        "lang": "en"
+      }, {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "all right"
+        } ],
+        "timesAddedCount": 1,
+        "lang": "en"
+      }, {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "okay"
+        } ],
+        "timesAddedCount": 1,
+        "lang": "en"
+      }, {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "yeah that's right"
+        } ],
+        "timesAddedCount": 1,
+        "lang": "en"
+      }, {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "I think so"
+        } ],
+        "timesAddedCount": 1,
+        "lang": "en"
+      }, {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "yep"
+        } ],
+        "timesAddedCount": 1,
+        "lang": "en"
+      }, {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "ya"
+        } ],
+        "timesAddedCount": 1,
+        "lang": "en"
+      }, {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "I agree"
+        } ],
+        "timesAddedCount": 1,
+        "lang": "en"
+      }, {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "yes you may"
+        } ],
+        "timesAddedCount": 1,
+        "lang": "en"
+      }, {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "yes I agree"
+        } ],
+        "timesAddedCount": 1,
+        "lang": "en"
+      }, {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "yeah"
+        } ],
+        "timesAddedCount": 1,
+        "lang": "en"
+      }, {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "absolutely"
+        } ],
+        "timesAddedCount": 1,
+        "lang": "en"
+      }, {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "okey"
+        } ],
+        "timesAddedCount": 1,
+        "lang": "en"
+      }, {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "I guess"
+        } ],
+        "timesAddedCount": 1,
+        "lang": "en"
+      }, {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "exactly"
+        } ],
+        "timesAddedCount": 1,
+        "lang": "en"
+      }, {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "that's correct"
+        } ],
+        "timesAddedCount": 1,
+        "lang": "en"
+      }, {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "yes thank you"
+        } ],
+        "timesAddedCount": 1,
+        "lang": "en"
+      }, {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "sure"
+        } ],
+        "timesAddedCount": 1,
+        "lang": "en"
+      }, {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "do it"
+        } ],
+        "timesAddedCount": 1,
+        "lang": "en"
+      } ]
+    }, {
+      "meta": {
+        "id": "00000000-0000-0000-0000-000000000001",
+        "displayName": "Default Negative Intent",
+        "priority": 500000,
+        "isFallback": true
+      },
+      "trainingPhrases": [ {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "What's your zodiac sign?"
+        } ],
+        "timesAddedCount": 1,
+        "lang": "en"
+      }, {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "I'd like to order a ",
+          "userDefined": true
+        }, {
+          "text": "burger"
+        } ],
+        "timesAddedCount": 1,
+        "lang": "en"
+      }, {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "What is your gender?"
+        } ],
+        "timesAddedCount": 1,
+        "lang": "en"
+      }, {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "What's your favorite color?"
+        } ],
+        "timesAddedCount": 1,
+        "lang": "en"
+      } ]
+    }, {
+      "meta": {
+        "id": "a28c5287-56fe-4e98-96b3-627b01bbf7bc",
+        "displayName": "user_provides_food",
+        "priority": 500000,
+        "parameters": [ {
+          "id": "grossFood",
+          "displayName": "grossFood",
+          "value": "$grossFood",
+          "entityTypeDisplayName": "@grossFoods"
+        } ],
+        "etag": "693f0abd"
+      },
+      "trainingPhrases": [ {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "Stinky Tofu",
+          "entityType": "@grossFoods",
+          "alias": "grossFood",
+          "userDefined": true
+        } ],
+        "timesAddedCount": 1,
+        "lang": "en"
+      }, {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "Sannakji",
+          "entityType": "@grossFoods",
+          "alias": "grossFood",
+          "userDefined": true
+        } ],
+        "timesAddedCount": 1,
+        "lang": "en"
+      }, {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "Natto",
+          "entityType": "@grossFoods",
+          "alias": "grossFood",
+          "userDefined": true
+        } ],
+        "timesAddedCount": 1,
+        "lang": "en"
+      }, {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "Surströmming",
+          "entityType": "@grossFoods",
+          "alias": "grossFood",
+          "userDefined": true
+        } ],
+        "timesAddedCount": 1,
+        "lang": "en"
+      }, {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "Haggis",
+          "entityType": "@grossFoods",
+          "alias": "grossFood",
+          "userDefined": true
+        } ],
+        "timesAddedCount": 1,
+        "lang": "en"
+      }, {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "Balut",
+          "entityType": "@grossFoods",
+          "alias": "grossFood",
+          "userDefined": true
+        } ],
+        "timesAddedCount": 1,
+        "lang": "en"
+      }, {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "brussels sprouts",
+          "entityType": "@grossFoods",
+          "alias": "grossFood",
+          "userDefined": true
+        } ],
+        "timesAddedCount": 1,
+        "lang": "en"
+      }, {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "durian",
+          "entityType": "@grossFoods",
+          "alias": "grossFood",
+          "userDefined": true
+        } ],
+        "timesAddedCount": 1,
+        "lang": "en"
+      }, {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "mushrooms",
+          "entityType": "@grossFoods",
+          "alias": "grossFood",
+          "userDefined": true
+        } ],
+        "timesAddedCount": 1,
+        "lang": "en"
+      }, {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "fish",
+          "entityType": "@grossFoods",
+          "alias": "grossFood",
+          "userDefined": true
+        } ],
+        "timesAddedCount": 1,
+        "lang": "en"
+      }, {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "blue cheese",
+          "entityType": "@grossFoods",
+          "alias": "grossFood",
+          "userDefined": true
+        } ],
+        "timesAddedCount": 1,
+        "lang": "en"
+      }, {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "snail",
+          "entityType": "@grossFoods",
+          "alias": "grossFood",
+          "userDefined": true
+        } ],
+        "timesAddedCount": 1,
+        "lang": "en"
+      }, {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "oyster",
+          "entityType": "@grossFoods",
+          "alias": "grossFood",
+          "userDefined": true
+        } ],
+        "timesAddedCount": 1,
+        "lang": "en"
+      } ]
+    }, {
+      "meta": {
+        "id": "d9b57423-b7e4-4946-b97f-c581c38895e9",
+        "displayName": "user_provides_transparent_material",
+        "priority": 500000,
+        "parameters": [ {
+          "id": "transparentMaterial",
+          "displayName": "transparentMaterial",
+          "value": "$transparentMaterial",
+          "entityTypeDisplayName": "@transparentMaterials"
+        } ],
+        "etag": "693aa5e4"
+      },
+      "trainingPhrases": [ {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "see-through material",
+          "entityType": "@transparentMaterials",
+          "alias": "transparentMaterial",
+          "userDefined": true
+        } ],
+        "timesAddedCount": 1,
+        "lang": "en"
+      }, {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "clear glue",
+          "entityType": "@transparentMaterials",
+          "alias": "transparentMaterial",
+          "userDefined": true
+        } ],
+        "timesAddedCount": 1,
+        "lang": "en"
+      }, {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "transparent tape",
+          "entityType": "@transparentMaterials",
+          "alias": "transparentMaterial",
+          "userDefined": true
+        } ],
+        "timesAddedCount": 1,
+        "lang": "en"
+      }, {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "clear nail polish",
+          "entityType": "@transparentMaterials",
+          "alias": "transparentMaterial",
+          "userDefined": true
+        } ],
+        "timesAddedCount": 1,
+        "lang": "en"
+      }, {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "clear coat",
+          "entityType": "@transparentMaterials",
+          "alias": "transparentMaterial",
+          "userDefined": true
+        } ],
+        "timesAddedCount": 1,
+        "lang": "en"
+      }, {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "clear vinyl",
+          "entityType": "@transparentMaterials",
+          "alias": "transparentMaterial",
+          "userDefined": true
+        } ],
+        "timesAddedCount": 1,
+        "lang": "en"
+      }, {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "crystal",
+          "entityType": "@transparentMaterials",
+          "alias": "transparentMaterial",
+          "userDefined": true
+        } ],
+        "timesAddedCount": 1,
+        "lang": "en"
+      }, {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "clear resin",
+          "entityType": "@transparentMaterials",
+          "alias": "transparentMaterial",
+          "userDefined": true
+        } ],
+        "timesAddedCount": 1,
+        "lang": "en"
+      }, {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "clear packing tape",
+          "entityType": "@transparentMaterials",
+          "alias": "transparentMaterial",
+          "userDefined": true
+        } ],
+        "timesAddedCount": 1,
+        "lang": "en"
+      }, {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "transparent paper",
+          "entityType": "@transparentMaterials",
+          "alias": "transparentMaterial",
+          "userDefined": true
+        } ],
+        "timesAddedCount": 1,
+        "lang": "en"
+      }, {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "transparent plastic wrap",
+          "entityType": "@transparentMaterials",
+          "alias": "transparentMaterial",
+          "userDefined": true
+        } ],
+        "timesAddedCount": 1,
+        "lang": "en"
+      }, {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "lucite",
+          "entityType": "@transparentMaterials",
+          "alias": "transparentMaterial",
+          "userDefined": true
+        } ],
+        "timesAddedCount": 1,
+        "lang": "en"
+      }, {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "plexiglass",
+          "entityType": "@transparentMaterials",
+          "alias": "transparentMaterial",
+          "userDefined": true
+        } ],
+        "timesAddedCount": 1,
+        "lang": "en"
+      }, {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "see-through film",
+          "entityType": "@transparentMaterials",
+          "alias": "transparentMaterial",
+          "userDefined": true
+        } ],
+        "timesAddedCount": 1,
+        "lang": "en"
+      }, {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "clear acrylic",
+          "entityType": "@transparentMaterials",
+          "alias": "transparentMaterial",
+          "userDefined": true
+        } ],
+        "timesAddedCount": 1,
+        "lang": "en"
+      }, {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "cellophane",
+          "entityType": "@transparentMaterials",
+          "alias": "transparentMaterial",
+          "userDefined": true
+        } ],
+        "timesAddedCount": 1,
+        "lang": "en"
+      }, {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "plastic",
+          "entityType": "@transparentMaterials",
+          "alias": "transparentMaterial",
+          "userDefined": true
+        } ],
+        "timesAddedCount": 1,
+        "lang": "en"
+      }, {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "water",
+          "entityType": "@transparentMaterials",
+          "alias": "transparentMaterial",
+          "userDefined": true
+        } ],
+        "timesAddedCount": 1,
+        "lang": "en"
+      }, {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "foil",
+          "entityType": "@transparentMaterials",
+          "alias": "transparentMaterial",
+          "userDefined": true
+        } ],
+        "timesAddedCount": 1,
+        "lang": "en"
+      }, {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "glass",
+          "entityType": "@transparentMaterials",
+          "alias": "transparentMaterial",
+          "userDefined": true
+        } ],
+        "timesAddedCount": 1,
+        "lang": "en"
+      } ]
+    } ],
+    "entities": [ {
+      "id": "c948f2a0-f9e7-4d7e-96b6-d19869c72870",
+      "displayName": "characters",
+      "kind": "KIND_MAP",
+      "entries": [ {
+        "value": "Disney characters",
+        "synonyms": [ "Disney characters", "Donald Duck", "Goofy", "Mickey Mouse" ],
+        "lang": "en"
+      }, {
+        "value": "animated characters",
+        "synonyms": [ "animated characters", "animated movie characters", "anime characters", "cartoon characters" ],
+        "lang": "en"
+      }, {
+        "value": "cartoons",
+        "synonyms": [ "animated movies", "anime", "cartoons", "comic strips" ],
+        "lang": "en"
+      } ],
+      "nluSettings": {
+      
+      }
+    }, {
+      "id": "1a628d57-9c9b-4a3d-86b1-9d453422ff5f",
+      "displayName": "transparentMaterials",
+      "kind": "KIND_MAP",
+      "entries": [ {
+        "value": "air",
+        "synonyms": [ "air", "atmosphere", "breeze", "wind" ],
+        "lang": "en"
+      }, {
+        "value": "liquids",
+        "synonyms": [ "beverage", "fluid", "liquids", "solution" ],
+        "lang": "en"
+      }, {
+        "value": "fabrics",
+        "synonyms": [ "cloth", "fabrics", "material", "textiles" ],
+        "lang": "en"
+      }, {
+        "value": "plastics",
+        "synonyms": [ "plastics", "polymeric material", "synthetic polymer", "vinyl" ],
+        "lang": "en"
+      }, {
+        "value": "glass",
+        "synonyms": [ "crystal", "glass", "pane", "window" ],
+        "lang": "en"
+      } ],
+      "nluSettings": {
+      
+      }
+    }, {
+      "id": "c6c01598-2794-44a3-9237-82fcd6ab7420",
+      "displayName": "cleaningProducts",
+      "kind": "KIND_MAP",
+      "entries": [ {
+        "value": "cleaners",
+        "synonyms": [ "cleaners", "cleansers", "detergents", "soaps" ],
+        "lang": "en"
+      }, {
+        "value": "ammoniums",
+        "synonyms": [ "ammoniums", "BAC", "quaternary ammonium compounds", "quats" ],
+        "lang": "en"
+      }, {
+        "value": "bleach",
+        "synonyms": [ "bleach", "chlorine", "disinfectant", "whitening agent" ],
+        "lang": "en"
+      }, {
+        "value": "liquids for cleaning",
+        "synonyms": [ "cleaning fluids", "detergents", "liquids for cleaning", "solvents" ],
+        "lang": "en"
+      } ],
+      "nluSettings": {
+      
+      }
+    }, {
+      "id": "20c0cc80-ff5c-4ce7-ad03-945d6fe83af4",
+      "displayName": "grossFoods",
+      "kind": "KIND_MAP",
+      "entries": [ {
+        "value": "durian",
+        "synonyms": [ "custard apple", "durian", "fruit", "stinky fruit" ],
+        "lang": "en"
+      }, {
+        "value": "blue cheese",
+        "synonyms": [ "blue cheese", "gorgonzola", "roquefort", "stilton" ],
+        "lang": "en"
+      }, {
+        "value": "cheeses",
+        "synonyms": [ "cheddar", "cheeses", "dairy", "swiss" ],
+        "lang": "en"
+      }, {
+        "value": "fish",
+        "synonyms": [ "bass", "fish", "salmon", "seafood" ],
+        "lang": "en"
+      }, {
+        "value": "snails",
+        "synonyms": [ "escargots", "gastropods", "mollusks", "snails" ],
+        "lang": "en"
+      }, {
+        "value": "oysters",
+        "synonyms": [ "mollusks", "oysters", "seafood", "shellfish" ],
+        "lang": "en"
+      } ],
+      "nluSettings": {
+      
+      }
+    }, {
+      "id": "3f10a02c-ab14-4c4a-bd6d-b19550018818",
+      "displayName": "songTitles",
+      "kind": "KIND_MAP",
+      "entries": [ {
+        "value": "Love on Top",
+        "synonyms": [ "Beyonce", "Love on Top", "pop", "R\u0026B" ],
+        "lang": "en"
+      }, {
+        "value": "When I Grow Up",
+        "synonyms": [ "Hanna Montana", "Miley Cyrus", "teen pop", "When I Grow Up" ],
+        "lang": "en"
+      }, {
+        "value": "Thriller",
+        "synonyms": [ "Bad", "Beat It", "Billie Jean", "Thriller" ],
+        "lang": "en"
+      }, {
+        "value": "Jazz songs",
+        "synonyms": [ "bebop", "Jazz songs", "smooth jazz", "swing" ],
+        "lang": "en"
+      }, {
+        "value": "Soul songs",
+        "synonyms": [ "blues", "Motown", "R\u0026B", "Soul songs" ],
+        "lang": "en"
+      }, {
+        "value": "K-pop songs",
+        "synonyms": [ "K-ballads", "K-dance", "K-pop songs", "Korean pop" ],
+        "lang": "en"
+      }, {
+        "value": "Old songs",
+        "synonyms": [ "classics", "golden oldies", "Old songs", "vintage music" ],
+        "lang": "en"
+      }, {
+        "value": "Pop songs",
+        "synonyms": [ "bubblegum pop", "electropop", "Pop songs", "top 40" ],
+        "lang": "en"
+      }, {
+        "value": "Rock songs",
+        "synonyms": [ "alternative rock", "classic rock", "hard rock", "Rock songs" ],
+        "lang": "en"
+      } ],
+      "nluSettings": {
+      
+      }
+    } ],
+    "pages": [ {
+      "key": "07deb9e4-6e1d-4cc2-94e2-82d59b35cb19",
+      "value": {
+        "displayName": "05b_confirm_ready",
+        "onLoad": {
+          "staticUserResponse": {
+            "candidates": [ {
+              "selector": {
+                "platform": [ "PLATFORM_UNSPECIFIED" ],
+                "lang": "en"
+              },
+              "responses": [ {
+                "text": {
+                  "variants": [ {
+                    "text": "Exciting stuff! Are you ready for the next chapter?"
+                  } ]
+                }
+              } ]
+            } ]
+          }
+        },
+        "transitionEvents": [ {
+          "triggerIntentId": "aa4c42e1-f734-4c74-a177-8dc8c7234249",
+          "transitionEventHandler": {
+            "beforeTransition": {
+            
+            },
+            "targetPageId": "a190baaf-0a9e-4828-b25e-55f6aec5c6ce"
+          },
+          "name": "0a2818e5-00a3-4e34-8aee-d61d92bada1d"
+        } ],
+        "conversationEvents": [ {
+          "event": "sys.no-input-default",
+          "handler": {
+            "beforeTransition": {
+              "staticUserResponse": {
+                "candidates": [ {
+                  "selector": {
+                    "platform": [ "PLATFORM_UNSPECIFIED" ],
+                    "lang": "en"
+                  },
+                  "responses": [ {
+                    "text": {
+                      "variants": [ {
+                        "text": "I didn't hear you. Are you ready?"
+                      } ]
+                    }
+                  } ]
+                } ]
+              }
+            },
+            "targetPageId": "07deb9e4-6e1d-4cc2-94e2-82d59b35cb19"
+          },
+          "name": "65416acb-5e13-4f04-8d33-2edfb70abed0"
+        }, {
+          "event": "sys.no-match-default",
+          "handler": {
+            "beforeTransition": {
+              "staticUserResponse": {
+                "candidates": [ {
+                  "selector": {
+                    "platform": [ "PLATFORM_UNSPECIFIED" ],
+                    "lang": "en"
+                  },
+                  "responses": [ {
+                    "text": {
+                      "variants": [ {
+                        "text": "Please confirm that you are ready for the story by replying yes!"
+                      } ]
+                    }
+                  } ]
+                } ]
+              }
+            },
+            "targetPageId": "07deb9e4-6e1d-4cc2-94e2-82d59b35cb19"
+          },
+          "name": "0549f435-abc5-42e0-8a10-eafa95ef34b6"
+        } ],
+        "etag": "693aa114"
+      }
+    }, {
+      "key": "59168608-8a10-43c3-8fec-7df28925dc6d",
+      "value": {
+        "displayName": "02_get_gross_food",
+        "onLoad": {
+          "staticUserResponse": {
+            "candidates": [ {
+              "selector": {
+                "platform": [ "PLATFORM_UNSPECIFIED" ],
+                "lang": "en"
+              },
+              "responses": [ {
+                "text": {
+                  "variants": [ {
+                    "text": "Now, name a gross food."
+                  } ]
+                }
+              } ]
+            } ]
+          }
+        },
+        "transitionEvents": [ {
+          "triggerIntentId": "a28c5287-56fe-4e98-96b3-627b01bbf7bc",
+          "transitionEventHandler": {
+            "beforeTransition": {
+              "staticUserResponse": {
+                "candidates": [ {
+                  "selector": {
+                    "platform": [ "PLATFORM_UNSPECIFIED" ],
+                    "lang": "en"
+                  },
+                  "responses": [ {
+                    "text": {
+                      "variants": [ {
+                        "text": "Food: $intent.params.grossFood"
+                      } ]
+                    }
+                  } ]
+                } ]
+              },
+              "setParameterActions": [ {
+                "parameter": "word_11",
+                "value": "$intent.params.grossFood"
+              } ]
+            },
+            "targetPageId": "612fb6d3-d1a3-4c0a-bb15-aedbb2407d1f"
+          },
+          "name": "7a5bd783-c4ae-4be3-b468-c1d4e40570ed"
+        } ],
+        "conversationEvents": [ {
+          "event": "sys.no-input-default",
+          "handler": {
+            "beforeTransition": {
+              "staticUserResponse": {
+                "candidates": [ {
+                  "selector": {
+                    "platform": [ "PLATFORM_UNSPECIFIED" ],
+                    "lang": "en"
+                  },
+                  "responses": [ {
+                    "text": {
+                      "variants": [ {
+                        "text": "I did not hear you properly. Can you repeat?"
+                      } ]
+                    }
+                  } ]
+                } ]
+              }
+            },
+            "targetPageId": "59168608-8a10-43c3-8fec-7df28925dc6d"
+          },
+          "name": "119857da-5cd7-43d6-8f8d-dccb6284c900"
+        }, {
+          "event": "sys.no-match-default",
+          "handler": {
+            "beforeTransition": {
+              "staticUserResponse": {
+                "candidates": [ {
+                  "selector": {
+                    "platform": [ "PLATFORM_UNSPECIFIED" ],
+                    "lang": "en"
+                  },
+                  "responses": [ {
+                    "text": {
+                      "variants": [ {
+                        "text": "That does not sound like a gross food. Please provide something like escargots or oysters."
+                      } ]
+                    }
+                  } ]
+                } ]
+              }
+            },
+            "targetPageId": "59168608-8a10-43c3-8fec-7df28925dc6d"
+          },
+          "name": "68b222d5-1f12-4efa-96ad-08beccb0b5fb"
+        } ],
+        "etag": "693a95da"
+      }
+    }, {
+      "key": "6117b412-b12f-4fdf-8ec7-eb6c94ea8551",
+      "value": {
+        "displayName": "05_get_transparent_material",
+        "onLoad": {
+          "staticUserResponse": {
+            "candidates": [ {
+              "selector": {
+                "platform": [ "PLATFORM_UNSPECIFIED" ],
+                "lang": "en"
+              },
+              "responses": [ {
+                "text": {
+                  "variants": [ {
+                    "text": "Finally, name a transparent material."
+                  } ]
+                }
+              } ]
+            } ]
+          }
+        },
+        "transitionEvents": [ {
+          "triggerIntentId": "d9b57423-b7e4-4946-b97f-c581c38895e9",
+          "transitionEventHandler": {
+            "beforeTransition": {
+              "staticUserResponse": {
+                "candidates": [ {
+                  "selector": {
+                    "platform": [ "PLATFORM_UNSPECIFIED" ],
+                    "lang": "en"
+                  },
+                  "responses": [ {
+                    "text": {
+                      "variants": [ {
+                        "text": "The transparent material is $intent.params.transparentMaterial"
+                      } ]
+                    }
+                  } ]
+                } ]
+              },
+              "setParameterActions": [ {
+                "parameter": "word_14",
+                "value": "$intent.params.transparentMaterial"
+              } ]
+            },
+            "targetPageId": "07deb9e4-6e1d-4cc2-94e2-82d59b35cb19"
+          },
+          "name": "92ee1a10-377c-4ae8-ab91-7d07503fe7e8"
+        } ],
+        "conversationEvents": [ {
+          "event": "sys.no-input-default",
+          "handler": {
+            "beforeTransition": {
+              "staticUserResponse": {
+                "candidates": [ {
+                  "selector": {
+                    "platform": [ "PLATFORM_UNSPECIFIED" ],
+                    "lang": "en"
+                  },
+                  "responses": [ {
+                    "text": {
+                      "variants": [ {
+                        "text": "I couldn't understand you. Can you say it again?"
+                      } ]
+                    }
+                  } ]
+                } ]
+              }
+            },
+            "targetPageId": "6117b412-b12f-4fdf-8ec7-eb6c94ea8551"
+          },
+          "name": "2ec45b65-66a7-4229-b3d4-107660dc3b38"
+        } ],
+        "etag": "693a9a29"
+      }
+    }, {
+      "key": "612fb6d3-d1a3-4c0a-bb15-aedbb2407d1f",
+      "value": {
+        "displayName": "03_get_cleaning_product",
+        "onLoad": {
+          "staticUserResponse": {
+            "candidates": [ {
+              "selector": {
+                "platform": [ "PLATFORM_UNSPECIFIED" ],
+                "lang": "en"
+              },
+              "responses": [ {
+                "text": {
+                  "variants": [ {
+                    "text": "Next, name a cleaning product."
+                  } ]
+                }
+              } ]
+            } ]
+          }
+        },
+        "transitionEvents": [ {
+          "triggerIntentId": "7bf86e9e-54b1-45e2-aee2-f65eb998834d",
+          "transitionEventHandler": {
+            "beforeTransition": {
+              "staticUserResponse": {
+                "candidates": [ {
+                  "selector": {
+                    "platform": [ "PLATFORM_UNSPECIFIED" ],
+                    "lang": "en"
+                  },
+                  "responses": [ {
+                    "text": {
+                      "variants": [ {
+                        "text": "The cleaning product is $intent.params.cleaningProduct"
+                      } ]
+                    }
+                  } ]
+                } ]
+              },
+              "setParameterActions": [ {
+                "parameter": "word_12",
+                "value": "$intent.params.cleaningProduct"
+              } ]
+            },
+            "targetPageId": "a7e61573-8682-459b-ab5b-1ea4e3925aaa"
+          },
+          "name": "1b75e44e-2035-43e8-ba68-7c9e5d8ae340"
+        } ],
+        "conversationEvents": [ {
+          "event": "sys.no-input-default",
+          "handler": {
+            "beforeTransition": {
+              "staticUserResponse": {
+                "candidates": [ {
+                  "selector": {
+                    "platform": [ "PLATFORM_UNSPECIFIED" ],
+                    "lang": "en"
+                  },
+                  "responses": [ {
+                    "text": {
+                      "variants": [ {
+                        "text": "I couldn't understand you. What did you say?"
+                      } ]
+                    }
+                  } ]
+                } ]
+              }
+            },
+            "targetPageId": "612fb6d3-d1a3-4c0a-bb15-aedbb2407d1f"
+          },
+          "name": "00f40162-5acd-4b6f-a90f-50a5a142076d"
+        }, {
+          "event": "sys.no-match-default",
+          "handler": {
+            "beforeTransition": {
+              "staticUserResponse": {
+                "candidates": [ {
+                  "selector": {
+                    "platform": [ "PLATFORM_UNSPECIFIED" ],
+                    "lang": "en"
+                  },
+                  "responses": [ {
+                    "text": {
+                      "variants": [ {
+                        "text": "That does not sound like a cleaning product. Please provide something like bleach or disinfectant spray."
+                      } ]
+                    }
+                  } ]
+                } ]
+              }
+            },
+            "targetPageId": "612fb6d3-d1a3-4c0a-bb15-aedbb2407d1f"
+          },
+          "name": "a64360a6-a03d-4ad0-a138-76cbd6eaa2dd"
+        } ],
+        "etag": "693a9987"
+      }
+    }, {
+      "key": "a190baaf-0a9e-4828-b25e-55f6aec5c6ce",
+      "value": {
+        "displayName": "06_chapter3_story",
+        "onLoad": {
+          "staticUserResponse": {
+            "candidates": [ {
+              "selector": {
+                "platform": [ "PLATFORM_UNSPECIFIED" ],
+                "lang": "en"
+              },
+              "responses": [ {
+                "text": {
+                  "variants": [ {
+                    "text": "$request.generative.text"
+                  } ]
+                }
+              } ]
+            }, {
+              "selector": {
+                "platform": [ "PLATFORM_UNSPECIFIED" ],
+                "lang": "en"
+              },
+              "responses": [ {
+                "payload": {
+                  "robot_command": {
+                    "led": "purple",
+                    "motion": "neutral",
+                    "text": "$request.generative.text"
+                  }
+                }
+              } ]
+            } ]
+          },
+          "generators": [ {
+            "generatorId": "e862fc65-b044-4981-9756-e86ce17a0818",
+            "inputParameters": [ {
+              "key": "session",
+              "value": "$session.params"
+            } ],
+            "outputParameter": "$request.generative.text"
+          } ]
+        },
+        "transitionEvents": [ {
+          "condition": {
+            "restriction": {
+              "comparator": "GLOBAL",
+              "rhs": {
+                "value": "true"
+              }
+            }
+          },
+          "transitionEventHandler": {
+            "beforeTransition": {
+            
+            },
+            "targetFlowId": "d0fb63a8-bc82-4440-a7b0-2360c2a16723"
+          },
+          "name": "8ae02e0f-8119-4765-834f-6c0438e2ba45",
+          "conditionString": "true"
+        } ],
+        "etag": "693aad9a"
+      }
+    }, {
+      "key": "a7e61573-8682-459b-ab5b-1ea4e3925aaa",
+      "value": {
+        "displayName": "04_get_song_title",
+        "onLoad": {
+          "staticUserResponse": {
+            "candidates": [ {
+              "selector": {
+                "platform": [ "PLATFORM_UNSPECIFIED" ],
+                "lang": "en"
+              },
+              "responses": [ {
+                "text": {
+                  "variants": [ {
+                    "text": "Name a song title."
+                  } ]
+                }
+              } ]
+            } ]
+          }
+        },
+        "transitionEvents": [ {
+          "triggerIntentId": "842dd464-f844-4dd5-8780-2005def83f55",
+          "transitionEventHandler": {
+            "beforeTransition": {
+              "staticUserResponse": {
+                "candidates": [ {
+                  "selector": {
+                    "platform": [ "PLATFORM_UNSPECIFIED" ],
+                    "lang": "en"
+                  },
+                  "responses": [ {
+                    "text": {
+                      "variants": [ {
+                        "text": "Song: $intent.params.songTitle"
+                      } ]
+                    }
+                  } ]
+                } ]
+              },
+              "setParameterActions": [ {
+                "parameter": "word_13",
+                "value": "$intent.params.songTitle"
+              } ]
+            },
+            "targetPageId": "6117b412-b12f-4fdf-8ec7-eb6c94ea8551"
+          },
+          "name": "bc37f461-17ba-4216-8066-33e3eebbca39"
+        } ],
+        "conversationEvents": [ {
+          "event": "sys.no-input-default",
+          "handler": {
+            "beforeTransition": {
+              "staticUserResponse": {
+                "candidates": [ {
+                  "selector": {
+                    "platform": [ "PLATFORM_UNSPECIFIED" ],
+                    "lang": "en"
+                  },
+                  "responses": [ {
+                    "text": {
+                      "variants": [ {
+                        "text": "I didn't hear you. Can you say it again?"
+                      } ]
+                    }
+                  } ]
+                } ]
+              }
+            },
+            "targetPageId": "a7e61573-8682-459b-ab5b-1ea4e3925aaa"
+          },
+          "name": "71bdbd44-5f65-4d6a-ba52-ae7eefc1a2a0"
+        }, {
+          "event": "sys.no-match-default",
+          "handler": {
+            "beforeTransition": {
+              "staticUserResponse": {
+                "candidates": [ {
+                  "selector": {
+                    "platform": [ "PLATFORM_UNSPECIFIED" ],
+                    "lang": "en"
+                  },
+                  "responses": [ {
+                    "text": {
+                      "variants": [ {
+                        "text": "This does not sound like a song title. Please provide a song like Thriller or Bohemian Rhapsody."
+                      } ]
+                    }
+                  } ]
+                } ]
+              }
+            },
+            "targetPageId": "a7e61573-8682-459b-ab5b-1ea4e3925aaa"
+          },
+          "name": "a225050f-5192-413e-b65f-b7153d8aab9b"
+        } ],
+        "etag": "693a99e8"
+      }
+    }, {
+      "key": "b82288b0-07aa-4bc1-b231-0a03de5ca779",
+      "value": {
+        "displayName": "01_get_character",
+        "onLoad": {
+          "staticUserResponse": {
+            "candidates": [ {
+              "selector": {
+                "platform": [ "PLATFORM_UNSPECIFIED" ],
+                "lang": "en"
+              },
+              "responses": [ {
+                "text": {
+                  "variants": [ {
+                    "text": "The queen returns. Name a famous character."
+                  } ]
+                }
+              } ]
+            } ]
+          }
+        },
+        "transitionEvents": [ {
+          "triggerIntentId": "675136b4-2384-45eb-939d-bbd7de4caa53",
+          "transitionEventHandler": {
+            "beforeTransition": {
+              "staticUserResponse": {
+                "candidates": [ {
+                  "selector": {
+                    "platform": [ "PLATFORM_UNSPECIFIED" ],
+                    "lang": "en"
+                  },
+                  "responses": [ {
+                    "text": {
+                      "variants": [ {
+                        "text": "Disguise: $intent.params.character"
+                      } ]
+                    }
+                  } ]
+                } ]
+              },
+              "setParameterActions": [ {
+                "parameter": "word_10",
+                "value": "$intent.params.character"
+              } ]
+            },
+            "targetPageId": "59168608-8a10-43c3-8fec-7df28925dc6d"
+          },
+          "name": "20c27bf9-11c9-4b1e-997a-2c00227c6d33"
+        } ],
+        "conversationEvents": [ {
+          "event": "sys.no-input-default",
+          "handler": {
+            "beforeTransition": {
+              "staticUserResponse": {
+                "candidates": [ {
+                  "selector": {
+                    "platform": [ "PLATFORM_UNSPECIFIED" ],
+                    "lang": "en"
+                  },
+                  "responses": [ {
+                    "text": {
+                      "variants": [ {
+                        "text": "I did not understand you. Can you say it again?"
+                      } ]
+                    }
+                  } ]
+                } ]
+              }
+            },
+            "targetPageId": "b82288b0-07aa-4bc1-b231-0a03de5ca779"
+          },
+          "name": "b8bd826e-6921-4f65-a22e-c43f9e96e781"
+        }, {
+          "event": "sys.no-match-default",
+          "handler": {
+            "beforeTransition": {
+              "staticUserResponse": {
+                "candidates": [ {
+                  "selector": {
+                    "platform": [ "PLATFORM_UNSPECIFIED" ],
+                    "lang": "en"
+                  },
+                  "responses": [ {
+                    "text": {
+                      "variants": [ {
+                        "text": "I don't know this character. Please provide a name like Mickey Mouse or Snoopy."
+                      } ]
+                    }
+                  } ]
+                } ]
+              }
+            }
+          },
+          "name": "3bdcdfce-e831-441e-9d29-235ed3b71e4a"
+        } ],
+        "etag": "693a9542"
+      }
+    } ],
+    "generators": [ {
+      "key": "e862fc65-b044-4981-9756-e86ce17a0818",
+      "value": {
+        "id": "e862fc65-b044-4981-9756-e86ce17a0818",
+        "displayName": "correct_story_third_chapter",
+        "phrases": [ {
+          "text": "You are a Mad Libs game engine.\nInput: A story template with user-provided words.\nTask: Output the story with the user's words inserted.\nCRITICAL RULES:\n1. Semantic nonsense is required. Do NOT change the user's words.\n2. Fix ONLY grammar:\n   - Articles with Clothing: The template says \"wearing only a [word_16]\". If the word provided is plural (like \"pants\", \"jeans\", \"shoes\") or a mass noun, DELETE the word \"a\" from the story so it reads \"wearing only pants\".\n   - Verb Conjugation: Convert the action [word_17] to its infinitive form to fit \"decided to [action]\" (e.g., change \"running\" or \"runs\" to \"run\").\n3. Do not add intro text. Just the story.\n\nContext Variables:\n- Disguise/Character: $session.params.word_10\n- Gross Food: $session.params.word_11\n- Cleaning Product: $session.params.word_12\n- Song: $session.params.word_13\n- Transparent Material: $session.params.word_14\n\nStory:\nDown in the dungeon, the Queen cast a magic spell to disguise herself as $session.params.word_10. The Queen went into the forests to find Snow White. She found the tiny cottage and knocked on the door and sang $session.params.word_13 to trick Snow White. She offered Snow White a piece of $session.params.word_11 dipped in $session.params.word_12. Snow White took one bite and fell into a deep sleep. The wicked queen said, \"She will never be awake again!\" The Dwarfs chased the queen, until she fell from a mountain. To be never seen. The dwarfs cried and placed her in a coffin made of $session.params.word_14. To keep watch over Snow White every day.",
+          "languageCode": "en"
+        } ],
+        "placeholders": [ {
+          "id": "session",
+          "name": "session"
+        } ],
+        "etag": "693aad98",
+        "modelParameter": {
+          "temperature": 0.5,
+          "maxDecodeSteps": 128,
+          "topP": 0.94999999,
+          "topK": 40
+        },
+        "llmModelSettings": {
+          "model": "gemini-2.5-flash"
+        }
+      }
+    } ]
+  }
+}

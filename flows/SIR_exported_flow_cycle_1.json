@@ -1,0 +1,2171 @@
+{
+  "flow": {
+    "flow": {
+      "flowId": "c5eacb8c-2410-47b0-a51a-02c96c998c08",
+      "displayName": "cycle_1",
+      "transitionEvents": [ {
+        "condition": {
+          "restriction": {
+            "comparator": "NOT_EQUALS",
+            "lhs": {
+              "member": {
+                "expressions": [ {
+                  "value": "$session"
+                }, {
+                  "value": "params"
+                }, {
+                  "value": "word_1"
+                } ]
+              }
+            },
+            "rhs": {
+              "value": "null"
+            }
+          }
+        },
+        "transitionEventHandler": {
+          "beforeTransition": {
+          
+          },
+          "targetPageId": "6c41e6b1-350e-4904-907f-685dcab0b4bd"
+        },
+        "name": "ce793eed-90d6-4e23-b1f1-caf8de40994d",
+        "conditionString": "$session.params.word_1 != null"
+      }, {
+        "condition": {
+          "restriction": {
+            "comparator": "GLOBAL",
+            "rhs": {
+              "value": "true"
+            }
+          }
+        },
+        "transitionEventHandler": {
+          "beforeTransition": {
+          
+          },
+          "targetPageId": "0d747c5f-5603-4409-a3fe-869652906d89"
+        },
+        "name": "667a6a8c-00c6-4869-9a5d-aae752c3d494",
+        "conditionString": "true"
+      } ],
+      "modelIdentifier": {
+        "modelId": "67cf9b82-3dcb-4287-9622-b3bb36371cf5"
+      },
+      "conversationEvents": [ {
+        "event": "sys.no-match-default",
+        "handler": {
+          "beforeTransition": {
+          
+          },
+          "targetPageId": "e09780e0-2dfb-49ec-9b57-822b0aa56356"
+        },
+        "name": "867c1336-e196-4ba0-827c-3eee571356d0"
+      }, {
+        "event": "sys.no-input-default",
+        "handler": {
+          "beforeTransition": {
+          
+          },
+          "targetPageId": "e09780e0-2dfb-49ec-9b57-822b0aa56356"
+        },
+        "name": "6e553329-d5a7-4b60-b89d-4db277212947"
+      } ],
+      "nluSettings": {
+        "classificationThreshold": 0.30000001,
+        "modelType": "MODEL_TYPE_ADVANCED",
+        "modelTrainingMode": "MODEL_TRAINING_MODE_AUTOMATIC",
+        "customConfigKey": "d37df153-760e-4461-ac5f-0242af296fad"
+      },
+      "ivrSettings": {
+        "enableIvr": true
+      },
+      "etag": "6938634f",
+      "nluSettingsMapping": [ {
+        "key": "en",
+        "value": {
+          "classificationThreshold": 0.30000001,
+          "modelType": "MODEL_TYPE_ADVANCED",
+          "modelTrainingMode": "MODEL_TRAINING_MODE_AUTOMATIC",
+          "customConfigKey": "d37df153-760e-4461-ac5f-0242af296fad",
+          "languageCode": "en"
+        }
+      } ]
+    },
+    "intents": [ {
+      "meta": {
+        "id": "a5c8f977-6a5a-42a7-b5cd-96de65710aaf",
+        "displayName": "user_provides_word",
+        "priority": 500000,
+        "parameters": [ {
+          "id": "any_word",
+          "displayName": "any_word",
+          "value": "$any_word",
+          "entityTypeDisplayName": "@sys.any"
+        } ],
+        "etag": "6928289b"
+      },
+      "trainingPhrases": [ {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "pretty",
+          "entityType": "@sys.any",
+          "alias": "any_word",
+          "userDefined": true
+        } ],
+        "timesAddedCount": 1,
+        "lang": "en"
+      }, {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "lamp",
+          "entityType": "@sys.any",
+          "alias": "any_word",
+          "userDefined": true
+        } ],
+        "timesAddedCount": 1,
+        "lang": "en"
+      }, {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "bed",
+          "entityType": "@sys.any",
+          "alias": "any_word",
+          "userDefined": true
+        } ],
+        "timesAddedCount": 1,
+        "lang": "en"
+      }, {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "beautiful",
+          "entityType": "@sys.any",
+          "alias": "any_word",
+          "userDefined": true
+        } ],
+        "timesAddedCount": 1,
+        "lang": "en"
+      }, {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "fat",
+          "entityType": "@sys.any",
+          "alias": "any_word",
+          "userDefined": true
+        } ],
+        "timesAddedCount": 1,
+        "lang": "en"
+      }, {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "tall",
+          "entityType": "@sys.any",
+          "alias": "any_word",
+          "userDefined": true
+        } ],
+        "timesAddedCount": 1,
+        "lang": "en"
+      }, {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "smart",
+          "entityType": "@sys.any",
+          "alias": "any_word",
+          "userDefined": true
+        } ],
+        "timesAddedCount": 1,
+        "lang": "en"
+      }, {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "banana",
+          "entityType": "@sys.any",
+          "alias": "any_word",
+          "userDefined": true
+        } ],
+        "timesAddedCount": 1,
+        "lang": "en"
+      }, {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "leg",
+          "entityType": "@sys.any",
+          "alias": "any_word",
+          "userDefined": true
+        } ],
+        "timesAddedCount": 1,
+        "lang": "en"
+      }, {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "blue",
+          "entityType": "@sys.any",
+          "alias": "any_word",
+          "userDefined": true
+        } ],
+        "timesAddedCount": 1,
+        "lang": "en"
+      }, {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "The word is ",
+          "userDefined": true
+        }, {
+          "text": "chair",
+          "entityType": "@sys.any",
+          "alias": "any_word",
+          "userDefined": true
+        } ],
+        "timesAddedCount": 1,
+        "lang": "en"
+      }, {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "It is ",
+          "userDefined": true
+        }, {
+          "text": "apple",
+          "entityType": "@sys.any",
+          "alias": "any_word",
+          "userDefined": true
+        } ],
+        "timesAddedCount": 1,
+        "lang": "en"
+      } ]
+    }, {
+      "meta": {
+        "id": "47d51c4d-46cb-4895-9a01-9f7afefc8603",
+        "displayName": "user_provides_adjective",
+        "priority": 500000,
+        "parameters": [ {
+          "id": "adjective",
+          "displayName": "adjective",
+          "value": "$adjective",
+          "entityTypeDisplayName": "@Adjectives"
+        } ],
+        "etag": "693ab124"
+      },
+      "trainingPhrases": [ {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "expensive",
+          "entityType": "@Adjectives",
+          "alias": "adjective",
+          "userDefined": true
+        } ],
+        "timesAddedCount": 1,
+        "lang": "en"
+      }, {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "slow",
+          "entityType": "@Adjectives",
+          "alias": "adjective",
+          "userDefined": true
+        } ],
+        "timesAddedCount": 1,
+        "lang": "en"
+      }, {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "fast",
+          "entityType": "@Adjectives",
+          "alias": "adjective",
+          "userDefined": true
+        } ],
+        "timesAddedCount": 1,
+        "lang": "en"
+      }, {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "clumsy",
+          "entityType": "@Adjectives",
+          "alias": "adjective",
+          "userDefined": true
+        } ],
+        "timesAddedCount": 1,
+        "lang": "en"
+      }, {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "graceful",
+          "entityType": "@Adjectives",
+          "alias": "adjective",
+          "userDefined": true
+        } ],
+        "timesAddedCount": 1,
+        "lang": "en"
+      }, {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "silly",
+          "entityType": "@Adjectives",
+          "alias": "adjective",
+          "userDefined": true
+        } ],
+        "timesAddedCount": 1,
+        "lang": "en"
+      }, {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "horrible",
+          "entityType": "@Adjectives",
+          "alias": "adjective",
+          "userDefined": true
+        } ],
+        "timesAddedCount": 1,
+        "lang": "en"
+      }, {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "fantastic",
+          "entityType": "@Adjectives",
+          "alias": "adjective",
+          "userDefined": true
+        } ],
+        "timesAddedCount": 1,
+        "lang": "en"
+      }, {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "amazing",
+          "entityType": "@Adjectives",
+          "alias": "adjective",
+          "userDefined": true
+        } ],
+        "timesAddedCount": 1,
+        "lang": "en"
+      }, {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "interesting",
+          "entityType": "@Adjectives",
+          "alias": "adjective",
+          "userDefined": true
+        } ],
+        "timesAddedCount": 1,
+        "lang": "en"
+      }, {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "fun",
+          "entityType": "@Adjectives",
+          "alias": "adjective",
+          "userDefined": true
+        } ],
+        "timesAddedCount": 1,
+        "lang": "en"
+      }, {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "pretty",
+          "entityType": "@Adjectives",
+          "alias": "adjective"
+        } ],
+        "timesAddedCount": 1,
+        "lang": "en"
+      }, {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "beautiful",
+          "entityType": "@Adjectives",
+          "alias": "adjective",
+          "userDefined": true
+        } ],
+        "timesAddedCount": 1,
+        "lang": "en"
+      }, {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "ugly",
+          "entityType": "@Adjectives",
+          "alias": "adjective"
+        } ],
+        "timesAddedCount": 1,
+        "lang": "en"
+      }, {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "tall",
+          "entityType": "@Adjectives",
+          "alias": "adjective"
+        } ],
+        "timesAddedCount": 1,
+        "lang": "en"
+      }, {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "smart",
+          "entityType": "@Adjectives",
+          "alias": "adjective"
+        } ],
+        "timesAddedCount": 1,
+        "lang": "en"
+      } ]
+    }, {
+      "meta": {
+        "id": "be108cc9-9425-4cdd-b675-9851c76d6128",
+        "displayName": "user_provides_fruit",
+        "priority": 500000,
+        "parameters": [ {
+          "id": "fruit",
+          "displayName": "fruit",
+          "value": "$fruit",
+          "entityTypeDisplayName": "@fruits"
+        } ],
+        "etag": "693aa6ff"
+      },
+      "trainingPhrases": [ {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "I want a ",
+          "userDefined": true
+        }, {
+          "text": "pomegranate",
+          "entityType": "@fruits",
+          "alias": "fruit",
+          "userDefined": true
+        } ],
+        "timesAddedCount": 1,
+        "lang": "en"
+      }, {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "I am going to choose a ",
+          "userDefined": true
+        }, {
+          "text": "tangerine",
+          "entityType": "@fruits",
+          "alias": "fruit",
+          "userDefined": true
+        } ],
+        "timesAddedCount": 1,
+        "lang": "en"
+      }, {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "I select a ",
+          "userDefined": true
+        }, {
+          "text": "lime",
+          "entityType": "@fruits",
+          "alias": "fruit",
+          "userDefined": true
+        } ],
+        "timesAddedCount": 1,
+        "lang": "en"
+      }, {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "My selection is a ",
+          "userDefined": true
+        }, {
+          "text": "lemon",
+          "entityType": "@fruits",
+          "alias": "fruit",
+          "userDefined": true
+        } ],
+        "timesAddedCount": 1,
+        "lang": "en"
+      }, {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "I will choose a ",
+          "userDefined": true
+        }, {
+          "text": "pear",
+          "entityType": "@fruits",
+          "alias": "fruit",
+          "userDefined": true
+        } ],
+        "timesAddedCount": 1,
+        "lang": "en"
+      }, {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "I pick a ",
+          "userDefined": true
+        }, {
+          "text": "peach",
+          "entityType": "@fruits",
+          "alias": "fruit",
+          "userDefined": true
+        } ],
+        "timesAddedCount": 1,
+        "lang": "en"
+      }, {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "I like ",
+          "userDefined": true
+        }, {
+          "text": "plum",
+          "entityType": "@fruits",
+          "alias": "fruit",
+          "userDefined": true
+        } ],
+        "timesAddedCount": 1,
+        "lang": "en"
+      }, {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "I pick a ",
+          "userDefined": true
+        }, {
+          "text": "coconut",
+          "entityType": "@fruits",
+          "alias": "fruit",
+          "userDefined": true
+        } ],
+        "timesAddedCount": 1,
+        "lang": "en"
+      }, {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "I want a ",
+          "userDefined": true
+        }, {
+          "text": "raspberry",
+          "entityType": "@fruits",
+          "alias": "fruit",
+          "userDefined": true
+        } ],
+        "timesAddedCount": 1,
+        "lang": "en"
+      }, {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "I'd like a ",
+          "userDefined": true
+        }, {
+          "text": "kiwi",
+          "entityType": "@fruits",
+          "alias": "fruit",
+          "userDefined": true
+        } ],
+        "timesAddedCount": 1,
+        "lang": "en"
+      }, {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "My favorite is ",
+          "userDefined": true
+        }, {
+          "text": "cherry",
+          "entityType": "@fruits",
+          "alias": "fruit",
+          "userDefined": true
+        } ],
+        "timesAddedCount": 1,
+        "lang": "en"
+      }, {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "I want a ",
+          "userDefined": true
+        }, {
+          "text": "watermelon",
+          "entityType": "@fruits",
+          "alias": "fruit",
+          "userDefined": true
+        } ],
+        "timesAddedCount": 1,
+        "lang": "en"
+      }, {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "My choice is a ",
+          "userDefined": true
+        }, {
+          "text": "pineapple",
+          "entityType": "@fruits",
+          "alias": "fruit",
+          "userDefined": true
+        } ],
+        "timesAddedCount": 1,
+        "lang": "en"
+      }, {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "I would like an ",
+          "userDefined": true
+        }, {
+          "text": "orange",
+          "entityType": "@fruits",
+          "alias": "fruit",
+          "userDefined": true
+        } ],
+        "timesAddedCount": 1,
+        "lang": "en"
+      }, {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "blueberry",
+          "entityType": "@fruits",
+          "alias": "fruit",
+          "userDefined": true
+        } ],
+        "timesAddedCount": 1,
+        "lang": "en"
+      }, {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "strawberry",
+          "entityType": "@fruits",
+          "alias": "fruit"
+        } ],
+        "timesAddedCount": 1,
+        "lang": "en"
+      }, {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "i choose "
+        }, {
+          "text": "grape",
+          "entityType": "@fruits",
+          "alias": "fruit"
+        } ],
+        "timesAddedCount": 1,
+        "lang": "en"
+      }, {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "Mango",
+          "entityType": "@fruits",
+          "alias": "fruit"
+        } ],
+        "timesAddedCount": 1,
+        "lang": "en"
+      }, {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "It is a "
+        }, {
+          "text": "banana",
+          "entityType": "@fruits",
+          "alias": "fruit"
+        } ],
+        "timesAddedCount": 1,
+        "lang": "en"
+      }, {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "Apple",
+          "entityType": "@fruits",
+          "alias": "fruit"
+        } ],
+        "timesAddedCount": 1,
+        "lang": "en"
+      } ]
+    }, {
+      "meta": {
+        "id": "aa4c42e1-f734-4c74-a177-8dc8c7234249",
+        "displayName": "small_talk.confirmation.yes",
+        "priority": 500000
+      },
+      "trainingPhrases": [ {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "yup"
+        } ],
+        "timesAddedCount": 1,
+        "lang": "en"
+      }, {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "yes sure"
+        } ],
+        "timesAddedCount": 1,
+        "lang": "en"
+      }, {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "that is ok"
+        } ],
+        "timesAddedCount": 1,
+        "lang": "en"
+      }, {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "yes for sure"
+        } ],
+        "timesAddedCount": 1,
+        "lang": "en"
+      }, {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "yes I do"
+        } ],
+        "timesAddedCount": 1,
+        "lang": "en"
+      }, {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "yeah sure"
+        } ],
+        "timesAddedCount": 1,
+        "lang": "en"
+      }, {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "yes it is correct"
+        } ],
+        "timesAddedCount": 1,
+        "lang": "en"
+      }, {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "ok thank you"
+        } ],
+        "timesAddedCount": 1,
+        "lang": "en"
+      }, {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "sure why not"
+        } ],
+        "timesAddedCount": 1,
+        "lang": "en"
+      }, {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "of course why not"
+        } ],
+        "timesAddedCount": 1,
+        "lang": "en"
+      }, {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "yeah of course"
+        } ],
+        "timesAddedCount": 1,
+        "lang": "en"
+      }, {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "nevermind its okay"
+        } ],
+        "timesAddedCount": 1,
+        "lang": "en"
+      }, {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "of course"
+        } ],
+        "timesAddedCount": 1,
+        "lang": "en"
+      }, {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "yes this is correct"
+        } ],
+        "timesAddedCount": 1,
+        "lang": "en"
+      }, {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "ye"
+        } ],
+        "timesAddedCount": 1,
+        "lang": "en"
+      }, {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "yes of course"
+        } ],
+        "timesAddedCount": 1,
+        "lang": "en"
+      }, {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "ok you can"
+        } ],
+        "timesAddedCount": 1,
+        "lang": "en"
+      }, {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "confirmed"
+        } ],
+        "timesAddedCount": 1,
+        "lang": "en"
+      }, {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "definitely"
+        } ],
+        "timesAddedCount": 1,
+        "lang": "en"
+      }, {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "ok sure"
+        } ],
+        "timesAddedCount": 1,
+        "lang": "en"
+      }, {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "obviously"
+        } ],
+        "timesAddedCount": 1,
+        "lang": "en"
+      }, {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "yes it is"
+        } ],
+        "timesAddedCount": 1,
+        "lang": "en"
+      }, {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "oh yes"
+        } ],
+        "timesAddedCount": 1,
+        "lang": "en"
+      }, {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "ok"
+        } ],
+        "timesAddedCount": 1,
+        "lang": "en"
+      }, {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "certainly"
+        } ],
+        "timesAddedCount": 1,
+        "lang": "en"
+      }, {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "correct"
+        } ],
+        "timesAddedCount": 1,
+        "lang": "en"
+      }, {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "looks good"
+        } ],
+        "timesAddedCount": 1,
+        "lang": "en"
+      }, {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "go ahead"
+        } ],
+        "timesAddedCount": 1,
+        "lang": "en"
+      }, {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "yes correct"
+        } ],
+        "timesAddedCount": 1,
+        "lang": "en"
+      }, {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "yea"
+        } ],
+        "timesAddedCount": 1,
+        "lang": "en"
+      }, {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "okie dokie"
+        } ],
+        "timesAddedCount": 1,
+        "lang": "en"
+      }, {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "right"
+        } ],
+        "timesAddedCount": 1,
+        "lang": "en"
+      }, {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "yes indeed"
+        } ],
+        "timesAddedCount": 1,
+        "lang": "en"
+      }, {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "sounds good"
+        } ],
+        "timesAddedCount": 1,
+        "lang": "en"
+      }, {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "that's okay"
+        } ],
+        "timesAddedCount": 1,
+        "lang": "en"
+      }, {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "I don't mind"
+        } ],
+        "timesAddedCount": 1,
+        "lang": "en"
+      }, {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "yeah go ahead"
+        } ],
+        "timesAddedCount": 1,
+        "lang": "en"
+      }, {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "go for it"
+        } ],
+        "timesAddedCount": 1,
+        "lang": "en"
+      }, {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "yeah I'm sure"
+        } ],
+        "timesAddedCount": 1,
+        "lang": "en"
+      }, {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "yes right"
+        } ],
+        "timesAddedCount": 1,
+        "lang": "en"
+      }, {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "affirmative"
+        } ],
+        "timesAddedCount": 1,
+        "lang": "en"
+      }, {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "yes"
+        } ],
+        "timesAddedCount": 1,
+        "lang": "en"
+      }, {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "sure thing"
+        } ],
+        "timesAddedCount": 1,
+        "lang": "en"
+      }, {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "I do"
+        } ],
+        "timesAddedCount": 1,
+        "lang": "en"
+      }, {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "yeah right"
+        } ],
+        "timesAddedCount": 1,
+        "lang": "en"
+      }, {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "okay that's fine"
+        } ],
+        "timesAddedCount": 1,
+        "lang": "en"
+      }, {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "confirm"
+        } ],
+        "timesAddedCount": 1,
+        "lang": "en"
+      }, {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "yes I would like to"
+        } ],
+        "timesAddedCount": 1,
+        "lang": "en"
+      }, {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "sure is"
+        } ],
+        "timesAddedCount": 1,
+        "lang": "en"
+      }, {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "ok go ahead"
+        } ],
+        "timesAddedCount": 1,
+        "lang": "en"
+      }, {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "yes that's fine"
+        } ],
+        "timesAddedCount": 1,
+        "lang": "en"
+      }, {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "alrighty"
+        } ],
+        "timesAddedCount": 1,
+        "lang": "en"
+      }, {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "yes definitely"
+        } ],
+        "timesAddedCount": 1,
+        "lang": "en"
+      }, {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "why not"
+        } ],
+        "timesAddedCount": 1,
+        "lang": "en"
+      }, {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "yeh"
+        } ],
+        "timesAddedCount": 1,
+        "lang": "en"
+      }, {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "k"
+        } ],
+        "timesAddedCount": 1,
+        "lang": "en"
+      }, {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "okay then"
+        } ],
+        "timesAddedCount": 1,
+        "lang": "en"
+      }, {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "this is correct"
+        } ],
+        "timesAddedCount": 1,
+        "lang": "en"
+      }, {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "okay sounds good"
+        } ],
+        "timesAddedCount": 1,
+        "lang": "en"
+      }, {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "yap"
+        } ],
+        "timesAddedCount": 1,
+        "lang": "en"
+      }, {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "ok yes"
+        } ],
+        "timesAddedCount": 1,
+        "lang": "en"
+      }, {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "yeah exactly"
+        } ],
+        "timesAddedCount": 1,
+        "lang": "en"
+      }, {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "please do"
+        } ],
+        "timesAddedCount": 1,
+        "lang": "en"
+      }, {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "all right"
+        } ],
+        "timesAddedCount": 1,
+        "lang": "en"
+      }, {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "okay"
+        } ],
+        "timesAddedCount": 1,
+        "lang": "en"
+      }, {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "yeah that's right"
+        } ],
+        "timesAddedCount": 1,
+        "lang": "en"
+      }, {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "I think so"
+        } ],
+        "timesAddedCount": 1,
+        "lang": "en"
+      }, {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "yep"
+        } ],
+        "timesAddedCount": 1,
+        "lang": "en"
+      }, {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "ya"
+        } ],
+        "timesAddedCount": 1,
+        "lang": "en"
+      }, {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "I agree"
+        } ],
+        "timesAddedCount": 1,
+        "lang": "en"
+      }, {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "yes you may"
+        } ],
+        "timesAddedCount": 1,
+        "lang": "en"
+      }, {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "yes I agree"
+        } ],
+        "timesAddedCount": 1,
+        "lang": "en"
+      }, {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "yeah"
+        } ],
+        "timesAddedCount": 1,
+        "lang": "en"
+      }, {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "absolutely"
+        } ],
+        "timesAddedCount": 1,
+        "lang": "en"
+      }, {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "okey"
+        } ],
+        "timesAddedCount": 1,
+        "lang": "en"
+      }, {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "I guess"
+        } ],
+        "timesAddedCount": 1,
+        "lang": "en"
+      }, {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "exactly"
+        } ],
+        "timesAddedCount": 1,
+        "lang": "en"
+      }, {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "that's correct"
+        } ],
+        "timesAddedCount": 1,
+        "lang": "en"
+      }, {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "yes thank you"
+        } ],
+        "timesAddedCount": 1,
+        "lang": "en"
+      }, {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "sure"
+        } ],
+        "timesAddedCount": 1,
+        "lang": "en"
+      }, {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "do it"
+        } ],
+        "timesAddedCount": 1,
+        "lang": "en"
+      } ]
+    }, {
+      "meta": {
+        "id": "00000000-0000-0000-0000-000000000001",
+        "displayName": "Default Negative Intent",
+        "priority": 500000,
+        "isFallback": true
+      },
+      "trainingPhrases": [ {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "What's your zodiac sign?"
+        } ],
+        "timesAddedCount": 1,
+        "lang": "en"
+      }, {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "I'd like to order a ",
+          "userDefined": true
+        }, {
+          "text": "burger"
+        } ],
+        "timesAddedCount": 1,
+        "lang": "en"
+      }, {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "What is your gender?"
+        } ],
+        "timesAddedCount": 1,
+        "lang": "en"
+      }, {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "What's your favorite color?"
+        } ],
+        "timesAddedCount": 1,
+        "lang": "en"
+      } ]
+    }, {
+      "meta": {
+        "id": "33bf7629-f582-44ba-8b18-f4d010853799",
+        "displayName": "user_provides_bodypart",
+        "priority": 500000,
+        "parameters": [ {
+          "id": "bodypart",
+          "displayName": "bodypart",
+          "value": "$bodypart",
+          "entityTypeDisplayName": "@bodyParts"
+        } ],
+        "etag": "693aa51e"
+      },
+      "trainingPhrases": [ {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "my ",
+          "userDefined": true
+        }, {
+          "text": "thighs",
+          "entityType": "@bodyParts",
+          "alias": "bodypart",
+          "userDefined": true
+        } ],
+        "timesAddedCount": 1,
+        "lang": "en"
+      }, {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "my ",
+          "userDefined": true
+        }, {
+          "text": "stomach",
+          "entityType": "@bodyParts",
+          "alias": "bodypart",
+          "userDefined": true
+        } ],
+        "timesAddedCount": 1,
+        "lang": "en"
+      }, {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "my ",
+          "userDefined": true
+        }, {
+          "text": "chest",
+          "entityType": "@bodyParts",
+          "alias": "bodypart",
+          "userDefined": true
+        } ],
+        "timesAddedCount": 1,
+        "lang": "en"
+      }, {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "thumb",
+          "entityType": "@bodyParts",
+          "alias": "bodypart",
+          "userDefined": true
+        } ],
+        "timesAddedCount": 1,
+        "lang": "en"
+      }, {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "hips",
+          "entityType": "@bodyParts",
+          "alias": "bodypart",
+          "userDefined": true
+        } ],
+        "timesAddedCount": 1,
+        "lang": "en"
+      }, {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "back",
+          "entityType": "@bodyParts",
+          "alias": "bodypart",
+          "userDefined": true
+        } ],
+        "timesAddedCount": 1,
+        "lang": "en"
+      }, {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "my ",
+          "userDefined": true
+        }, {
+          "text": "neck",
+          "entityType": "@bodyParts",
+          "alias": "bodypart",
+          "userDefined": true
+        } ],
+        "timesAddedCount": 1,
+        "lang": "en"
+      }, {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "heel",
+          "entityType": "@bodyParts",
+          "alias": "bodypart",
+          "userDefined": true
+        } ],
+        "timesAddedCount": 1,
+        "lang": "en"
+      }, {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "toe",
+          "entityType": "@bodyParts",
+          "alias": "bodypart",
+          "userDefined": true
+        } ],
+        "timesAddedCount": 1,
+        "lang": "en"
+      }, {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "finger",
+          "entityType": "@bodyParts",
+          "alias": "bodypart"
+        } ],
+        "timesAddedCount": 1,
+        "lang": "en"
+      }, {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "knee",
+          "entityType": "@bodyParts",
+          "alias": "bodypart",
+          "userDefined": true
+        } ],
+        "timesAddedCount": 1,
+        "lang": "en"
+      }, {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "elbow",
+          "entityType": "@bodyParts",
+          "alias": "bodypart",
+          "userDefined": true
+        } ],
+        "timesAddedCount": 1,
+        "lang": "en"
+      }, {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "hand",
+          "entityType": "@bodyParts",
+          "alias": "bodypart",
+          "userDefined": true
+        } ],
+        "timesAddedCount": 1,
+        "lang": "en"
+      }, {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "feet",
+          "entityType": "@bodyParts",
+          "alias": "bodypart",
+          "userDefined": true
+        } ],
+        "timesAddedCount": 1,
+        "lang": "en"
+      }, {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "foot",
+          "entityType": "@bodyParts",
+          "alias": "bodypart"
+        } ],
+        "timesAddedCount": 2,
+        "lang": "en"
+      }, {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "ankle",
+          "entityType": "@bodyParts",
+          "alias": "bodypart",
+          "userDefined": true
+        } ],
+        "timesAddedCount": 1,
+        "lang": "en"
+      }, {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "shoulder",
+          "entityType": "@bodyParts",
+          "alias": "bodypart",
+          "userDefined": true
+        } ],
+        "timesAddedCount": 1,
+        "lang": "en"
+      }, {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "head",
+          "entityType": "@bodyParts",
+          "alias": "bodypart"
+        } ],
+        "timesAddedCount": 1,
+        "lang": "en"
+      }, {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "my "
+        }, {
+          "text": "arm",
+          "entityType": "@bodyParts",
+          "alias": "bodypart"
+        } ],
+        "timesAddedCount": 1,
+        "lang": "en"
+      }, {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "leg",
+          "entityType": "@bodyParts",
+          "alias": "bodypart"
+        } ],
+        "timesAddedCount": 1,
+        "lang": "en"
+      } ]
+    } ],
+    "entities": [ {
+      "id": "11691210-9c79-44d5-9dba-a0c92dc44aee",
+      "displayName": "fruits",
+      "kind": "KIND_MAP",
+      "entries": [ {
+        "value": "strawberry",
+        "synonyms": [ "strawberry" ],
+        "lang": "en"
+      }, {
+        "value": "grape",
+        "synonyms": [ "grape" ],
+        "lang": "en"
+      }, {
+        "value": "pear",
+        "synonyms": [ "pear" ],
+        "lang": "en"
+      }, {
+        "value": "mango",
+        "synonyms": [ "mango" ],
+        "lang": "en"
+      }, {
+        "value": "orange",
+        "synonyms": [ "orange" ],
+        "lang": "en"
+      }, {
+        "value": "banana",
+        "synonyms": [ "banana" ],
+        "lang": "en"
+      }, {
+        "value": "apple",
+        "synonyms": [ "apple" ],
+        "lang": "en"
+      } ],
+      "nluSettings": {
+      
+      }
+    }, {
+      "id": "4fdb371a-3d29-4ec3-bff6-ae99c2d40e3d",
+      "displayName": "bodyParts",
+      "kind": "KIND_MAP",
+      "entries": [ {
+        "value": "back",
+        "synonyms": [ "back" ],
+        "lang": "en"
+      }, {
+        "value": "belly",
+        "synonyms": [ "belly" ],
+        "lang": "en"
+      }, {
+        "value": "ear",
+        "synonyms": [ "ear" ],
+        "lang": "en"
+      }, {
+        "value": "foot",
+        "synonyms": [ "foot" ],
+        "lang": "en"
+      }, {
+        "value": "finger",
+        "synonyms": [ "finger" ],
+        "lang": "en"
+      }, {
+        "value": "nose",
+        "synonyms": [ "nose" ],
+        "lang": "en"
+      }, {
+        "value": "head",
+        "synonyms": [ "head" ],
+        "lang": "en"
+      }, {
+        "value": "arm",
+        "synonyms": [ "arm" ],
+        "lang": "en"
+      }, {
+        "value": "leg",
+        "synonyms": [ "leg" ],
+        "lang": "en"
+      } ],
+      "nluSettings": {
+      
+      }
+    }, {
+      "id": "b189ef9e-ad85-43f5-a098-514c8eaaef5f",
+      "displayName": "Adjectives",
+      "kind": "KIND_MAP",
+      "entries": [ {
+        "value": "dumb",
+        "synonyms": [ "dumb" ],
+        "lang": "en"
+      }, {
+        "value": "smart",
+        "synonyms": [ "smart" ],
+        "lang": "en"
+      }, {
+        "value": "slow",
+        "synonyms": [ "slow" ],
+        "lang": "en"
+      }, {
+        "value": "fast",
+        "synonyms": [ "fast" ],
+        "lang": "en"
+      }, {
+        "value": "pretty",
+        "synonyms": [ "pretty" ],
+        "lang": "en"
+      }, {
+        "value": "ugly",
+        "synonyms": [ "ugly" ],
+        "lang": "en"
+      }, {
+        "value": "funny",
+        "synonyms": [ "funny" ],
+        "lang": "en"
+      }, {
+        "value": "tall",
+        "synonyms": [ "tall" ],
+        "lang": "en"
+      }, {
+        "value": "small",
+        "synonyms": [ "small" ],
+        "lang": "en"
+      } ],
+      "nluSettings": {
+      
+      }
+    } ],
+    "pages": [ {
+      "key": "0d747c5f-5603-4409-a3fe-869652906d89",
+      "value": {
+        "displayName": "01_intro",
+        "onLoad": {
+        
+        },
+        "transitionEvents": [ {
+          "condition": {
+            "restriction": {
+              "comparator": "GLOBAL",
+              "rhs": {
+                "value": "true"
+              }
+            }
+          },
+          "transitionEventHandler": {
+            "beforeTransition": {
+            
+            },
+            "targetPageId": "e09780e0-2dfb-49ec-9b57-822b0aa56356"
+          },
+          "name": "f4043961-3b84-4803-ac12-40da7721b9c7",
+          "conditionString": "true"
+        } ],
+        "etag": "693aa1c6"
+      }
+    }, {
+      "key": "6c41e6b1-350e-4904-907f-685dcab0b4bd",
+      "value": {
+        "displayName": "03_Get_object",
+        "onLoad": {
+          "staticUserResponse": {
+            "candidates": [ {
+              "selector": {
+                "platform": [ "PLATFORM_UNSPECIFIED" ],
+                "lang": "en"
+              },
+              "responses": [ {
+                "text": {
+                  "variants": [ {
+                    "text": "Name a weird object to compare skin to."
+                  } ]
+                }
+              } ]
+            } ]
+          }
+        },
+        "transitionEvents": [ {
+          "triggerIntentId": "a5c8f977-6a5a-42a7-b5cd-96de65710aaf",
+          "transitionEventHandler": {
+            "beforeTransition": {
+              "staticUserResponse": {
+                "candidates": [ {
+                  "selector": {
+                    "platform": [ "PLATFORM_UNSPECIFIED" ],
+                    "lang": "en"
+                  },
+                  "responses": [ {
+                    "text": {
+                      "variants": [ {
+                        "text": "Object: $intent.params.any_word."
+                      } ]
+                    }
+                  } ]
+                } ]
+              },
+              "setParameterActions": [ {
+                "parameter": "word_2",
+                "value": "$intent.params.any_word"
+              } ]
+            },
+            "targetPageId": "8f998b21-a1c4-45af-984c-be5a747fae07"
+          },
+          "name": "2e05e9ec-0744-4e51-9dcd-b582b4e1233d"
+        } ],
+        "conversationEvents": [ {
+          "event": "sys.no-input-default",
+          "handler": {
+            "beforeTransition": {
+              "staticUserResponse": {
+                "candidates": [ {
+                  "selector": {
+                    "platform": [ "PLATFORM_UNSPECIFIED" ],
+                    "lang": "en"
+                  },
+                  "responses": [ {
+                    "text": {
+                      "variants": [ {
+                        "text": "I didn't hear anything. Please provide an adjective"
+                      } ]
+                    }
+                  } ]
+                } ]
+              }
+            },
+            "targetPageId": "6c41e6b1-350e-4904-907f-685dcab0b4bd"
+          },
+          "name": "5090a595-7633-4ee8-865c-1582583f63b5"
+        } ],
+        "etag": "693863c9"
+      }
+    }, {
+      "key": "77521217-f585-4bed-963a-e0f9945b08ae",
+      "value": {
+        "displayName": "05b_Confirm_Ready",
+        "transitionEvents": [ {
+          "triggerIntentId": "aa4c42e1-f734-4c74-a177-8dc8c7234249",
+          "transitionEventHandler": {
+            "beforeTransition": {
+            
+            },
+            "targetPageId": "b7e755d3-1760-4517-9ac3-e4bc194ef17c"
+          },
+          "name": "9f06a243-34f2-478e-91a2-fcc9da66daac"
+        } ],
+        "conversationEvents": [ {
+          "event": "sys.no-input-default",
+          "handler": {
+            "beforeTransition": {
+              "staticUserResponse": {
+                "candidates": [ {
+                  "selector": {
+                    "platform": [ "PLATFORM_UNSPECIFIED" ],
+                    "lang": "en"
+                  },
+                  "responses": [ {
+                    "text": {
+                      "variants": [ {
+                        "text": "I didn't hear you. Are you ready?"
+                      } ]
+                    }
+                  } ]
+                } ]
+              }
+            },
+            "targetPageId": "77521217-f585-4bed-963a-e0f9945b08ae"
+          },
+          "name": "2b9e4100-7647-4412-944c-43b7bca7c02d"
+        }, {
+          "event": "sys.no-match-default",
+          "handler": {
+            "beforeTransition": {
+              "staticUserResponse": {
+                "candidates": [ {
+                  "selector": {
+                    "platform": [ "PLATFORM_UNSPECIFIED" ],
+                    "lang": "en"
+                  },
+                  "responses": [ {
+                    "text": {
+                      "variants": [ {
+                        "text": "Please confirm that you are ready for the story by replying yes!"
+                      } ]
+                    }
+                  } ]
+                } ]
+              }
+            },
+            "targetPageId": "77521217-f585-4bed-963a-e0f9945b08ae"
+          },
+          "name": "c7187d6d-dd5a-4247-a1d3-fabf5e85d94a"
+        } ],
+        "etag": "693a9ef0"
+      }
+    }, {
+      "key": "8f998b21-a1c4-45af-984c-be5a747fae07",
+      "value": {
+        "displayName": "04_Get_Bodypart",
+        "onLoad": {
+          "staticUserResponse": {
+            "candidates": [ {
+              "selector": {
+                "platform": [ "PLATFORM_UNSPECIFIED" ],
+                "lang": "en"
+              },
+              "responses": [ {
+                "text": {
+                  "variants": [ {
+                    "text": "Name a body part."
+                  } ]
+                }
+              } ]
+            } ]
+          }
+        },
+        "transitionEvents": [ {
+          "triggerIntentId": "33bf7629-f582-44ba-8b18-f4d010853799",
+          "transitionEventHandler": {
+            "beforeTransition": {
+              "staticUserResponse": {
+                "candidates": [ {
+                  "selector": {
+                    "platform": [ "PLATFORM_UNSPECIFIED" ],
+                    "lang": "en"
+                  },
+                  "responses": [ {
+                    "text": {
+                      "variants": [ {
+                        "text": "Body Part: $intent.params.bodypart. "
+                      } ]
+                    }
+                  } ]
+                } ]
+              },
+              "setParameterActions": [ {
+                "parameter": "word_3",
+                "value": "$intent.params.bodypart"
+              } ]
+            },
+            "targetPageId": "b348cd43-0eda-4ff0-b98d-87cc28d34f77"
+          },
+          "name": "64df555c-de84-48b1-bc1f-5e392d3dea27"
+        } ],
+        "conversationEvents": [ {
+          "event": "sys.no-input-default",
+          "handler": {
+            "beforeTransition": {
+              "staticUserResponse": {
+                "candidates": [ {
+                  "selector": {
+                    "platform": [ "PLATFORM_UNSPECIFIED" ],
+                    "lang": "en"
+                  },
+                  "responses": [ {
+                    "text": {
+                      "variants": [ {
+                        "text": "I didn't hear anything. Please name a body part."
+                      } ]
+                    }
+                  } ]
+                } ]
+              }
+            },
+            "targetPageId": "8f998b21-a1c4-45af-984c-be5a747fae07"
+          },
+          "name": "19e661b4-1ad7-49b9-82ec-f6fb1cf667f1"
+        }, {
+          "event": "sys.no-match-default",
+          "handler": {
+            "beforeTransition": {
+              "staticUserResponse": {
+                "candidates": [ {
+                  "selector": {
+                    "platform": [ "PLATFORM_UNSPECIFIED" ],
+                    "lang": "en"
+                  },
+                  "responses": [ {
+                    "text": {
+                      "variants": [ {
+                        "text": "That doesn't sound like a body part. Please name a body part, like arm or head."
+                      } ]
+                    }
+                  } ]
+                } ]
+              }
+            },
+            "targetPageId": "8f998b21-a1c4-45af-984c-be5a747fae07"
+          },
+          "name": "8445388d-09ef-416c-ba0c-73e33460ddbe"
+        } ],
+        "etag": "693863e3"
+      }
+    }, {
+      "key": "b348cd43-0eda-4ff0-b98d-87cc28d34f77",
+      "value": {
+        "displayName": "05_Get_Fruit",
+        "onLoad": {
+          "staticUserResponse": {
+            "candidates": [ {
+              "selector": {
+                "platform": [ "PLATFORM_UNSPECIFIED" ],
+                "lang": "en"
+              },
+              "responses": [ {
+                "text": {
+                  "variants": [ {
+                    "text": "Name a fruit"
+                  } ]
+                }
+              } ]
+            } ]
+          }
+        },
+        "transitionEvents": [ {
+          "triggerIntentId": "be108cc9-9425-4cdd-b675-9851c76d6128",
+          "transitionEventHandler": {
+            "beforeTransition": {
+              "staticUserResponse": {
+                "candidates": [ {
+                  "selector": {
+                    "platform": [ "PLATFORM_UNSPECIFIED" ],
+                    "lang": "en"
+                  },
+                  "responses": [ {
+                    "text": {
+                      "variants": [ {
+                        "text": "\"Fruit: $intent.params.fruit. Are you ready for the story?\""
+                      } ]
+                    }
+                  } ]
+                } ]
+              },
+              "setParameterActions": [ {
+                "parameter": "word_4",
+                "value": "$intent.params.fruit"
+              } ]
+            },
+            "targetPageId": "77521217-f585-4bed-963a-e0f9945b08ae"
+          },
+          "name": "a0ea6f50-bbaa-4a48-a9e1-3fef96d0f9e0"
+        } ],
+        "conversationEvents": [ {
+          "event": "sys.no-match-default",
+          "handler": {
+            "beforeTransition": {
+              "staticUserResponse": {
+                "candidates": [ {
+                  "selector": {
+                    "platform": [ "PLATFORM_UNSPECIFIED" ],
+                    "lang": "en"
+                  },
+                  "responses": [ {
+                    "text": {
+                      "variants": [ {
+                        "text": "That doesn't sound like a fruit. Please name a fruit, like apple or banana."
+                      } ]
+                    }
+                  } ]
+                } ]
+              }
+            },
+            "targetPageId": "b348cd43-0eda-4ff0-b98d-87cc28d34f77"
+          },
+          "name": "984f2d80-dddb-4a2d-aa53-16e37833edf7"
+        }, {
+          "event": "sys.no-input-default",
+          "handler": {
+            "beforeTransition": {
+              "staticUserResponse": {
+                "candidates": [ {
+                  "selector": {
+                    "platform": [ "PLATFORM_UNSPECIFIED" ],
+                    "lang": "en"
+                  },
+                  "responses": [ {
+                    "text": {
+                      "variants": [ {
+                        "text": "\"I didn't hear anything. Please name a fruit.\""
+                      } ]
+                    }
+                  } ]
+                } ]
+              }
+            },
+            "targetPageId": "b348cd43-0eda-4ff0-b98d-87cc28d34f77"
+          },
+          "name": "9fa48a74-d63f-44fc-8a91-90b101771c65"
+        } ],
+        "etag": "692ec7e7"
+      }
+    }, {
+      "key": "b7e755d3-1760-4517-9ac3-e4bc194ef17c",
+      "value": {
+        "displayName": "06_Cycle1_Story",
+        "onLoad": {
+          "staticUserResponse": {
+            "candidates": [ {
+              "selector": {
+                "platform": [ "PLATFORM_UNSPECIFIED" ],
+                "lang": "en"
+              },
+              "responses": [ {
+                "text": {
+                  "variants": [ {
+                    "text": "$request.generative.text"
+                  } ]
+                }
+              } ]
+            }, {
+              "selector": {
+                "platform": [ "PLATFORM_UNSPECIFIED" ],
+                "lang": "en"
+              },
+              "responses": [ {
+                "payload": {
+                  "robot_command": {
+                    "led": "red",
+                    "motion": "neutral",
+                    "text": "$request.generative.text"
+                  }
+                }
+              } ]
+            } ]
+          },
+          "generators": [ {
+            "generatorId": "c65921e1-c0fe-4a92-b680-80300a1ef193",
+            "inputParameters": [ {
+              "key": "session",
+              "value": "$session.params"
+            } ],
+            "outputParameter": "$request.generative.text"
+          } ]
+        },
+        "transitionEvents": [ {
+          "condition": {
+            "restriction": {
+              "comparator": "GLOBAL",
+              "rhs": {
+                "value": "true"
+              }
+            }
+          },
+          "transitionEventHandler": {
+            "beforeTransition": {
+            
+            },
+            "targetFlowId": "35b11713-c8ba-4c88-968a-1acbd74a43a8"
+          },
+          "name": "fbd916c3-1e0f-4a15-acf0-53546c72d473",
+          "conditionString": "true"
+        } ],
+        "etag": "693a9e40"
+      }
+    }, {
+      "key": "e09780e0-2dfb-49ec-9b57-822b0aa56356",
+      "value": {
+        "displayName": "02_Get_adjective",
+        "onLoad": {
+          "staticUserResponse": {
+            "candidates": [ {
+              "selector": {
+                "platform": [ "PLATFORM_UNSPECIFIED" ],
+                "lang": "en"
+              },
+              "responses": [ {
+                "text": {
+                  "variants": [ {
+                    "text": "Name an adjective a Queen would want to be."
+                  } ]
+                }
+              } ]
+            } ]
+          }
+        },
+        "transitionEvents": [ {
+          "triggerIntentId": "47d51c4d-46cb-4895-9a01-9f7afefc8603",
+          "transitionEventHandler": {
+            "beforeTransition": {
+              "staticUserResponse": {
+                "candidates": [ {
+                  "selector": {
+                    "platform": [ "PLATFORM_UNSPECIFIED" ],
+                    "lang": "en"
+                  },
+                  "responses": [ {
+                    "text": {
+                      "variants": [ {
+                        "text": "Adjective: $intent.params.adjective"
+                      } ]
+                    }
+                  } ]
+                } ]
+              },
+              "setParameterActions": [ {
+                "parameter": "word_1",
+                "value": "$intent.params.adjective"
+              } ]
+            },
+            "targetPageId": "6c41e6b1-350e-4904-907f-685dcab0b4bd"
+          },
+          "name": "3fbc3666-c004-44c9-9cf2-96601b5d24ea"
+        } ],
+        "conversationEvents": [ {
+          "event": "sys.no-match-default",
+          "handler": {
+            "beforeTransition": {
+              "staticUserResponse": {
+                "candidates": [ {
+                  "selector": {
+                    "platform": [ "PLATFORM_UNSPECIFIED" ],
+                    "lang": "en"
+                  },
+                  "responses": [ {
+                    "text": {
+                      "variants": [ {
+                        "text": "That doesn't sound like an adjective. Please name an adjective, like tall or beautiful"
+                      } ]
+                    }
+                  } ]
+                } ]
+              }
+            },
+            "targetPageId": "e09780e0-2dfb-49ec-9b57-822b0aa56356"
+          },
+          "name": "d31c85b6-4308-421a-9135-6a372838b536"
+        }, {
+          "event": "sys.no-input-default",
+          "handler": {
+            "beforeTransition": {
+              "staticUserResponse": {
+                "candidates": [ {
+                  "selector": {
+                    "platform": [ "PLATFORM_UNSPECIFIED" ],
+                    "lang": "en"
+                  },
+                  "responses": [ {
+                    "text": {
+                      "variants": [ {
+                        "text": "I didn't hear anything. Please provide an adjective"
+                      } ]
+                    }
+                  } ]
+                } ]
+              }
+            },
+            "targetPageId": "e09780e0-2dfb-49ec-9b57-822b0aa56356"
+          },
+          "name": "90d5152f-e533-4676-a81a-669cd545083e"
+        } ],
+        "etag": "693863a5"
+      }
+    } ],
+    "generators": [ {
+      "key": "c65921e1-c0fe-4a92-b680-80300a1ef193",
+      "value": {
+        "id": "c65921e1-c0fe-4a92-b680-80300a1ef193",
+        "displayName": "correct_story_first_chapter",
+        "phrases": [ {
+          "text": "You are a Mad Libs game engine.\nInput: A story template with user-provided words.\nTask: Output the story with the user's words inserted.\nCRITICAL RULES:\n1. Semantic nonsense is required. Do not change the user's words to make sense (e.g., if skin is white as \"mud\", keep \"mud\").\n2. Fix ONLY the grammar:\n   - Articles: Fix \"a/an\" agreement (e.g., \"as big as an apple\" vs \"as big as a banana\").\n   - Plurals/Verbs: Ensure the sentence flows grammatically around the inserted words.\n- Superlatives: If the user provides an adjective for \"the [word] of them all\", convert it to the superlative form (e.g., change \"pretty\" to \"prettiest\", \"smart\" to \"smartest\").\n3. Do not add intro text. Just the story.\n3. Do not add intro text. Just the story.\n\nContext Variables:\n- Adjective: $session.params.word_1\n- Object: $session.params.word_2\n- Body Part: $session.params.word_3\n- Fruit: $session.params.word_4\n\nStory:\nGenerating Story... It is Snow White! Once upon a time, there lived a princess called Snow White. Snow White was very beautiful. Then there was the Evil Queen who also was very beautiful. Every day she looked into her Magic Mirror. She asked: 'Mirror, Mirror, on the wall, who is the $session.params.word_1 of them all?' The Mirror replied: 'Not you. It is Snow White. She has skin as white as $session.params.word_2, and she has $session.params.word_3 as big as a $session.params.word_4..' The Queen was furious. “Snow White!” she hissed. “It cannot be!”. Then the Queen told the huntsman to find Snow White and kill her in the forest. ",
+          "languageCode": "en"
+        } ],
+        "placeholders": [ {
+          "id": "session",
+          "name": "session"
+        } ],
+        "etag": "693aac88",
+        "modelParameter": {
+          "temperature": 0.5,
+          "maxDecodeSteps": 128,
+          "topP": 0.94999999,
+          "topK": 40
+        },
+        "llmModelSettings": {
+          "model": "gemini-2.5-flash"
+        }
+      }
+    } ]
+  }
+}
