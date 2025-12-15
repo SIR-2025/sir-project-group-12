@@ -2,9 +2,43 @@
 
 This project is for the Socially Intelligent Robotics course at the University of Groningen. It contains a collection of scripts and demonstrations for interacting with a NAO robot and using various cloud services for speech recognition, text-to-speech, and dialog management.
 
+# NAO Performance Demos
+
+This folder contains scripts and modules for running various interactive performances and demos with the NAO robot using the SIC framework.
+
+## Contents
+
+### Main Scripts
+
+- **`nao_performance/snowwhite_interactive.py`**: The primary interactive application. It uses Google Speech-to-Text to listen to the user, Dialogflow CX to manage the conversation, and triggers theatrical performances (gestures + TTS) when the story intent is detected.
+- **`nao_performance/snowwhite_demo.py`**: A storytelling demo ("Snow White") that is 'based' on the first scene of our performance. This is just to demonstrate how the performance could look like if every part of the performance is combined.
+- **`nao_performance/opening_script.py`**: An introductory script where NAO introduces itself and the upcoming performance (Snow White).
+- **`nao_performance/end_script.py`**: A closing script where NAO thanks the audience and says goodbye.
+
+### Helper Modules
+
+- **`animations.py`**: Contains the database of animations categorized by intent (e.g., neutral, question, negation) and functions to select the best animation based on text analysis.
+- **`leds.py`**: Manages the robot's eye and ear LEDs to express various emotions (neutral, enjoyment, anger, disgust, sadness, fear, surprise).
+- **`tts_client.py`**: Client for generating speech audio files using an external TTS server.
+- **`music_player.py`**: Handles background music playback using `pygame`.
+
 ## Installation
 
 This project uses [uv](https://github.com/astral-sh/uv) for Python package management.
+
+**SIC Framework**: The `social-interaction-cloud` package is included in the requirements.
+**Network**: The computer must be on the same network as the NAO robot.
+**Redis Server**: The system requires a Redis server running locally.
+Navigate to the `conf/redis` directory in the project root and run:
+
+```bash
+.\redis-server.exe .\redis.conf
+```
+
+- **Google STT Service**: Open a separate terminal and run:
+  ```bash
+  run-google-stt
+  ```
 
 1.  **Install uv:**
 
@@ -68,6 +102,7 @@ Before running any of the scripts, you will need to configure the following:
 The `server` directory contains a Text-to-Speech (TTS) server that uses the Kokoro TTS model. The `snowwhite_interactive.py` script uses this server to generate the audio for the storytelling performance.
 
 The `server` directory contains the following scripts:
+
 - `server.py`: The FastAPI server that runs the TTS model.
 - `client.py`: A script that shows how to interact with the server.
 
