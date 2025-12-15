@@ -1,0 +1,10 @@
+{
+  "name": "33bf7629-f582-44ba-8b18-f4d010853799",
+  "displayName": "user_provides_bodypart",
+  "parameters": [ {
+    "id": "bodypart",
+    "entityType": "@bodyParts"
+  } ],
+  "priority": 500000,
+  "numTrainingPhrases": 20
+}

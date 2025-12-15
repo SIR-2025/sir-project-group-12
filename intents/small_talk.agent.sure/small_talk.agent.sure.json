@@ -1,0 +1,10 @@
+{
+  "name": "df5fcfcb-eb05-43a0-a345-82a9b339cb84",
+  "displayName": "small_talk.agent.sure",
+  "parameters": [ {
+    "id": "date-time",
+    "entityType": "@sys.date-time"
+  } ],
+  "priority": 500000,
+  "numTrainingPhrases": 6
+}

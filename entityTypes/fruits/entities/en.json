@@ -1,0 +1,31 @@
+{
+  "entities": [ {
+    "value": "strawberry",
+    "synonyms": [ "strawberry" ],
+    "languageCode": "en"
+  }, {
+    "value": "grape",
+    "synonyms": [ "grape" ],
+    "languageCode": "en"
+  }, {
+    "value": "pear",
+    "synonyms": [ "pear" ],
+    "languageCode": "en"
+  }, {
+    "value": "mango",
+    "synonyms": [ "mango" ],
+    "languageCode": "en"
+  }, {
+    "value": "orange",
+    "synonyms": [ "orange" ],
+    "languageCode": "en"
+  }, {
+    "value": "banana",
+    "synonyms": [ "banana" ],
+    "languageCode": "en"
+  }, {
+    "value": "apple",
+    "synonyms": [ "apple" ],
+    "languageCode": "en"
+  } ]
+}

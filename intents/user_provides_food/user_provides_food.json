@@ -1,0 +1,10 @@
+{
+  "name": "a28c5287-56fe-4e98-96b3-627b01bbf7bc",
+  "displayName": "user_provides_food",
+  "parameters": [ {
+    "id": "grossFood",
+    "entityType": "@grossFoods"
+  } ],
+  "priority": 500000,
+  "numTrainingPhrases": 13
+}

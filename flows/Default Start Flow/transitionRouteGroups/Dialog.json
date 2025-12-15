@@ -1,0 +1,71 @@
+{
+  "name": "97ae5e89-3d04-4bcd-b14a-a26b9b7e365f",
+  "displayName": "Dialog",
+  "transitionRoutes": [ {
+    "intent": "small_talk.dialog.hold_on",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "I can wait.", "I'll be waiting.", "Okay. I'm here." ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "name": "61221453-b4e3-4b59-8115-9bb4447aaf5c"
+  }, {
+    "intent": "small_talk.dialog.hug",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "I wish I could really hug you!", "I love hugs!", "Hugs are the best!" ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "name": "e193722d-8d5a-4956-881c-2067d6c85f50"
+  }, {
+    "intent": "small_talk.dialog.i_do_not_care",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Ok, let's not talk about it then.", "Alright then. Let's move on." ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "name": "0fbb28a4-4dc0-4587-aa52-37100fb0e006"
+  }, {
+    "intent": "small_talk.dialog.sorry",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "It's okay. No worries.", "No big deal. I won't hold a grudge.", " It's cool.", "That's all right. I forgive you." ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "name": "8003e05c-7030-470d-9dfd-a610a35f2c25"
+  }, {
+    "intent": "small_talk.dialog.what_do _you_mean",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Sorry if I understood you incorrectly.", "I'm still learning. I may misinterpret things from time to time.", "Maybe I misunderstood what you said.", "Sorry, looks like I misunderstood what you said." ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "name": "0b04c620-c4bd-49aa-811b-aa47935609e8"
+  }, {
+    "intent": "small_talk.dialog.wrong",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Sorry if I understood you incorrectly.", "I'm still learning. I may misinterpret things from time to time.", "Sorry about that. I'm still learning." ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "name": "5e2d9f2d-1270-4dc2-ba93-078be2b107dc"
+  } ]
+}

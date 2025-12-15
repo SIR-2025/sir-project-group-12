@@ -1,0 +1,10 @@
+{
+  "name": "a4e79093-537d-484c-8eee-beec501b0161",
+  "displayName": "user_provides_trash",
+  "parameters": [ {
+    "id": "trash",
+    "entityType": "@trashTypes"
+  } ],
+  "priority": 500000,
+  "numTrainingPhrases": 20
+}

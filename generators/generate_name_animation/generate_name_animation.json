@@ -1,0 +1,17 @@
+{
+  "name": "83ed266b-473d-4a40-af36-06accf6e9624",
+  "displayName": "generate_name_animation",
+  "placeholders": [ {
+    "id": "_name",
+    "name": "_name"
+  } ],
+  "modelParameter": {
+    "temperature": 0.5,
+    "maxDecodeSteps": 128,
+    "topP": 0.94999999,
+    "topK": 40
+  },
+  "llmModelSettings": {
+    "model": "gemini-2.0-flash-lite-001"
+  }
+}

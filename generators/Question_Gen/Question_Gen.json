@@ -1,0 +1,20 @@
+{
+  "name": "66324c87-ec43-4011-ba1e-a5f4f088d7b4",
+  "displayName": "Question_Gen",
+  "placeholders": [ {
+    "id": "cycle_num",
+    "name": "cycle_num"
+  }, {
+    "id": "input_count",
+    "name": "input_count"
+  } ],
+  "modelParameter": {
+    "temperature": 0.5,
+    "maxDecodeSteps": 128,
+    "topP": 0.94999999,
+    "topK": 40
+  },
+  "llmModelSettings": {
+    "model": "gemini-2.5-flash"
+  }
+}

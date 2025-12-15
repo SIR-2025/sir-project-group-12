@@ -1,0 +1,143 @@
+{
+  "trainingPhrases": [ {
+    "parts": [ {
+      "text": "see-through material",
+      "parameterId": "transparentMaterial"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "clear glue",
+      "parameterId": "transparentMaterial"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "transparent tape",
+      "parameterId": "transparentMaterial"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "clear nail polish",
+      "parameterId": "transparentMaterial"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "clear coat",
+      "parameterId": "transparentMaterial"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "clear vinyl",
+      "parameterId": "transparentMaterial"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "crystal",
+      "parameterId": "transparentMaterial"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "clear resin",
+      "parameterId": "transparentMaterial"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "clear packing tape",
+      "parameterId": "transparentMaterial"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "transparent paper",
+      "parameterId": "transparentMaterial"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "transparent plastic wrap",
+      "parameterId": "transparentMaterial"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "lucite",
+      "parameterId": "transparentMaterial"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "plexiglass",
+      "parameterId": "transparentMaterial"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "see-through film",
+      "parameterId": "transparentMaterial"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "clear acrylic",
+      "parameterId": "transparentMaterial"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "cellophane",
+      "parameterId": "transparentMaterial"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "plastic",
+      "parameterId": "transparentMaterial"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "water",
+      "parameterId": "transparentMaterial"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "foil",
+      "parameterId": "transparentMaterial"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "glass",
+      "parameterId": "transparentMaterial"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  } ]
+}

@@ -1,4 +1,0 @@
-social-interaction-cloud>=2.1.0
-requests
-pygame
-google-auth

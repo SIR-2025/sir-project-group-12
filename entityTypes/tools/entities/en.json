@@ -1,0 +1,15 @@
+{
+  "entities": [ {
+    "value": "painting tools",
+    "synonyms": [ "decorating tools", "paint supplies", "painter's implements", "painting tools" ],
+    "languageCode": "en"
+  }, {
+    "value": "ironwork tools",
+    "synonyms": [ "blacksmith tools", "ironwork tools", "metalworking tools", "smithy tools" ],
+    "languageCode": "en"
+  }, {
+    "value": "wood tools",
+    "synonyms": [ "carpentry tools", "lumber tools", "wood tools", "woodworking tools" ],
+    "languageCode": "en"
+  } ]
+}
