@@ -22,6 +22,10 @@ This folder contains scripts and modules for running various interactive perform
 - **`nao_performance/tts_client.py`**: Client for generating speech audio files using an external TTS server.
 - **`nao_performance/music_player.py`**: Handles background music playback using `pygame`.
 
+## Dialogflow Flows
+
+The `flows` directory contains exported Dialogflow CX flows used by the interactive storytelling scripts. Each JSON file (e.g., `SIR_exported_flow_cycle_1.json` through `SIR_exported_flow_cycle_4.json`) represents a full flow version. Import these into Dialogflow CX when you need to recreate or update the conversation design used by `snowwhite_interactive.py` and related demos.
+
 ## Installation
 
 This project uses [uv](https://github.com/astral-sh/uv) for Python package management.
