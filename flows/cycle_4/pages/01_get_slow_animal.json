@@ -1,0 +1,45 @@
+{
+  "name": "c9a9b139-7a3e-435a-9879-4774a796a97a",
+  "displayName": "01_get_slow_animal",
+  "form": {
+  
+  },
+  "entryFulfillment": {
+    "messages": [ {
+      "text": {
+        "text": [ "A hero arrives. Name a slow animal." ]
+      },
+      "languageCode": "en"
+    } ]
+  },
+  "transitionRoutes": [ {
+    "intent": "user_provides_slow_animal",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Animal: $intent.params.slowAnimal" ]
+        },
+        "languageCode": "en"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "word_15",
+        "value": "$intent.params.slowAnimal"
+      } ]
+    },
+    "targetPage": "02_get_clothing",
+    "name": "0b417ac6-d1e1-4a07-b1ce-68b41797db9a"
+  } ],
+  "eventHandlers": [ {
+    "targetPage": "01_get_slow_animal",
+    "event": "sys.no-input-default",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "I didn't understand you. Can you repeat?" ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "name": "2ce25797-5273-433a-ae58-9ebeec084963"
+  } ]
+}

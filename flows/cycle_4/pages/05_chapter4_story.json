@@ -1,0 +1,40 @@
+{
+  "name": "17f93d14-2542-4ab7-a4f8-cb4a987bb690",
+  "displayName": "05_chapter4_story",
+  "form": {
+  
+  },
+  "entryFulfillment": {
+    "messages": [ {
+      "text": {
+        "text": [ "$request.generative.text" ]
+      },
+      "languageCode": "en"
+    }, {
+      "payload": {
+        "robot_command": {
+          "led": "blue",
+          "motion": "neutral",
+          "text": "$request.generative.text"
+        }
+      },
+      "languageCode": "en"
+    } ],
+    "generators": [ {
+      "generator": "projects/newagent-tcmq/locations/europe-west4/agents/5079e43a-fec2-441d-bf10-f23f292fbf15/generators/1dbfc50f-8adf-4af9-ac80-9ede791c95dd",
+      "inputParameters": [ {
+        "key": "session",
+        "value": "$session.params"
+      } ],
+      "outputParameter": "$request.generative.text"
+    } ]
+  },
+  "transitionRoutes": [ {
+    "condition": "true",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "End Flow",
+    "name": "1b5e5263-b3c5-46b7-b59b-04468da13ef2"
+  } ]
+}

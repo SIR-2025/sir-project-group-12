@@ -1,0 +1,17 @@
+{
+  "name": "f7a364c0-b807-43b9-8e91-f28a54833d5d",
+  "displayName": "generate_animation",
+  "placeholders": [ {
+    "id": "_intro",
+    "name": "_intro"
+  } ],
+  "modelParameter": {
+    "temperature": 0.5,
+    "maxDecodeSteps": 128,
+    "topP": 0.94999999,
+    "topK": 40
+  },
+  "llmModelSettings": {
+    "model": "gemini-2.5-flash"
+  }
+}

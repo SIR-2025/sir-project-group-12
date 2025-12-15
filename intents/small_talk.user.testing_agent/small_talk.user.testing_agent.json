@@ -1,0 +1,6 @@
+{
+  "name": "08dd8eaf-f2e6-4cae-a1ec-d411dd3b2fda",
+  "displayName": "small_talk.user.testing_agent",
+  "priority": 500000,
+  "numTrainingPhrases": 8
+}

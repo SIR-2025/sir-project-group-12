@@ -1,0 +1,10 @@
+{
+  "name": "eccc1ff7-d6e2-45c6-a8f4-bcfd703532fc",
+  "displayName": "small_talk.user.does_not_want_to_talk",
+  "parameters": [ {
+    "id": "duration",
+    "entityType": "@sys.duration"
+  } ],
+  "priority": 500000,
+  "numTrainingPhrases": 10
+}

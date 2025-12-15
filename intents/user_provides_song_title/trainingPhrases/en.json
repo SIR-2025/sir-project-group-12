@@ -1,0 +1,143 @@
+{
+  "trainingPhrases": [ {
+    "parts": [ {
+      "text": "Hallelujah",
+      "parameterId": "songTitle"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Livin' on a Prayer",
+      "parameterId": "songTitle"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Free Bird",
+      "parameterId": "songTitle"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Wonderwall",
+      "parameterId": "songTitle"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "All Along the Watchtower",
+      "parameterId": "songTitle"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Purple Haze",
+      "parameterId": "songTitle"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Billie Jean",
+      "parameterId": "songTitle"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Hotel California",
+      "parameterId": "songTitle"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Let it Be",
+      "parameterId": "songTitle"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Hello",
+      "parameterId": "songTitle"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Hey Jude",
+      "parameterId": "songTitle"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Imagine",
+      "parameterId": "songTitle"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Yesterday",
+      "parameterId": "songTitle"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Like a Rolling Stone",
+      "parameterId": "songTitle"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Stairway to Heaven",
+      "parameterId": "songTitle"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Smells Like Teen Spirit",
+      "parameterId": "songTitle"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Blinding Lights",
+      "parameterId": "songTitle"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Thriller",
+      "parameterId": "songTitle"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Bohemian Rhapsody",
+      "parameterId": "songTitle"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "I believe I can Fly",
+      "parameterId": "songTitle"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  } ]
+}

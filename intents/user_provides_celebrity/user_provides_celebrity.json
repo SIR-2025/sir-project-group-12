@@ -1,0 +1,10 @@
+{
+  "name": "f4f99e59-a9af-44fd-9f95-d0a8d8008547",
+  "displayName": "user_provides_celebrity",
+  "parameters": [ {
+    "id": "celebrity",
+    "entityType": "@celebrities"
+  } ],
+  "priority": 500000,
+  "numTrainingPhrases": 20
+}

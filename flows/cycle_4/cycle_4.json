@@ -1,0 +1,47 @@
+{
+  "name": "d0fb63a8-bc82-4440-a7b0-2360c2a16723",
+  "displayName": "cycle_4",
+  "transitionRoutes": [ {
+    "condition": "true",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "01_get_slow_animal",
+    "name": "4dc5c1b0-b328-4cdc-9d36-4af8d21d8821"
+  } ],
+  "eventHandlers": [ {
+    "targetPage": "01_get_slow_animal",
+    "event": "sys.no-match-default",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Now onto our last chapter!" ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "name": "24a2f951-d617-486d-aaa8-2eb7c062273e"
+  }, {
+    "targetPage": "01_get_slow_animal",
+    "event": "sys.no-input-default",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Now onto our last chapter!" ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "name": "d1eed628-cd45-4a9f-be82-c95352a37004"
+  } ],
+  "nluSettings": {
+    "modelType": "MODEL_TYPE_ADVANCED",
+    "classificationThreshold": 0.30000001
+  },
+  "nluSettingsList": [ {
+    "modelType": "MODEL_TYPE_ADVANCED",
+    "classificationThreshold": 0.30000001,
+    "customConfigKey": "6ddfeea9-2962-4775-84a6-38db721271fb",
+    "languageCode": "en"
+  } ]
+}

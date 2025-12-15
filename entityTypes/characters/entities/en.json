@@ -1,0 +1,15 @@
+{
+  "entities": [ {
+    "value": "Disney characters",
+    "synonyms": [ "Disney characters", "Donald Duck", "Goofy", "Mickey Mouse" ],
+    "languageCode": "en"
+  }, {
+    "value": "animated characters",
+    "synonyms": [ "animated characters", "animated movie characters", "anime characters", "cartoon characters" ],
+    "languageCode": "en"
+  }, {
+    "value": "cartoons",
+    "synonyms": [ "animated movies", "anime", "cartoons", "comic strips" ],
+    "languageCode": "en"
+  } ]
+}

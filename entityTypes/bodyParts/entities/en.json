@@ -1,0 +1,39 @@
+{
+  "entities": [ {
+    "value": "back",
+    "synonyms": [ "back" ],
+    "languageCode": "en"
+  }, {
+    "value": "belly",
+    "synonyms": [ "belly" ],
+    "languageCode": "en"
+  }, {
+    "value": "ear",
+    "synonyms": [ "ear" ],
+    "languageCode": "en"
+  }, {
+    "value": "foot",
+    "synonyms": [ "foot" ],
+    "languageCode": "en"
+  }, {
+    "value": "finger",
+    "synonyms": [ "finger" ],
+    "languageCode": "en"
+  }, {
+    "value": "nose",
+    "synonyms": [ "nose" ],
+    "languageCode": "en"
+  }, {
+    "value": "head",
+    "synonyms": [ "head" ],
+    "languageCode": "en"
+  }, {
+    "value": "arm",
+    "synonyms": [ "arm" ],
+    "languageCode": "en"
+  }, {
+    "value": "leg",
+    "synonyms": [ "leg" ],
+    "languageCode": "en"
+  } ]
+}

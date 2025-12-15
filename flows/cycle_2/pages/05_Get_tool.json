@@ -1,0 +1,51 @@
+{
+  "name": "573b9528-2bcd-4a06-bf91-5cfc6d5d9f99",
+  "displayName": "05_Get_tool",
+  "form": {
+  
+  },
+  "entryFulfillment": {
+    "messages": [ {
+      "text": {
+        "text": [ "Now, name a tool." ]
+      },
+      "languageCode": "en"
+    } ]
+  },
+  "transitionRoutes": [ {
+    "intent": "user_provides_tool",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "word_9",
+        "value": "$intent.params.tool"
+      } ]
+    },
+    "targetPage": "05b_Confirm_Ready",
+    "name": "b72719d4-4383-4ff1-8b4a-ba465affae19"
+  } ],
+  "eventHandlers": [ {
+    "targetPage": "05_Get_tool",
+    "event": "sys.no-input-default",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "I didn't hear your response. Can you say it again?" ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "name": "bc7ad4bf-7784-444e-be88-98f9ab4ff692"
+  }, {
+    "targetPage": "05_Get_tool",
+    "event": "sys.no-match-default",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "This does not really sound like a tool. Please name a tool, like hammer or ruler." ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "name": "5cf2d150-5631-4936-8966-68c91353dbc7"
+  } ]
+}

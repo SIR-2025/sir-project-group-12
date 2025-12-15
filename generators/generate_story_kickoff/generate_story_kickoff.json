@@ -1,0 +1,13 @@
+{
+  "name": "c4ba710d-4221-472f-87f9-907c98c9423d",
+  "displayName": "generate_story_kickoff",
+  "modelParameter": {
+    "temperature": 0.5,
+    "maxDecodeSteps": 128,
+    "topP": 0.94999999,
+    "topK": 40
+  },
+  "llmModelSettings": {
+    "model": "gemini-2.0-flash-lite-001"
+  }
+}

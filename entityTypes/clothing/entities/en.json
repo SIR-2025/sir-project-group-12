@@ -1,0 +1,27 @@
+{
+  "entities": [ {
+    "value": "accessoires",
+    "synonyms": [ "accessoires", "handbags", "jewelry", "scarves" ],
+    "languageCode": "en"
+  }, {
+    "value": "shoewear",
+    "synonyms": [ "boots", "sandals", "shoes", "shoewear" ],
+    "languageCode": "en"
+  }, {
+    "value": "bottoms",
+    "synonyms": [ "bottoms", "pants", "shorts", "skirts" ],
+    "languageCode": "en"
+  }, {
+    "value": "tops",
+    "synonyms": [ "blouses", "shirts", "t-shirts", "tops" ],
+    "languageCode": "en"
+  }, {
+    "value": "coats",
+    "synonyms": [ "coats", "jackets", "outerwear", "overcoats" ],
+    "languageCode": "en"
+  }, {
+    "value": "dresses",
+    "synonyms": [ "clothing", "dresses", "frocks", "gowns" ],
+    "languageCode": "en"
+  } ]
+}
