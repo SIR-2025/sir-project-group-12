@@ -58,6 +58,8 @@ from sic_framework.services.google_stt.google_stt import (
     GoogleSpeechToTextConf,
     GetStatementRequest,
 )
+from sic_framework.devices.desktop import Desktop
+from sic_framework.devices.common_desktop.desktop_microphone import MicrophoneConf
 
 # Import the existing Dialogflow client from the sibling directory
 try:
@@ -178,6 +180,7 @@ class SnowWhiteInteractive(SICApplication):
         
         # Components
         self.nao = None
+        self.desktop = None
         self.dialogflow_client = None
         self.speech_to_text = None
         self.emotions = None
@@ -198,6 +201,7 @@ class SnowWhiteInteractive(SICApplication):
         # 1. Initialize NAO & LEDs
         self.nao = Nao(ip=self.nao_ip)
         self.emotions = NaoLEDS(self.nao)
+        self.desktop = Desktop(mic_conf=MicrophoneConf(device_index=2))
         
         # 2. Autonomous Life & Awareness (Face Tracking)
         self.logger.info("Setting up Autonomous Life...")
@@ -227,7 +231,7 @@ class SnowWhiteInteractive(SICApplication):
                 language="en-US",
                 interim_results=False,
             )
-            self.speech_to_text = GoogleSpeechToText(conf=stt_conf, input_source=self.nao.mic)
+            self.speech_to_text = GoogleSpeechToText(conf=stt_conf, input_source=self.desktop.mic)
         except Exception as e:
             self.logger.error(f"Failed to init STT: {e}")
             raise
