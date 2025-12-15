@@ -63,21 +63,47 @@ Before running any of the scripts, you will need to configure the following:
 
     Move your Google API key JSON file to `conf/google/google-key.json`. In the script you want to run, make sure the `google_credentials_path` variable is set to this path.
 
+## Kokoro TTS Server
+
+The `server` directory contains a Text-to-Speech (TTS) server that uses the Kokoro TTS model. The `snowwhite_interactive.py` script uses this server to generate the audio for the storytelling performance.
+
+The `server` directory contains the following scripts:
+- `server.py`: The FastAPI server that runs the TTS model.
+- `client.py`: A script that shows how to interact with the server.
+
+Before running the `snowwhite_interactive.py` script, you need to start the TTS server.
+
+You also need to configure the IP address of the machine running the server in the `nao_performance/tts_client.py` file. Change the `url` variable to the IP address of the machine running the `server.py` script.
+
 ## How to Run
 
-The `nao_performance` directory contains the performance code to demonstrate the project's functionality. You can run them directly from your terminal.
+1.  **Start the TTS Server:**
 
-For example, to run the `snowwhite_interactive.py` script:
+    Open a new terminal, activate the virtual environment, and run the following command:
 
-```bash
-uv run nao_performance/snowwhite_interactive.py
-```
+    ```bash
+    uv run server/server.py
+    ```
 
-or if you are using python directly:
+    or if you are using python directly:
 
-```bash
-python nao_performance/snowwhite_interactive.py
-```
+    ```bash
+    python server/server.py
+    ```
+
+2.  **Run the Snow White Interactive Script:**
+
+    Open another terminal, activate the virtual environment, and run the following command:
+
+    ```bash
+    uv run nao_performance/snowwhite_interactive.py
+    ```
+
+    or if you are using python directly:
+
+    ```bash
+    python nao_performance/snowwhite_interactive.py
+    ```
 
 To run a demo on the NAO robot, you will need to have the NAO's IP address and be on the same network.
 

@@ -14,7 +14,8 @@ def generate_audio(text, output_filename, voice="af_bella", speed=1.0):
     Returns:
         bool: True if successful, False otherwise.
     """
-    url = "http://tts.twin-tails.org:80/tts"
+    # Change the IP address here to the IP address of the machine running the server.py script.
+    url = "http://localhost:8000/tts"
     
     payload = {
         "text": text,
