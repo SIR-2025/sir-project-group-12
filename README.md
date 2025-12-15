@@ -17,10 +17,10 @@ This folder contains scripts and modules for running various interactive perform
 
 ### Helper Modules
 
-- **`animations.py`**: Contains the database of animations categorized by intent (e.g., neutral, question, negation) and functions to select the best animation based on text analysis.
-- **`leds.py`**: Manages the robot's eye and ear LEDs to express various emotions (neutral, enjoyment, anger, disgust, sadness, fear, surprise).
-- **`tts_client.py`**: Client for generating speech audio files using an external TTS server.
-- **`music_player.py`**: Handles background music playback using `pygame`.
+- **`nao_performance/animations.py`**: Contains the database of animations categorized by intent (e.g., neutral, question, negation) and functions to select the best animation based on text analysis.
+- **`nao_performance/leds.py`**: Manages the robot's eye and ear LEDs to express various emotions (neutral, enjoyment, anger, disgust, sadness, fear, surprise).
+- **`nao_performance/tts_client.py`**: Client for generating speech audio files using an external TTS server.
+- **`nao_performance/music_player.py`**: Handles background music playback using `pygame`.
 
 ## Installation
 
