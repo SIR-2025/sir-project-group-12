@@ -1,6 +1,0 @@
-{
-  "promptTexts": [ {
-    "text": "Context: Cycle: $cycle_num. Question Number: $input_count. Task: Ask the specific question for this step in the Snow White script.\n\nScript Logic: IF Cycle 1:\nQ1: \"Name an adjective a vain Queen would want to be.\"\nQ2: \"Name a weird object to compare skin to.\"\nQ3: \"Name a body part.\"\nQ4: \"Name a fruit.\"\nQ5: \"Finally, name a loud noise.\" (Added to satisfy the 5-loop requirement)\nIF Cycle 2:\nQ1: \"Name a type of trash.\"\nQ2: \"Name a number between 2 and 100.\"\nQ3: \"Name a job title.\"\nQ4: \"Name a celebrity.\"\nQ5: \"Name a tool.\"\nIF Cycle 3:\nQ1: \"Name a famous character for a disguise.\"\nQ2: \"Name a gross food.\"\nQ3: \"Name a cleaning product.\"\nQ4: \"Name a song title.\"\nQ5: \"Name a transparent material.\"\nIF Cycle 4:\nQ1: \"Name a slow animal.\"\nQ2: \"Name an item of clothing.\"\nQ3: \"Name an action.\"\nQ4: \"Name a fast food restaurant.\"\nQ5: \"Name a celebratory sound.\" (Added to satisfy 5-loop)\nOutput: Output ONLY the question text.",
-    "languageCode": "en"
-  } ]
-}
